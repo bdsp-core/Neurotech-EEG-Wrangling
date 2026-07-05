@@ -313,6 +313,9 @@ def generate_figure2(data: dict):
         ("Bonn", 5, 0.6),
         ("Siena", 14, 128),
         ("TUH EEG", 15000, 25000),
+        # Harvard EEG Database (same BDSP platform) — current figures from site metadata
+        # (~109k patients, ~329k recordings, ~3.3M hours); in-hospital recordings only.
+        ("Harvard\nEEG DB", 109000, 3_300_000),
         ("Neurotech\n(this work)", len(set(r["subject"] for r in s3_data)), sum(float(r.get("duration_hours",0)) for r in s3_data)),
     ]
     x = np.arange(len(datasets))
@@ -326,7 +329,7 @@ def generate_figure2(data: dict):
     ax.set_xticks(x)
     ax.set_xticklabels(names, fontsize=8)
     ax.set_ylabel("Patients or recording-hours (log scale)")
-    ax.set_title("C. Comparison with\npublic EEG datasets", fontweight="bold")
+    ax.set_title("C. Comparison with\nclinical EEG datasets", fontweight="bold")
     ax.legend(fontsize=9)
 
     plt.tight_layout()
