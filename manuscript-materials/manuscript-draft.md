@@ -17,7 +17,7 @@ We present the Neurotech EEG Dataset, a large clinical scalp electroencephalogra
 
 ## Background & Summary
 
-Expert interpretation of the electroencephalogram (EEG) remains the cornerstone of epilepsy diagnosis^1^, yet the global shortage of trained EEG readers creates a bottleneck affecting the approximately 50 million people living with epilepsy worldwide^9^. Machine learning (ML) offers a path toward scalable automated interpretation^2^ [ref. 2 pending verification], but the scarcity of large, clinically representative public datasets has constrained progress. Spike detection algorithms trained on existing public datasets can achieve high accuracy on held-out test sets but can drop substantially when deployed on recordings from different clinical settings or hardware platforms -- a persistent and well-documented generalization problem^3-6,12^.
+Expert interpretation of the electroencephalogram (EEG) remains the cornerstone of epilepsy diagnosis^1^, yet the global shortage of trained EEG readers creates a bottleneck affecting the approximately 50 million people living with epilepsy worldwide^9^. Machine learning (ML) offers a path toward scalable automated interpretation^2^, but the scarcity of large, clinically representative public datasets has constrained progress. Spike detection algorithms trained on existing public datasets can achieve high accuracy on held-out test sets but can drop substantially when deployed on recordings from different clinical settings or hardware platforms -- a persistent and well-documented generalization problem^3-6,12^.
 
 Existing public EEG resources span a range of sizes and designs but share common limitations (Table 1). The CHB-MIT dataset provides 23 pediatric patients with seizure annotations^3^; the Bonn dataset offers intracranial recordings from 5 patients^4^; the Siena dataset contributes 14 patients with scalp EEG^5^. The Temple University Hospital (TUH) EEG Corpus, at over 25,000 sessions, demonstrated that large-scale release of unselected clinical data could become the most widely used benchmark in the EEG artificial intelligence (AI) literature^7^. However, publicly available clinical EEG remains insufficiently diverse across institutions, hardware platforms, clinical settings, and annotation practices.
 
@@ -188,7 +188,7 @@ Code for the BIDS conversion pipeline, de-identification procedures, and annotat
 ## References
 
 1. Noachtar, S. & Remi, J. The role of EEG in epilepsy: a critical review. *Epilepsy Behav.* 15, 22-33 (2009).
-2. Westover, M.B. et al. Machine learning for electroencephalography: current status and future directions. *J. Clin. Neurophysiol.* (2023). **[NEEDS VERIFICATION — author to confirm full citation (volume/pages/DOI) or replace; could not be located in a literature search.]**
+2. Roy, Y. et al. Deep learning-based electroencephalography analysis: a systematic review. *J. Neural Eng.* 16, 051001 (2019).
 3. Shoeb, A. & Guttag, J. Application of machine learning to epileptic seizure detection. *Proc. ICML* (2010). [CHB-MIT]
 4. Andrzejak, R.G. et al. Indications of nonlinear deterministic and finite-dimensional structures in time series of brain electrical activity. *Phys. Rev. E* 64, 061907 (2001). [Bonn dataset]
 5. Detti, P. et al. EEG synchronization analysis for seizure prediction: a study on data of noninvasive recordings. *Processes* 8, 846 (2020). [Siena dataset]
