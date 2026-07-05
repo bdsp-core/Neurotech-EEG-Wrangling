@@ -1,0 +1,9 @@
+Metric,Value,Notes
+Studies with monitoring data,6413,
+Total logged hours,"296,948",
+Hours recording active,"273,796",(92%)
+"Distinct days/study, median (IQR)",3.0 (2.0-4.0),
+Monitoring events,"173,096",
+  EEG reviewed,"134,875",
+  General notes,"37,704",
+  Equipment failures,517,

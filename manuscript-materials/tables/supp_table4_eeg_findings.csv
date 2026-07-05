@@ -1,0 +1,33 @@
+Finding,Value,Notes
+Posterior dominant rhythm,,
+  PDR extractable,8057,of 10726 studies
+"  PDR frequency, median (IQR)",9.0 (8.5-10.0),Hz
+  Normal range (8-13 Hz),6816,(85%)
+  Slow (<8 Hz),1146,(14%)
+,,
+Interictal epileptiform discharges,6345,of 10726 studies (59%)
+  Morphology,,
+    Spike,3342,
+    Sharp wave,1755,
+    Spike-and-wave,1669,
+    Polyspike,502,
+  Distribution,,
+    Generalized,1691,
+    Focal,1364,
+    Multifocal,277,
+    Bilateral independent,97,
+  Laterality,,
+    Left,1770,
+    Right,1611,
+    Bilateral,709,
+  Region,,
+    Temporal,1940,
+    Frontal,1261,
+    Central,878,
+    Parietal,329,
+    Occipital,404,
+,,
+Abnormal slowing,4524,of 10726 studies
+Electrographic seizures,2379,of 10726 studies
+Patient-reported events,5119,
+  With timestamp,5011,(98%)

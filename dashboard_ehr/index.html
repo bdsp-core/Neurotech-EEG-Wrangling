@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Neurotech EHR Extraction Pipeline</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+<style>
+  :root { --c1: #7c3aed; --c2: #2563eb; --c3: #16a34a; --err: #dc2626; --ocr: #f59e0b; }
+  body { font-family: -apple-system, "SF Pro Display", sans-serif; margin: 0; padding: 20px 28px;
+         background: #f5f5f7; color: #1f2937; }
+  h1 { margin: 0 0 2px 0; color: #111827; font-size: 22px; }
+  h2 { margin: 0 0 4px 0; font-size: 18px; }
+  .sub { color: #6b7280; font-size: 13px; margin-bottom: 16px; }
+  .overall { display: flex; gap: 10px; margin: 14px 0 22px 0; flex-wrap: wrap; }
+  .mini-stage { background: #fff; border-radius: 10px; padding: 10px 14px; flex: 1;
+                box-shadow: 0 1px 3px rgba(0,0,0,.08); min-width: 220px; }
+  .mini-stage .name { font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: #6b7280; }
+  .mini-stage .pct { font-size: 28px; font-weight: 600; margin: 2px 0 4px 0; }
+  .mini-stage .counts { font-size: 12px; color: #6b7280; }
+  .mini-bar { background: #e5e7eb; border-radius: 4px; height: 6px; margin-top: 6px; overflow: hidden; }
+  .mini-fill { height: 100%; border-radius: 4px; transition: width .4s; }
+
+  .stage-card { background: #fff; border-radius: 12px; padding: 18px 20px; margin-bottom: 18px;
+                box-shadow: 0 1px 3px rgba(0,0,0,.08); }
+  .stage-card .header { display: flex; align-items: center; justify-content: space-between;
+                        gap: 12px; flex-wrap: wrap; margin-bottom: 10px; }
+  .stage-card .header-left h2 { margin: 0; }
+  .stage-card .header-left .now { color: #6b7280; font-size: 12px; margin-top: 2px; font-style: italic; word-break: break-word; }
+  .badge { font-size: 12px; padding: 4px 12px; border-radius: 20px; font-weight: 600; }
+  .badge.running  { background: #dbeafe; color: #1d4ed8; }
+  .badge.complete { background: #dcfce7; color: #166534; }
+  .badge.idle     { background: #f3f4f6; color: #6b7280; }
+  .badge.error    { background: #fee2e2; color: #991b1b; }
+
+  .progress-bar { background: #e5e7eb; border-radius: 8px; height: 22px; margin: 8px 0 12px 0;
+                  overflow: hidden; }
+  .progress-fill { height: 100%; border-radius: 8px; transition: width .5s; display: flex;
+                   align-items: center; justify-content: center; color: #fff; font-size: 11px;
+                   font-weight: 700; }
+
+  .stats { display: flex; gap: 10px; margin: 6px 0 10px 0; flex-wrap: wrap; }
+  .stat { background: #f9fafb; border-radius: 8px; padding: 10px 14px; flex: 1; min-width: 100px; }
+  .stat .v { font-size: 22px; font-weight: 700; color: #2563eb; }
+  .stat .l { font-size: 10px; text-transform: uppercase; letter-spacing: 0.5px; color: #6b7280; margin-top: 2px; }
+  .stat .s { color: #9ca3af; font-size: 11px; }
+  .stat.ocr .v { color: var(--ocr); }
+  .stat.done .v { color: var(--c3); }
+  .stat.err .v { color: var(--err); }
+  .stat.small .v { font-size: 17px; color: #4b5563; }
+
+  .stage-body { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  @media (max-width: 900px) { .stage-body { grid-template-columns: 1fr; } }
+
+  .chart-wrap { background: #f9fafb; border-radius: 8px; padding: 10px; }
+
+  .log { background: #111827; color: #d4d4d8; padding: 10px 12px; border-radius: 8px;
+         font-family: ui-monospace, Menlo, monospace; font-size: 11px; max-height: 160px;
+         overflow-y: auto; white-space: pre-wrap; }
+
+  table.types { width: 100%; border-collapse: collapse; background: #f9fafb; border-radius: 8px; overflow: hidden; }
+  table.types th { font-size: 10px; text-transform: uppercase; color: #6b7280; text-align: left; padding: 6px 10px; }
+  table.types td { padding: 5px 10px; font-size: 12px; border-top: 1px solid #f1f5f9; }
+  table.types td.num { text-align: right; font-variant-numeric: tabular-nums; }
+</style>
+</head>
+<body>
+
+<h1>Neurotech EHR Extraction Pipeline</h1>
+<div class="sub">Live progress across extract → segment → structured-field stages. Polls every 3s.</div>
+
+<!-- Overall summary: 3 mini-cards, one per stage -->
+<div class="overall">
+  <div class="mini-stage" id="mini-1"><div class="name">Stage 1 · Extract</div><div class="pct">--</div><div class="counts">waiting</div><div class="mini-bar"><div class="mini-fill" style="background:var(--c1);width:0%"></div></div></div>
+  <div class="mini-stage" id="mini-2"><div class="name">Stage 2 · Segment</div><div class="pct">--</div><div class="counts">waiting</div><div class="mini-bar"><div class="mini-fill" style="background:var(--c2);width:0%"></div></div></div>
+  <div class="mini-stage" id="mini-3"><div class="name">Stage 3 · Fields</div><div class="pct">--</div><div class="counts">waiting</div><div class="mini-bar"><div class="mini-fill" style="background:var(--c3);width:0%"></div></div></div>
+  <div class="mini-stage" id="mini-4"><div class="name">Stage 6 · De-identify</div><div class="pct">--</div><div class="counts">waiting</div><div class="mini-bar"><div class="mini-fill" style="background:var(--ocr);width:0%"></div></div></div>
+</div>
+
+<!-- Stage 1: Extract raw text -->
+<div class="stage-card" id="card-extract_text">
+  <div class="header">
+    <div class="header-left">
+      <h2>Stage 1 · Extract raw text</h2>
+      <div class="now" id="now-extract_text"></div>
+    </div>
+    <span class="badge idle" id="badge-extract_text">idle</span>
+  </div>
+  <div class="progress-bar"><div class="progress-fill" id="bar-extract_text" style="width:0%;background:linear-gradient(90deg,var(--c1),#a78bfa)"></div></div>
+  <div class="stats">
+    <div class="stat"><div class="v" id="s1-done">0</div><div class="l">PDFs</div><div class="s">of <span id="s1-total">?</span></div></div>
+    <div class="stat ocr"><div class="v" id="s1-ocr">0</div><div class="l">OCR'd</div></div>
+    <div class="stat done"><div class="v" id="s1-pages">0</div><div class="l">Pages</div></div>
+    <div class="stat"><div class="v" id="s1-chars">0</div><div class="l">M Chars</div></div>
+    <div class="stat err"><div class="v" id="s1-err">0</div><div class="l">Errors</div></div>
+    <div class="stat small"><div class="v" id="s1-rate">--</div><div class="l">PDFs/min</div></div>
+    <div class="stat small"><div class="v" id="s1-eta">--</div><div class="l">ETA</div></div>
+    <div class="stat small"><div class="v" id="s1-elapsed">--</div><div class="l">Elapsed</div></div>
+    <div class="stat small"><div class="v" id="s1-workers">--</div><div class="l">Workers</div></div>
+  </div>
+  <div class="stage-body">
+    <div class="chart-wrap"><canvas id="chart-extract_text" height="120"></canvas></div>
+    <div class="log" id="log-extract_text">Waiting for data...</div>
+  </div>
+</div>
+
+<!-- Stage 2: Segment documents -->
+<div class="stage-card" id="card-segment_documents">
+  <div class="header">
+    <div class="header-left">
+      <h2>Stage 2 · Segment documents</h2>
+      <div class="now" id="now-segment_documents"></div>
+    </div>
+    <span class="badge idle" id="badge-segment_documents">idle</span>
+  </div>
+  <div class="progress-bar"><div class="progress-fill" id="bar-segment_documents" style="width:0%;background:linear-gradient(90deg,var(--c2),#60a5fa)"></div></div>
+  <div class="stats">
+    <div class="stat"><div class="v" id="s2-done">0</div><div class="l">Packets</div><div class="s">of <span id="s2-total">?</span></div></div>
+    <div class="stat done"><div class="v" id="s2-sections">0</div><div class="l">Sub-docs</div></div>
+    <div class="stat err"><div class="v" id="s2-err">0</div><div class="l">Errors</div></div>
+    <div class="stat small"><div class="v" id="s2-rate">--</div><div class="l">Packets/min</div></div>
+    <div class="stat small"><div class="v" id="s2-eta">--</div><div class="l">ETA</div></div>
+    <div class="stat small"><div class="v" id="s2-elapsed">--</div><div class="l">Elapsed</div></div>
+  </div>
+  <div class="stage-body">
+    <div class="chart-wrap"><canvas id="chart-segment_documents" height="120"></canvas></div>
+    <table class="types" id="types-segment_documents">
+      <thead><tr><th>Document type</th><th class="num">Count</th><th class="num">%</th></tr></thead>
+      <tbody><tr><td colspan="3" style="color:#9ca3af;padding:14px">No segmentation data yet</td></tr></tbody>
+    </table>
+  </div>
+</div>
+
+<!-- Stage 3: Extract structured fields -->
+<div class="stage-card" id="card-extract_fields">
+  <div class="header">
+    <div class="header-left">
+      <h2>Stage 3 · Extract structured fields</h2>
+      <div class="now" id="now-extract_fields"></div>
+    </div>
+    <span class="badge idle" id="badge-extract_fields">idle</span>
+  </div>
+  <div class="progress-bar"><div class="progress-fill" id="bar-extract_fields" style="width:0%;background:linear-gradient(90deg,var(--c3),#4ade80)"></div></div>
+  <div class="stats">
+    <div class="stat"><div class="v" id="s3-done">0</div><div class="l">Docs</div><div class="s">of <span id="s3-total">?</span></div></div>
+    <div class="stat"><div class="v" id="s3-calls">0</div><div class="l">LLM calls</div></div>
+    <div class="stat ocr"><div class="v" id="s3-tokens">0</div><div class="l">Tokens (M)</div></div>
+    <div class="stat done"><div class="v" id="s3-cost">$0.00</div><div class="l">Cost</div></div>
+    <div class="stat err"><div class="v" id="s3-err">0</div><div class="l">Errors</div></div>
+    <div class="stat small"><div class="v" id="s3-rate">--</div><div class="l">Docs/min</div></div>
+    <div class="stat small"><div class="v" id="s3-eta">--</div><div class="l">ETA</div></div>
+    <div class="stat small"><div class="v" id="s3-elapsed">--</div><div class="l">Elapsed</div></div>
+  </div>
+  <div class="stage-body">
+    <div class="chart-wrap"><canvas id="chart-extract_fields" height="120"></canvas></div>
+    <div class="log" id="log-extract_fields">Waiting for data...</div>
+  </div>
+</div>
+
+<!-- Stage 6: De-identify -->
+<div class="stage-card" id="card-deidentify">
+  <div class="header">
+    <div class="header-left">
+      <h2>Stage 6 · De-identify EHR data</h2>
+      <div class="now" id="now-deidentify"></div>
+    </div>
+    <span class="badge idle" id="badge-deidentify">idle</span>
+  </div>
+  <div class="progress-bar"><div class="progress-fill" id="bar-deidentify" style="width:0%;background:linear-gradient(90deg,var(--ocr),#fbbf24)"></div></div>
+  <div class="stats">
+    <div class="stat"><div class="v" id="s6-done">0</div><div class="l">Patients</div><div class="s">of <span id="s6-total">?</span></div></div>
+    <div class="stat err"><div class="v" id="s6-err">0</div><div class="l">Errors</div></div>
+    <div class="stat small"><div class="v" id="s6-rate">--</div><div class="l">Patients/min</div></div>
+    <div class="stat small"><div class="v" id="s6-eta">--</div><div class="l">ETA</div></div>
+    <div class="stat small"><div class="v" id="s6-elapsed">--</div><div class="l">Elapsed</div></div>
+  </div>
+  <div class="stage-body">
+    <div class="chart-wrap"><canvas id="chart-deidentify" height="120"></canvas></div>
+    <div class="log" id="log-deidentify">Waiting for data...</div>
+  </div>
+</div>
+
+<script>
+const STAGES = ['extract_text', 'segment_documents', 'extract_fields', 'deidentify'];
+const charts = {};
+
+function mkChart(id, colorMain) {
+  const ctx = document.getElementById(id).getContext('2d');
+  return new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: [],
+      datasets: [
+        { label: 'Remaining', data: [], borderColor: colorMain, backgroundColor: colorMain + '22', fill: true, tension: 0.3, pointRadius: 0 },
+        { label: 'Done', data: [], borderColor: '#16a34a', fill: false, tension: 0.3, pointRadius: 0, yAxisID: 'y1' }
+      ]
+    },
+    options: {
+      responsive: true, animation: false,
+      plugins: { legend: { labels: { boxWidth: 10, font: { size: 11 } } } },
+      scales: {
+        y: { title: { display: false }, beginAtZero: true, grid: { color: '#f1f5f9' } },
+        y1: { position: 'right', beginAtZero: true, grid: { drawOnChartArea: false } },
+        x: { ticks: { font: { size: 10 } } }
+      }
+    }
+  });
+}
+charts.extract_text     = mkChart('chart-extract_text',     '#7c3aed');
+charts.segment_documents= mkChart('chart-segment_documents','#2563eb');
+charts.extract_fields   = mkChart('chart-extract_fields',   '#16a34a');
+charts.deidentify       = mkChart('chart-deidentify',       '#f59e0b');
+
+function fmtDur(sec) {
+  if (!sec || sec < 0) return '--';
+  if (sec < 60) return Math.round(sec) + 's';
+  if (sec < 3600) return Math.round(sec/60) + 'm';
+  const h = Math.floor(sec/3600), m = Math.round((sec%3600)/60);
+  return h + 'h ' + m + 'm';
+}
+function fmtBig(n) { if (!n) return '0'; if (n < 1000) return n; if (n < 1e6) return (n/1e3).toFixed(1)+'K'; return (n/1e6).toFixed(1)+'M'; }
+function fmtMChars(n) { if (!n) return '0'; return n < 1e6 ? (n/1e3).toFixed(0)+'K' : (n/1e6).toFixed(1); }
+
+function badgeFor(d) {
+  if (!d) return ['idle', 'never run'];
+  if (d.complete) return ['complete', 'complete'];
+  if (d.running) return ['running', 'running'];
+  if (d.errors > 0 && d.done === 0) return ['error', 'error'];
+  return ['idle', 'idle'];
+}
+
+async function fetchStage(stage) {
+  try {
+    const r = await fetch('progress_' + stage + '.json?' + Date.now());
+    if (!r.ok) return null;
+    return await r.json();
+  } catch (e) { return null; }
+}
+
+function updateMini(stage, d, idx) {
+  const el = document.getElementById('mini-' + idx);
+  const pct = d && d.total ? (d.done / d.total * 100) : 0;
+  el.querySelector('.pct').textContent = d ? pct.toFixed(0) + '%' : '--';
+  el.querySelector('.counts').textContent = d ? ((d.done||0) + ' / ' + (d.total||'?')) : 'waiting';
+  el.querySelector('.mini-fill').style.width = pct + '%';
+}
+
+function updateCommon(d, prefix) {
+  const pct = d && d.total ? (d.done / d.total * 100) : 0;
+  const bar = document.getElementById('bar-' + d.stage);
+  bar.style.width = pct + '%';
+  bar.textContent = pct >= 3 ? pct.toFixed(1) + '%' : '';
+
+  const [cls, label] = badgeFor(d);
+  const badge = document.getElementById('badge-' + d.stage);
+  badge.className = 'badge ' + cls;
+  badge.textContent = label;
+
+  document.getElementById('now-' + d.stage).textContent = d.current_item ? ('Now: ' + d.current_item) : '';
+
+  document.getElementById(prefix + '-done').textContent = (d.done||0).toLocaleString();
+  document.getElementById(prefix + '-total').textContent = (d.total||0).toLocaleString();
+  document.getElementById(prefix + '-err').textContent  = (d.errors||0).toLocaleString();
+  document.getElementById(prefix + '-elapsed').textContent = fmtDur(d.elapsed_sec || 0);
+
+  const rate = (d.elapsed_sec||0) > 30 ? ((d.done||0) / d.elapsed_sec * 60) : 0;
+  document.getElementById(prefix + '-rate').textContent = rate > 0 ? rate.toFixed(1) : '--';
+  const remaining = Math.max(0, (d.total||0) - (d.done||0));
+  const etaSec = rate > 0 ? (remaining / rate * 60) : 0;
+  document.getElementById(prefix + '-eta').textContent = etaSec > 0 ? fmtDur(etaSec) : '--';
+
+  // burndown chart
+  const chart = charts[d.stage];
+  if (d.history && d.history.length > 0 && d.total) {
+    chart.data.labels = d.history.map(h => h.time);
+    chart.data.datasets[0].data = d.history.map(h => d.total - (h.done || 0));
+    chart.data.datasets[1].data = d.history.map(h => h.done || 0);
+    chart.update('none');
+  }
+}
+
+async function update() {
+  const [d1, d2, d3, d6] = await Promise.all(STAGES.map(fetchStage));
+  updateMini('extract_text',     d1, 1);
+  updateMini('segment_documents',d2, 2);
+  updateMini('extract_fields',   d3, 3);
+  updateMini('deidentify',       d6, 4);
+
+  if (d1) {
+    updateCommon(d1, 's1');
+    document.getElementById('s1-ocr').textContent   = (d1.ocr||0).toLocaleString();
+    document.getElementById('s1-pages').textContent = (d1.pages_done||0).toLocaleString();
+    document.getElementById('s1-chars').textContent = fmtMChars(d1.chars_done||0);
+    document.getElementById('s1-workers').textContent = d1.workers || '--';
+    if (d1.recent_log) document.getElementById('log-extract_text').textContent = d1.recent_log.join('\n');
+  }
+
+  if (d2) {
+    updateCommon(d2, 's2');
+    document.getElementById('s2-sections').textContent = (d2.sections_total||0).toLocaleString();
+    // document-type breakdown table
+    const by = d2.sections_by_type || {};
+    const total = d2.sections_total || 0;
+    const tbody = document.querySelector('#types-segment_documents tbody');
+    const keys = Object.keys(by).sort((a,b) => by[b] - by[a]);
+    if (keys.length) {
+      tbody.innerHTML = keys.map(k => {
+        const pct = total ? (by[k]/total*100) : 0;
+        return '<tr><td>' + k + '</td><td class="num">' + by[k] + '</td><td class="num">' + pct.toFixed(1) + '%</td></tr>';
+      }).join('');
+    }
+  }
+
+  if (d3) {
+    updateCommon(d3, 's3');
+    document.getElementById('s3-calls').textContent = (d3.llm_calls||0).toLocaleString();
+    const totalTokens = (d3.tokens_in||0) + (d3.tokens_out||0);
+    document.getElementById('s3-tokens').textContent = fmtMChars(totalTokens);
+    document.getElementById('s3-cost').textContent = '$' + ((d3.cost_usd||0).toFixed(2));
+    if (d3.recent_log) document.getElementById('log-extract_fields').textContent = d3.recent_log.join('\n');
+  }
+
+  if (d6) {
+    updateCommon(d6, 's6');
+    if (d6.recent_log) document.getElementById('log-deidentify').textContent = d6.recent_log.join('\n');
+  }
+}
+
+setInterval(update, 3000);
+update();
+</script>
+</body>
+</html>

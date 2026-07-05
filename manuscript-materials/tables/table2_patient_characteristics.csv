@@ -1,0 +1,26 @@
+Characteristic,Value,Notes
+Patients,,
+  Unique patients,4914,
+  With clinical documentation,4812,(98%)
+"  Age at first EEG, median (IQR)",26.7 (13.4-48.2),n=2915
+  Male,1374,(46%)
+  Female,1631,(54%)
+,,
+Referral indications (ICD-10),,n=13049 codes
+  Epilepsy (G40.x),7073,(54%)
+  Convulsions (R56.x),1648,(13%)
+  Abnormal movements (R25.x),618,(5%)
+  Other,3710,(28%)
+,,
+EEG recordings,,
+  Total recordings with signal data,"23,607",
+  Total recording hours,"212,186",
+"  Duration, median (IQR)",3.0 (0.3-12.3),hours
+"  Recordings per patient, median (IQR)",3.0 (1.0-6.0),
+  Patients with multiple recordings,3570,(73%)
+,,
+EEG findings (tech reports),,n=10726 studies
+  Normal,2506,(23%)
+  Abnormal,3693,(34%)
+  With epileptiform discharges,6345,
+  With seizures captured,2379,

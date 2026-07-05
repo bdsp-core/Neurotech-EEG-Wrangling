@@ -1,0 +1,77 @@
+# Virtual environment
+.venv/
+
+# Output data (contains PHI in linking table)
+output/linking_table.csv
+output/linking_table_pending_eeg.csv
+output/bids_progress.*
+output/bids_conversion.log
+
+# Local BIDS output (uploaded to S3, not committed)
+bids_output/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# macOS
+.DS_Store
+
+# Dashboard state
+dashboard/progress.json
+
+# Manuscript archive (large, not needed in repo)
+manuscript-materials/archive/
+
+# Review reports (can regenerate)
+reports/
+
+# Inventory CSVs contain patient names (PHI)
+output/*.csv
+
+# EHR extraction pipeline state — manifest + log contain patient names (PHI)
+output/ehr/
+
+# EHR dashboard progress files contain patient names in log lines / current item
+dashboard_ehr/progress_*.json
+
+# PHI metadata — never commit
+Metadata_PHI/
+
+# ===== Added 2026-07-03: comprehensive PHI / secret / junk exclusions =====
+# PHI-bearing outputs (patient names, linking tables, de-id EHR)
+output/batch2_IZ/
+output/ehr_deid/
+output/patient_summary.csv
+output/*.tsv
+# Credentials / secrets — NEVER commit
+sftp-key/
+ngrok_recovery_codes.txt
+*.tar
+*.dash_pass
+dashboard_url.txt
+# Working-memory copy (contains SFTP passphrase + AWS keys)
+_project_memory/
+# Docs that embed the SFTP passphrase / AWS keys
+ehr_pipeline/PIPELINE_WALKTHROUGH.md
+manuscript-materials/ehr_pipeline_handoff.md
+# Email drafts (contact info)
+manuscript-materials/email_to_*.md
+# Video de-id artifacts (synthetic faces, sample clips)
+**/donor_faces/
+**/sample_clips/
+# Model weights (re-downloaded on demand) + editor backups
+*.pt
+*.bak
+*.pre_az_bak
+
+# transient review-run logs
+manuscript-materials/*.log
+
+# Extraction snapshots / parallel outputs (contain PHI aggregates) — never commit
+output/*_snapshot_*/
+
+# Parallel Qwen extraction outputs (comparison only; ehr_qwen holds PHI) — never commit
+output/ehr_qwen/
+output/ehr_deid_tables_qwen/

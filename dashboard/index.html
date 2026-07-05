@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Neurotech BIDS Conversion</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+<style>
+  body { font-family: -apple-system, sans-serif; margin: 20px; background: #f5f5f5; }
+  h1 { color: #333; margin-bottom: 4px; }
+  h3 { color: #555; margin-top: 24px; margin-bottom: 8px; }
+  .stats { display: flex; gap: 12px; margin: 12px 0; flex-wrap: wrap; }
+  .stat-card { background: #fff; border-radius: 8px; padding: 14px 18px; min-width: 120px;
+               box-shadow: 0 1px 3px rgba(0,0,0,0.1); flex: 1; }
+  .stat-card .value { font-size: 28px; font-weight: bold; color: #2563eb; }
+  .stat-card .label { color: #666; font-size: 12px; margin-top: 2px; }
+  .stat-card.primary .value { font-size: 36px; color: #7c3aed; }
+  .stat-card.done .value { color: #16a34a; }
+  .stat-card.errors .value { color: #dc2626; }
+  .stat-card .sub { color: #999; font-size: 12px; }
+  .chart-container { background: #fff; border-radius: 8px; padding: 16px;
+                     box-shadow: 0 1px 3px rgba(0,0,0,0.1); margin: 16px 0; }
+  .log { background: #1e1e1e; color: #d4d4d4; padding: 12px; border-radius: 8px;
+         font-family: monospace; font-size: 12px; max-height: 200px; overflow-y: auto;
+         white-space: pre-wrap; }
+  #status { font-size: 16px; padding: 6px 14px; border-radius: 4px; display: inline-block; }
+  #status.running { background: #dbeafe; color: #1d4ed8; }
+  #status.complete { background: #dcfce7; color: #166534; }
+  .progress-bar { background: #e5e7eb; border-radius: 8px; height: 24px; margin: 12px 0; overflow: hidden; }
+  .progress-fill { height: 100%; border-radius: 8px; transition: width 0.5s; display: flex;
+                   align-items: center; justify-content: center; color: #fff; font-size: 12px; font-weight: bold; }
+  .progress-fill.edf { background: linear-gradient(90deg, #7c3aed, #a78bfa); }
+  .progress-fill.folder { background: linear-gradient(90deg, #2563eb, #60a5fa); }
+</style>
+</head>
+<body>
+<h1>Neurotech BIDS Conversion</h1>
+<div id="status" class="running">Loading...</div>
+
+<!-- EDF progress bar -->
+<div class="progress-bar"><div class="progress-fill edf" id="edf-bar" style="width:0%"></div></div>
+
+<div class="stats">
+  <div class="stat-card primary">
+    <div class="value" id="edfs-done">0</div>
+    <div class="label">EDF Files Done</div>
+    <div class="sub">of <span id="edfs-total">?</span> total</div>
+  </div>
+  <div class="stat-card done">
+    <div class="value" id="edfs-uploaded">0</div>
+    <div class="label">Uploaded to S3</div>
+  </div>
+  <div class="stat-card">
+    <div class="value" id="gb-uploaded">0</div>
+    <div class="label">GB Uploaded</div>
+  </div>
+  <div class="stat-card errors">
+    <div class="value" id="errors">0</div>
+    <div class="label">Errors</div>
+  </div>
+</div>
+
+<div class="stats">
+  <div class="stat-card">
+    <div class="value" id="eta" style="font-size:20px;color:#888">--</div>
+    <div class="label">ETA</div>
+  </div>
+  <div class="stat-card">
+    <div class="value" id="edf-rate" style="font-size:20px;color:#888">--</div>
+    <div class="label">EDFs/min</div>
+  </div>
+  <div class="stat-card">
+    <div class="value" id="elapsed" style="font-size:20px;color:#888">--</div>
+    <div class="label">Elapsed</div>
+  </div>
+</div>
+
+<!-- Primary chart: EDF burndown -->
+<div class="chart-container">
+  <canvas id="edf-burndown" height="120"></canvas>
+</div>
+
+<!-- Folder progress bar -->
+<h3>Folders: <span id="folders-done">0</span> / <span id="folders-total">0</span></h3>
+<div class="progress-bar"><div class="progress-fill folder" id="folder-bar" style="width:0%"></div></div>
+
+<!-- Secondary chart: Folder burndown -->
+<div class="chart-container">
+  <canvas id="burndown" height="80"></canvas>
+</div>
+
+<!-- Rate chart -->
+<div class="chart-container">
+  <canvas id="rate-chart" height="60"></canvas>
+</div>
+
+<h3>Recent Activity</h3>
+<div class="log" id="log">Waiting for data...</div>
+
+<script>
+const edfBurndownCtx = document.getElementById('edf-burndown').getContext('2d');
+const burndownCtx = document.getElementById('burndown').getContext('2d');
+const rateCtx = document.getElementById('rate-chart').getContext('2d');
+
+const edfBurndownChart = new Chart(edfBurndownCtx, {
+  type: 'line',
+  data: {
+    labels: [],
+    datasets: [
+      { label: 'EDFs Remaining', data: [], borderColor: '#7c3aed', backgroundColor: 'rgba(124,58,237,0.1)', fill: true, tension: 0.3, pointRadius: 0 },
+      { label: 'EDFs Done', data: [], borderColor: '#16a34a', backgroundColor: 'rgba(22,163,74,0.1)', fill: false, tension: 0.3, pointRadius: 0, yAxisID: 'y1' }
+    ]
+  },
+  options: {
+    responsive: true,
+    plugins: { title: { display: true, text: 'EDF File Burndown' } },
+    scales: {
+      y: { title: { display: true, text: 'Remaining' }, beginAtZero: true },
+      y1: { title: { display: true, text: 'Done' }, position: 'right', beginAtZero: true, grid: { drawOnChartArea: false } }
+    }
+  }
+});
+
+const burndownChart = new Chart(burndownCtx, {
+  type: 'line',
+  data: {
+    labels: [],
+    datasets: [
+      { label: 'Folders Remaining', data: [], borderColor: '#2563eb', backgroundColor: 'rgba(37,99,235,0.1)', fill: true, tension: 0.3, pointRadius: 0 },
+      { label: 'Errors', data: [], borderColor: '#dc2626', fill: false, tension: 0.3, pointRadius: 0, yAxisID: 'y1' }
+    ]
+  },
+  options: {
+    responsive: true,
+    plugins: { title: { display: true, text: 'Folder Burndown' } },
+    scales: {
+      y: { title: { display: true, text: 'Remaining' }, beginAtZero: true },
+      y1: { title: { display: true, text: 'Errors' }, position: 'right', beginAtZero: true, grid: { drawOnChartArea: false } }
+    }
+  }
+});
+
+const rateChart = new Chart(rateCtx, {
+  type: 'bar',
+  data: {
+    labels: [],
+    datasets: [
+      { label: 'EDFs/min', data: [], backgroundColor: 'rgba(124,58,237,0.5)', borderColor: '#7c3aed', borderWidth: 1 }
+    ]
+  },
+  options: {
+    responsive: true,
+    plugins: { title: { display: true, text: 'Processing Rate' } },
+    scales: { y: { beginAtZero: true, title: { display: true, text: 'EDFs/min' } } }
+  }
+});
+
+function formatDuration(sec) {
+  if (sec < 60) return Math.round(sec) + 's';
+  if (sec < 3600) return Math.round(sec/60) + 'm';
+  const h = Math.floor(sec/3600);
+  const m = Math.round((sec%3600)/60);
+  return h + 'h ' + m + 'm';
+}
+
+async function update() {
+  try {
+    const resp = await fetch('/progress.json?' + Date.now());
+    if (!resp.ok) return;
+    const d = await resp.json();
+    if (!d.folders_total) return;
+
+    const edfsTotal = d.edfs_total || 0;
+    const edfsDone = d.edfs_processed || 0;
+    const edfPct = edfsTotal > 0 ? (edfsDone / edfsTotal * 100) : 0;
+    const folderPct = d.folders_total > 0 ? (d.folders_done / d.folders_total * 100) : 0;
+
+    // Status
+    const st = document.getElementById('status');
+    if (d.complete) { st.textContent = 'Complete!'; st.className = 'complete'; }
+    else { st.textContent = 'Running -- ' + edfPct.toFixed(1) + '% EDFs done'; st.className = 'running'; }
+
+    // Progress bars
+    document.getElementById('edf-bar').style.width = edfPct + '%';
+    document.getElementById('edf-bar').textContent = edfPct >= 3 ? edfPct.toFixed(1) + '%' : '';
+    document.getElementById('folder-bar').style.width = folderPct + '%';
+    document.getElementById('folder-bar').textContent = folderPct >= 3 ? folderPct.toFixed(1) + '%' : '';
+
+    // Stats
+    document.getElementById('edfs-done').textContent = edfsDone.toLocaleString();
+    document.getElementById('edfs-total').textContent = edfsTotal.toLocaleString();
+    document.getElementById('edfs-uploaded').textContent = (d.edfs_uploaded || 0).toLocaleString();
+    document.getElementById('gb-uploaded').textContent = (d.bytes_uploaded / 1073741824).toFixed(1);
+    document.getElementById('errors').textContent = d.errors;
+    document.getElementById('folders-done').textContent = d.folders_done;
+    document.getElementById('folders-total').textContent = d.folders_total;
+    document.getElementById('elapsed').textContent = formatDuration(d.elapsed_sec);
+
+    // EDF rate & ETA (wait 60s for stable rate)
+    const edfRate = d.elapsed_sec > 60 ? (edfsDone / d.elapsed_sec * 60) : 0;
+    document.getElementById('edf-rate').textContent = edfRate > 0 ? edfRate.toFixed(1) : '--';
+    const edfsRemaining = edfsTotal - edfsDone;
+    const etaSec = edfRate > 0 ? (edfsRemaining / edfRate * 60) : 0;
+    document.getElementById('eta').textContent = etaSec > 0 ? formatDuration(etaSec) : '--';
+
+    // EDF burndown chart
+    if (d.history && d.history.length > 0 && edfsTotal > 0) {
+      edfBurndownChart.data.labels = d.history.map(h => h.time);
+      edfBurndownChart.data.datasets[0].data = d.history.map(h => edfsTotal - (h.edfs_done || 0));
+      edfBurndownChart.data.datasets[1].data = d.history.map(h => h.edfs_done || 0);
+      edfBurndownChart.update('none');
+    }
+
+    // Folder burndown chart
+    if (d.history && d.history.length > 0) {
+      burndownChart.data.labels = d.history.map(h => h.time);
+      burndownChart.data.datasets[0].data = d.history.map(h => d.folders_total - h.done);
+      burndownChart.data.datasets[1].data = d.history.map(h => h.errors);
+      burndownChart.update('none');
+    }
+
+    // Rate chart (EDF rate over sliding windows)
+    if (d.history && d.history.length > 1) {
+      const rates = [], labels = [];
+      for (let i = 1; i < d.history.length; i++) {
+        const dt = d.history[i].elapsed - d.history[i-1].elapsed;
+        const df = (d.history[i].edfs_done || 0) - (d.history[i-1].edfs_done || 0);
+        if (dt > 0) {
+          rates.push((df / dt * 60).toFixed(1));
+          labels.push(d.history[i].time);
+        }
+      }
+      rateChart.data.labels = labels;
+      rateChart.data.datasets[0].data = rates;
+      rateChart.update('none');
+    }
+
+    // Log
+    if (d.recent_log) {
+      document.getElementById('log').textContent = d.recent_log.join('\n');
+    }
+  } catch(e) { /* ignore */ }
+}
+
+setInterval(update, 5000);
+update();
+</script>
+</body>
+</html>

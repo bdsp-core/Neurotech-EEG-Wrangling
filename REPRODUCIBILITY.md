@@ -1,0 +1,87 @@
+# Reproducing the numbers in the manuscript
+
+Every quantitative claim in `manuscript-materials/manuscript-draft.md` is reproducible
+from **de-identified material available to readers** — the public BIDS dataset on S3
+and de-identified summary tables committed to this repository. No PHI is required.
+
+## One command to reproduce everything
+```bash
+.venv/bin/python reproduce_all.py
+```
+This single wrapper regenerates **every code-produced figure and table**, rebuilds the
+`.docx`, and **reproduces every number** in the manuscript — all from committed,
+de-identified data (no PHI, no external drive). It runs, in order:
+
+1. `manuscript-materials/generate_tables_and_figures.py` — Figures 2, 3, 4 + Supp Figures 3, 4; Table 2 + Supp Tables 4, 5
+2. `manuscript-materials/make_supp_figure1_eeg.py` — Supp Figure 1 (example EEG traces)
+3. `manuscript-materials/md_to_docx.py` — rebuild the Word document
+4. `reproduce_manuscript_numbers.py` — print every EEG / annotation / EHR number
+
+Verified: deleting all code-generated figures/tables and re-running `reproduce_all.py`
+regenerates the tables/CSVs and figure PNGs **byte-identical** to the committed versions
+(PDF/`.docx` differ only in an embedded creation timestamp, not in content).
+
+**Two figures are hand-made schematics** (static image assets committed to the repo, not
+code-generated): **Figure 1** (`figures/figure1_pipeline.png`) and **Supplementary Figure 2**
+(`figures/supp_figure2_deidentification.png`).
+
+## Just the numbers
+```bash
+.venv/bin/python reproduce_manuscript_numbers.py
+```
+Recomputes and prints every EEG, annotation, and EHR number from committed,
+de-identified CSVs. Each printed value matches the manuscript.
+
+## What backs each number
+
+| Manuscript numbers | Reproduced from | Also reproducible from |
+|---|---|---|
+| EEG: recordings, hours, TB, channels, durations, recordings/patient | `output/s3_recordings.csv` (committed, de-identified: `subject, session, duration, n_signals, n_records`) | the **public S3 BIDS dataset** — run `compute_eeg_stats_from_s3.py` |
+| Annotations: total, spikes, seizures, categories | `output/s3_annotation_categories.csv` (committed) | the published `*_Xltek.csv` files on S3 |
+| EHR: patients w/ docs, age, sex, ICD categories, findings, PDR, comorbidities, meds, monitoring | `output/ehr_deid_tables/*.csv` (committed, BDSP-keyed, **structured columns / categorical flags / aggregates only — no free text, no names, no raw dates**) | the de-identified EHR release (if published) |
+
+### The committed de-identified EHR tables (`output/ehr_deid_tables/`)
+All are keyed by `bdsp_id` (except the pure aggregates) and contain no PHI:
+
+| File | Contents |
+|---|---|
+| `demographics.csv` | derived age (years at first EEG) + sex — no raw dates |
+| `studies.csv` | per-study structured fields (duration, ambulatory flag, event/detection counts) |
+| `diagnosis_codes.csv` | referral ICD-10 `code` (dates scrubbed) |
+| `technologist_impression.csv` | normal/abnormal `classification` |
+| `eeg_background.csv` | `pdr_frequency_hz` (single value or range), symmetry, reactivity |
+| `eeg_epileptiform.csv` | **16 categorical IED flags** (morphology / distribution / laterality / region) derived from report text; free text dropped |
+| `eeg_seizures.csv`, `eeg_slowing.csv` | presence rows |
+| `comorbidities.csv`, `medications.csv` | normalized condition / drug names (dates scrubbed) |
+| `monitoring_summary.csv` | per-study hour counts + distinct days |
+| `monitoring_hour_of_day.csv`, `monitoring_event_counts.csv` | 24-row hour-of-day histogram + event-type totals (aggregates, no patient id) |
+| `patient_events.csv` | presence + `has_timestamp` flag |
+
+These are built from the raw (PHI, gitignored) `output/ehr/*.csv` by
+`ehr_pipeline/build_deid_tables.py`. The build is **deterministic** (sorted iteration,
+round-then-bound age) so re-running reproduces identical tables. `pdr_frequency_hz`
+cells that are ranges (e.g. `8-9`) are counted at their **midpoint** — the same rule in
+`reproduce_manuscript_numbers.py` and `generate_tables_and_figures.py`.
+
+## Regenerate the EEG intermediate from the public dataset
+```bash
+python compute_eeg_stats_from_s3.py \
+  --bids s3://bdsp-opendata-repository/EEG/bids/Neurotech/ \
+  --out output/s3_recordings.csv
+```
+This reads every published `*_eeg.json` (duration, channel count) and `*_Xltek.csv`
+(annotation rows) and writes the same `s3_recordings.csv` and annotation totals used
+above — closing the loop from raw public data to manuscript number.
+
+## Notes
+- The EEG/annotation figures are **exactly** reproducible from public data.
+- The EHR figures are computed from de-identified, structured aggregate tables committed
+  here (`output/ehr_deid_tables/`). The underlying raw clinical PDFs contain PHI and are
+  not released; the extraction/de-identification code is in `ehr_pipeline/`.
+- Tables and figures in `manuscript-materials/tables/` and `figures/` are regenerated by
+  `manuscript-materials/generate_tables_and_figures.py`, which reads **only** the committed
+  de-identified tables above (no `/Volumes` drive, no PHI) — so any reader can rebuild every
+  figure and table from the repo:
+  ```bash
+  .venv/bin/python manuscript-materials/generate_tables_and_figures.py
+  ```
