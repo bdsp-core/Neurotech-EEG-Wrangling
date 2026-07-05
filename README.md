@@ -2,7 +2,7 @@
 
 Pipeline for converting clinical Natus/Xltek NeuroWorks EEG recordings into a de-identified, BIDS-compliant dataset and uploading to the [Brain Data Science Platform (BDSP)](https://bdsp.io).
 
-**Dataset:** 1,748 patients | 18,896 EDF recordings | ~67,500 hours | 256 Hz | 10-20 montage
+**Dataset:** 4,914 patients | 23,607 EEG recordings | 212,186 hours | 10.2 TB | 256 Hz | 10-20 montage
 
 **Target:** `s3://bdsp-opendata-repository/EEG/bids/Neurotech/`
 
@@ -145,7 +145,7 @@ Extracts structured clinical data from Neurotech's scanned EHR/Patient Forms PDF
 
 **Source:** `/Users/mwestover/GithubRepos/Neurotech-EHR/` (not in git -- contains PHI)
 
-**Scale:** 2,469 PDFs | 41,926 pages | 132.9M characters | 12,440 sub-documents | 17 output CSVs
+**Scale:** 10,044 PDF packets | 40,529 sub-documents across 11 types | 17 output CSVs
 
 ### Prerequisites
 
@@ -173,7 +173,7 @@ For each PDF, runs `pdftotext -layout`. If text density is low (scanned pages), 
 
 **Resumable** via `output/ehr/manifest.tsv` (SHA1-keyed). Re-runs skip unchanged files.
 
-**Performance:** ~6 s/PDF with 6 workers × 2 OCR jobs. ~2,500 PDFs in ~3 hours.
+**Performance:** ~6 s/PDF with 6 workers × 2 OCR jobs (~10,000 PDF packets total).
 
 #### Stage 2: Segment documents
 
@@ -187,21 +187,21 @@ Classifies each page by regex landmark patterns, then collapses consecutive same
 
 | Type | Description | Count |
 |---|---|---|
-| `tech_scan_report` | Neurotech technologist EEG scan report | 2,871 |
-| `eeg_intake_form` | Long Term EEG Medical Necessity form | 2,701 |
-| `trackit_monitoring_log` | Hour-by-hour monitoring table | 2,192 |
-| `clinical_progress_note` | Neurology/epilepsy clinic notes | 1,589 |
-| `hipaa_consent` | HIPAA/consent boilerplate (skipped) | 1,319 |
-| `imaging_report` | MRI/CT reports | 430 |
-| `history_and_physical` | H&P documents | 240 |
-| `eeg_order` | EEG order from referring site | 226 |
-| `lab_results` | Laboratory results | 135 |
-| `patient_event_log` | Patient-reported event diaries | 39 |
-| `unknown` | Fax covers, external referrals, etc. | 698 |
+| `tech_scan_report` | Neurotech technologist EEG scan report | 11,298 |
+| `eeg_intake_form` | Long Term EEG Medical Necessity form | 8,630 |
+| `trackit_monitoring_log` | Hour-by-hour monitoring table | 6,433 |
+| `clinical_progress_note` | Neurology/epilepsy clinic notes | 4,886 |
+| `hipaa_consent` | HIPAA/consent boilerplate (skipped) | 4,023 |
+| `imaging_report` | MRI/CT reports | 1,336 |
+| `history_and_physical` | H&P documents | 735 |
+| `eeg_order` | EEG order from referring site | 659 |
+| `lab_results` | Laboratory results | 386 |
+| `patient_event_log` | Patient-reported event diaries | 147 |
+| `unknown` | Fax covers, external referrals, etc. | 1,996 |
 
 Output: `<name>.sections.json` + global `output/ehr/sections_summary.tsv`
 
-**Performance:** ~2,500 packets in ~35 seconds (pure regex, no LLM).
+**Performance:** ~10,000 packets in ~2-3 minutes (pure regex, no LLM).
 
 #### Stage 3: Extract structured fields
 
@@ -242,23 +242,23 @@ Aggregates all `fields.json` into 17 queryable CSVs under `output/ehr/`:
 
 | CSV | Rows | Description |
 |---|---|---|
-| `studies.csv` | ~2,600 | One row per EEG study |
-| `eeg_background.csv` | ~2,600 | PDR frequency, symmetry, sleep stages |
-| `eeg_slowing.csv` | ~1,100 | Studies with abnormal slowing |
-| `eeg_epileptiform.csv` | ~1,400 | Studies with interictal discharges |
-| `eeg_seizures.csv` | ~780 | Studies with documented seizures |
-| `technologist_impression.csv` | ~2,600 | Normal/abnormal classification |
-| `patient_events.csv` | ~1,350 | Timestamped patient-reported events |
-| `monitoring_hours.csv` | ~100,000 | Hour-by-hour recording status |
-| `monitoring_events.csv` | ~59,000 | Timestamped tech review notes |
-| `clinical_encounters.csv` | ~1,400 | Provider, chief complaint, assessment |
-| `conditions.csv` | ~7,500 | Past medical history entries |
-| `medications.csv` | ~7,900 | Medications with dose/frequency |
-| `diagnosis_codes.csv` | ~3,300 | ICD-10 codes |
-| `imaging.csv` | ~320 | MRI/CT findings |
-| `lab_results.csv` | ~100 | Lab panels |
-| `monitoring_summary.csv` | ~2,100 | Per-study monitoring summary |
-| `eeg_activations.csv` | ~2,600 | Photic/HV results |
+| `studies.csv` | ~10,760 | One row per EEG study |
+| `eeg_background.csv` | ~10,760 | PDR frequency, symmetry, sleep stages |
+| `eeg_slowing.csv` | ~4,500 | Studies with abnormal slowing |
+| `eeg_epileptiform.csv` | ~6,400 | Studies with interictal discharges |
+| `eeg_seizures.csv` | ~2,400 | Studies with documented seizures |
+| `technologist_impression.csv` | ~10,760 | Normal/abnormal classification |
+| `patient_events.csv` | ~5,200 | Timestamped patient-reported events |
+| `monitoring_hours.csv` | ~297,000 | Hour-by-hour recording status |
+| `monitoring_events.csv` | ~173,000 | Timestamped tech review notes |
+| `clinical_encounters.csv` | ~16,200 | Provider, chief complaint, assessment |
+| `conditions.csv` | ~29,300 | Past medical history entries |
+| `medications.csv` | ~31,000 | Medications with dose/frequency |
+| `diagnosis_codes.csv` | ~13,100 | ICD-10 codes |
+| `imaging.csv` | ~1,340 | MRI/CT findings |
+| `lab_results.csv` | ~385 | Lab panels |
+| `monitoring_summary.csv` | ~6,433 | Per-study monitoring summary |
+| `eeg_activations.csv` | ~10,760 | Photic/HV results |
 
 ### Live progress dashboard
 
@@ -282,7 +282,7 @@ To process additional patient PDFs (e.g., the I-Z batch):
 2. Run the three stages in order -- each is resumable and will only process new/changed files:
 
 ```bash
-# Stage 1: extract text (parallelized, ~3h for 2,500 PDFs)
+# Stage 1: extract text (parallelized; ~10,000 PDF packets)
 python ehr_pipeline/extract_text.py --workers 6 --ocr-jobs 2
 
 # Stage 2: segment (fast, <1 min)
