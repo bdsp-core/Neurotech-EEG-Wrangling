@@ -271,30 +271,30 @@ MBW receives research funding from the NIH (RF1AG064312, RF1NS120947, R01AG07341
 |  |  |  |
 | Interictal epileptiform discharges | 6345 | of 10726 studies (59%) |
 | **Morphology** | | |
-|     Spike | 3351 |  |
-|     Sharp wave | 1759 |  |
-|     Spike-and-wave | 1671 |  |
-|     Polyspike | 503 |  |
+|     Spike | 3342 |  |
+|     Sharp wave | 1755 |  |
+|     Spike-and-wave | 1669 |  |
+|     Polyspike | 502 |  |
 | **Distribution** | | |
-|     Generalized | 1694 |  |
-|     Focal | 1369 |  |
+|     Generalized | 1691 |  |
+|     Focal | 1364 |  |
 |     Multifocal | 277 |  |
 |     Bilateral independent | 97 |  |
 | **Laterality** | | |
-|     Left | 1771 |  |
-|     Right | 1616 |  |
-|     Bilateral | 713 |  |
+|     Left | 1770 |  |
+|     Right | 1611 |  |
+|     Bilateral | 709 |  |
 | **Region** | | |
-|     Temporal | 1943 |  |
-|     Frontal | 1265 |  |
-|     Central | 880 |  |
-|     Parietal | 330 |  |
-|     Occipital | 405 |  |
+|     Temporal | 1940 |  |
+|     Frontal | 1261 |  |
+|     Central | 878 |  |
+|     Parietal | 329 |  |
+|     Occipital | 404 |  |
 |  |  |  |
 | Abnormal slowing | 4524 | of 10726 studies |
 | Electrographic seizures | 2379 | of 10726 studies |
-| Patient-reported events | 5126 |  |
-|   With timestamp | 5018 | (98%) |
+| Patient-reported events | 5119 |  |
+|   With timestamp | 5011 | (98%) |
 
 *Morphology, distribution, laterality, and region were extracted from free-text descriptions using regex pattern matching. Categories are not mutually exclusive; a single description may contain multiple morphology or distribution terms.*
 
