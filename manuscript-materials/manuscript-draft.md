@@ -17,13 +17,13 @@ We present the Neurotech EEG Dataset, a large clinical scalp electroencephalogra
 
 ## Background & Summary
 
-Expert interpretation of the electroencephalogram (EEG) remains the cornerstone of epilepsy diagnosis, yet the global shortage of trained EEG readers creates a bottleneck affecting the approximately 50 million people living with epilepsy worldwide^1^. Machine learning (ML) offers a path toward scalable automated interpretation^2^, but the scarcity of large, clinically representative public datasets has constrained progress. Spike detection algorithms trained on existing public datasets can achieve high accuracy on held-out test sets but can drop substantially when deployed on recordings from different clinical settings or hardware platforms -- a persistent and well-documented generalization problem^3-6^.
+Expert interpretation of the electroencephalogram (EEG) remains the cornerstone of epilepsy diagnosis^1^, yet the global shortage of trained EEG readers creates a bottleneck affecting the approximately 50 million people living with epilepsy worldwide^9^. Machine learning (ML) offers a path toward scalable automated interpretation^2^ [ref. 2 pending verification], but the scarcity of large, clinically representative public datasets has constrained progress. Spike detection algorithms trained on existing public datasets can achieve high accuracy on held-out test sets but can drop substantially when deployed on recordings from different clinical settings or hardware platforms -- a persistent and well-documented generalization problem^3-6,12^.
 
 Existing public EEG resources span a range of sizes and designs but share common limitations (Table 1). The CHB-MIT dataset provides 23 pediatric patients with seizure annotations^3^; the Bonn dataset offers intracranial recordings from 5 patients^4^; the Siena dataset contributes 14 patients with scalp EEG^5^. The Temple University Hospital (TUH) EEG Corpus, at over 25,000 sessions, demonstrated that large-scale release of unselected clinical data could become the most widely used benchmark in the EEG artificial intelligence (AI) literature^7^. However, publicly available clinical EEG remains insufficiently diverse across institutions, hardware platforms, clinical settings, and annotation practices.
 
-Here we release the Neurotech EEG Dataset -- to our knowledge, one of the largest public clinical EEG corpora from a single service provider -- comprising 23,607 EEG recordings from 4,914 patients totaling 212,186 recording hours. This dataset complements TUH by providing: (1) a majority of ambulatory and multi-day recordings (53% of recordings, compared with a predominantly inpatient corpus in TUH), (2) Natus/Xltek hardware enabling cross-platform algorithm validation, and (3) intact clinical workflow annotations including 50,482 technician-confirmed spike events and 6,892 seizure markers, enabling study of real-world annotation practices. We preserve these workflow-native annotations deliberately: while they lack the consistency of multi-expert research labels, they capture the noise, variability, and practical constraints under which automated systems must ultimately operate (Figure 1).
+Here we release the Neurotech EEG Dataset -- to our knowledge, one of the largest public clinical EEG corpora from a single service provider -- comprising 23,607 EEG recordings from 4,914 patients totaling 212,186 recording hours. This dataset complements TUH by providing: (1) a majority of ambulatory and multi-day recordings (53% of recordings, compared with a predominantly inpatient corpus in TUH), (2) Natus/Xltek hardware enabling cross-platform algorithm validation, and (3) intact clinical workflow annotations including 50,482 technician-confirmed spike events and 6,892 seizure markers, enabling study of real-world annotation practices. This resource also complements large in-hospital clinical EEG databases such as the Harvard Electroencephalography Database (HEEDB; 109,178 patients and 284,343 studies across four hospitals, on the same BDSP platform)^11^: whereas HEEDB comprises routine, epilepsy monitoring unit (EMU), and intensive care unit (ICU) recordings acquired in clinical facilities, the present corpus is far smaller overall but uniquely contributes a large volume of multi-day ambulatory EEG recorded in patients' homes. We preserve these workflow-native annotations deliberately: while they lack the consistency of multi-expert research labels, they capture the noise, variability, and practical constraints under which automated systems must ultimately operate (Figure 1).
 
-**Table 1. Comparison with existing public EEG datasets.**
+**Table 1. Comparison with existing EEG datasets.**
 
 | Dataset | Patients | Sessions | Hours | Hardware | Recording types | Annotation style |
 |---|---|---|---|---|---|---|
@@ -31,6 +31,7 @@ Here we release the Neurotech EEG Dataset -- to our knowledge, one of the larges
 | Bonn^4^ | 5 | 5 | ~0.6 | Intracranial | Research | Segment-level labels |
 | Siena^5^ | 14 | 14 | ~128 | Unknown | Inpatient | Expert seizure labels |
 | TUH EEG Corpus^7^ | ~15,000 | ~25,000 | ~25,000 | Natus NicoletOne | Primarily inpatient | Clinical reports |
+| Harvard EEG Database^11^ | ~109,000 | ~284,000 | NR | Mixed (4 sites) | Routine + EMU + ICU (in-hospital) | Clinical reports |
 | **Neurotech (this work)** | **4,914** | **23,607** | **212,186** | **Natus/Xltek** | **Routine + ambulatory + ICU** | **Workflow-native** |
 
 ## Methods
@@ -75,7 +76,7 @@ This project was conducted under Institutional Review Board (IRB) protocol numbe
 
 ### Data formatting
 
-We converted the dataset to BIDS-EEG format (version 1.7.0)^8^ and assigned each patient a de-identified identifier (`sub-NeurotechN`). Each EDF recording segment constitutes a separate session (`ses-N`), numbered sequentially per patient. For each session, the following files are provided (Figure 1):
+We converted the dataset to BIDS-EEG format (version 1.7.0)^8,10^ and assigned each patient a de-identified identifier (`sub-NeurotechN`). Each EDF recording segment constitutes a separate session (`ses-N`), numbered sequentially per patient. For each session, the following files are provided (Figure 1):
 
 - `*_task-EEG_eeg.edf`: de-identified EEG recording
 - `*_task-EEG_eeg.json`: recording metadata (sampling frequency, channel counts, duration)
@@ -187,13 +188,17 @@ Code for the BIDS conversion pipeline, de-identification procedures, and annotat
 ## References
 
 1. Noachtar, S. & Remi, J. The role of EEG in epilepsy: a critical review. *Epilepsy Behav.* 15, 22-33 (2009).
-2. Westover, M.B. et al. Machine learning for electroencephalography: current status and future directions. *J. Clin. Neurophysiol.* (2023).
+2. Westover, M.B. et al. Machine learning for electroencephalography: current status and future directions. *J. Clin. Neurophysiol.* (2023). **[NEEDS VERIFICATION — author to confirm full citation (volume/pages/DOI) or replace; could not be located in a literature search.]**
 3. Shoeb, A. & Guttag, J. Application of machine learning to epileptic seizure detection. *Proc. ICML* (2010). [CHB-MIT]
 4. Andrzejak, R.G. et al. Indications of nonlinear deterministic and finite-dimensional structures in time series of brain electrical activity. *Phys. Rev. E* 64, 061907 (2001). [Bonn dataset]
 5. Detti, P. et al. EEG synchronization analysis for seizure prediction: a study on data of noninvasive recordings. *Processes* 8, 846 (2020). [Siena dataset]
 6. Gemein, L.A.W. et al. Machine-learning-based diagnostics of EEG pathology. *NeuroImage* 220, 117021 (2020).
 7. Obeid, I. & Picone, J. The Temple University Hospital EEG Data Corpus. *Front. Neurosci.* 10, 196 (2016).
 8. Pernet, C.R. et al. EEG-BIDS, an extension to the brain imaging data structure for electroencephalography. *Sci. Data* 6, 103 (2019).
+9. World Health Organization. *Epilepsy: A Public Health Imperative* (WHO, Geneva, 2019).
+10. Gorgolewski, K.J. et al. The brain imaging data structure, a format for organizing and describing outputs of neuroimaging experiments. *Sci. Data* 3, 160044 (2016).
+11. Sun, C. et al. Harvard Electroencephalography Database: a comprehensive clinical electroencephalographic resource from four Boston hospitals. *Epilepsia* (2025). doi:10.1111/epi.18487.
+12. Xu, L. et al. Cross-dataset variability problem in EEG decoding with deep learning. *Front. Hum. Neurosci.* 14, 103 (2020).
 
 ---
 
