@@ -356,8 +356,8 @@ The pipeline handles:
 
 ## License
 
-[TBD]
+Released under [CC BY-NC 4.0](LICENSE.txt) (Attribution–NonCommercial). Commercial use is prohibited.
 
 ## Citation
 
-[TBD -- data descriptor manuscript in preparation]
+Data descriptor manuscript in preparation (Morgan, Pickering, Goodwin, Wu, Ghanta, Gupta, Goldenholz, Westover). Please cite the manuscript on publication; until then, cite this repository and the BDSP dataset listing.

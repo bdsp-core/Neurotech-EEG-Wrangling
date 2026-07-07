@@ -478,8 +478,11 @@ def write_dataset_description(bids_root):
         "Name": "Neurotech EEG Dataset",
         "BIDSVersion": "1.7.0",
         "DatasetType": "raw",
-        "License": "TBD",
-        "Authors": ["TBD"],
+        "License": "CC BY-NC 4.0",
+        "Authors": [
+            "Keith Morgan", "Charles Pickering", "Matthew Goodwin", "Han Wu",
+            "Manohar Ghanta", "Aditya Gupta", "Daniel Goldenholz", "M. Brandon Westover",
+        ],
     }
     with open(bids_root / "dataset_description.json", "w") as f:
         json.dump(data, f, indent=4)
