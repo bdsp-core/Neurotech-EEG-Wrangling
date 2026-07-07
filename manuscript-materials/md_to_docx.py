@@ -7,6 +7,10 @@ from docx import Document
 from docx.shared import Inches, Pt, RGBColor
 from docx.enum.text import WD_ALIGN_PARAGRAPH
 from docx.oxml.ns import qn
+from docx.oxml.shared import OxmlElement
+from docx.opc.constants import RELATIONSHIP_TYPE as RT
+
+URL_RE = re.compile(r'(https?://[^\s)]+)')
 
 BASE = Path(__file__).resolve().parent
 MD_PATH = BASE / "manuscript-draft.md"
@@ -39,8 +43,42 @@ def set_run_font(run, size=11, bold=False, italic=False, color=None, name="Times
     if color:
         run.font.color.rgb = RGBColor(*color)
 
+def add_hyperlink(paragraph, url, text, size=11):
+    """Add a real, clickable Word hyperlink (blue, underlined) to the paragraph."""
+    r_id = paragraph.part.relate_to(url, RT.HYPERLINK, is_external=True)
+    hyperlink = OxmlElement('w:hyperlink')
+    hyperlink.set(qn('r:id'), r_id)
+    run = OxmlElement('w:r')
+    rPr = OxmlElement('w:rPr')
+    rFonts = OxmlElement('w:rFonts')
+    rFonts.set(qn('w:ascii'), 'Times New Roman'); rFonts.set(qn('w:hAnsi'), 'Times New Roman')
+    rPr.append(rFonts)
+    sz = OxmlElement('w:sz'); sz.set(qn('w:val'), str(int(size * 2))); rPr.append(sz)
+    color = OxmlElement('w:color'); color.set(qn('w:val'), '0563C1'); rPr.append(color)
+    u = OxmlElement('w:u'); u.set(qn('w:val'), 'single'); rPr.append(u)
+    run.append(rPr)
+    t = OxmlElement('w:t'); t.set(qn('xml:space'), 'preserve'); t.text = text
+    run.append(t)
+    hyperlink.append(run)
+    paragraph._p.append(hyperlink)
+
+
+def _add_plain_with_links(paragraph, text, size, bold, italic):
+    """Emit a plain text run, turning bare URLs into clickable hyperlinks."""
+    for seg in URL_RE.split(text):
+        if URL_RE.fullmatch(seg):
+            m = re.search(r'[.,;:]+$', seg)          # keep trailing sentence punctuation out of the link
+            trail = m.group(0) if m else ''
+            url = seg[:len(seg) - len(trail)] if trail else seg
+            add_hyperlink(paragraph, url, url, size=size)
+            if trail:
+                set_run_font(paragraph.add_run(trail), size=size, bold=bold, italic=italic)
+        elif seg:
+            set_run_font(paragraph.add_run(seg), size=size, bold=bold, italic=italic)
+
+
 def add_formatted_text(paragraph, text, size=11, bold=False, italic=False):
-    """Add text to a paragraph, handling basic markdown bold/italic inline."""
+    """Add text to a paragraph, handling markdown bold/italic and clickable URLs."""
     # Process bold (**text**) and italic (*text*) patterns
     parts = re.split(r'(\*\*.*?\*\*|\*.*?\*)', text)
     for part in parts:
@@ -51,8 +89,7 @@ def add_formatted_text(paragraph, text, size=11, bold=False, italic=False):
             run = paragraph.add_run(part[1:-1])
             set_run_font(run, size=size, bold=bold, italic=True)
         else:
-            run = paragraph.add_run(part)
-            set_run_font(run, size=size, bold=bold, italic=italic)
+            _add_plain_with_links(paragraph, part, size, bold, italic)
 
 def parse_table(lines):
     """Parse markdown table lines into list of rows (each row is list of cells)."""

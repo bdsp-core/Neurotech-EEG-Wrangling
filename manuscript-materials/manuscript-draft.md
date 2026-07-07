@@ -165,7 +165,7 @@ Future versions of this dataset will add multi-expert re-annotation of a validat
 
 ### Data access
 
-The dataset is available through BDSP at `s3://bdsp-opendata-repository/EEG/bids/Neurotech/`. Access requires a data use agreement (DUA); registration details are available at https://bdsp.io. The dataset is formatted according to BIDS-EEG v1.7.0 and can be read using standard tools including MNE-Python, MNE-BIDS, pyedflib, and edfio.
+The dataset is available through the Brain Data Science Platform (BDSP) at https://bdsp.io/content/nf89816gtxbon11kbr9a/1.0/ (DOI: https://doi.org/10.60508/v99k-ek82), hosted at `s3://bdsp-opendata-repository/EEG/bids/Neurotech/`. Access requires a data use agreement (DUA); register at https://bdsp.io. The dataset is formatted according to BIDS-EEG v1.7.0 and can be read using standard tools including MNE-Python, MNE-BIDS, pyedflib, and edfio.
 
 ### Code availability
 
