@@ -32,13 +32,13 @@ Here we release the Neurotech EEG Dataset -- to our knowledge, one of the larges
 | Siena^5^ | 14 | 14 | ~128 | Unknown | Inpatient | Expert seizure labels |
 | TUH EEG Corpus^7^ | ~15,000 | ~25,000 | ~25,000 | Natus NicoletOne | Primarily inpatient | Clinical reports |
 | Harvard EEG Database^11^ | ~109,000 | ~329,000 | ~3,300,000 | Mixed (4 sites) | Routine + EMU + ICU (in-hospital) | Clinical reports |
-| **Neurotech (this work)** | **4,914** | **23,607** | **212,186** | **Natus/Xltek** | **Routine + ambulatory + ICU** | **Workflow-native** |
+| **Neurotech (this work)** | **4,914** | **23,607** | **212,186** | **Natus/Xltek** | **Routine + ambulatory + ICU/EMU** | **Workflow-native** |
 
 ## Methods
 
 ### Patient population and clinical context
 
-The dataset comprises all clinical EEG recordings performed by Neurotech, LLC -- an accredited EEG monitoring service provider -- between 2021 and 2025. Rather than a single hospital or center, Neurotech acquires recordings across diverse settings: in-home ambulatory studies performed in patients' homes, and continuous monitoring in partner hospital intensive care units (ICUs) and epilepsy monitoring units (EMUs) across the United States, using a uniform hardware and technologist workflow. No inclusion or exclusion criteria were applied; this cohort represents the full clinical caseload. Recording types span routine outpatient EEGs (typically <1 hour), ambulatory monitoring studies (1-24 hours), and prolonged continuous EEG monitoring in the intensive care unit (ICU; >24 hours). The 4,914 unique patients in the released dataset contributed 23,607 EEG recordings, with 73% of patients (3,570) having multiple recordings (median 3 per patient, interquartile range 1-6).
+The dataset comprises all clinical EEG recordings performed by Neurotech, LLC -- an accredited EEG monitoring service provider -- between 2021 and 2025. Rather than a single hospital or center, Neurotech acquires recordings across diverse settings: in-home ambulatory studies performed in patients' homes, and continuous monitoring in partner hospital intensive care units (ICUs) and epilepsy monitoring units (EMUs) across the United States, using a uniform hardware and technologist workflow. No inclusion or exclusion criteria were applied; this cohort represents the full clinical caseload. Recording types span routine outpatient EEGs (typically <1 hour), ambulatory monitoring studies (1-24 hours), and prolonged continuous EEG monitoring in inpatient intensive care units and epilepsy monitoring units (ICU/EMU; >24 hours). The 4,914 unique patients in the released dataset contributed 23,607 EEG recordings, with 73% of patients (3,570) having multiple recordings (median 3 per patient, interquartile range 1-6).
 
 ### Recording hardware and protocol
 

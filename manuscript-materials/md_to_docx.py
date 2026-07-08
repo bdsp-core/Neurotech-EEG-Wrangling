@@ -208,11 +208,15 @@ def process_markdown(md_text):
             doc.add_paragraph()  # spacing after table
             continue
 
-        # Numbered list items
+        # Numbered list items — preserve the EXPLICIT source number rather than using
+        # Word's 'List Number' style, whose auto-numbering runs continuously across the
+        # whole document (that made independent lists and the reference list mis-number,
+        # e.g. references starting at 8 instead of 1).
         if re.match(r'^\d+\.\s', stripped):
-            text = re.sub(r'^\d+\.\s', '', stripped)
-            p = doc.add_paragraph(style='List Number')
-            add_formatted_text(p, text)
+            p = doc.add_paragraph()
+            p.paragraph_format.left_indent = Inches(0.25)
+            p.paragraph_format.first_line_indent = Inches(-0.25)  # hanging indent
+            add_formatted_text(p, stripped)   # keep the "N. " prefix verbatim
             i += 1
             continue
 
