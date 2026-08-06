@@ -413,7 +413,11 @@ def write_eeg_json(path, metadata):
     """Write _eeg.json sidecar."""
     data = {
         "TaskName": TASK_LABEL,
-        "Manufacturer": "Natus/Xltek",
+        # Acquisition hardware is Lifelines or EMS ambulatory equipment (Persyst
+        # spike/seizure detection) per the provider. The exact per-recording device
+        # is in the source EDF header 'equipment' field (captured by extract_inventory);
+        # populate that here if per-file attribution is needed.
+        "Manufacturer": "Lifelines/EMS",
         "PowerLineFrequency": 60,
         "SamplingFrequency": metadata["primary_sample_rate"],
         "SoftwareFilters": "n/a",
@@ -559,7 +563,7 @@ def write_readme(bids_root):
         f.write("- EEG data in EDF+ format\n")
         f.write("- Sampling rate: 256 Hz\n")
         f.write("- Channel placement: 10-20 system\n")
-        f.write("- Annotations from Natus/Xltek system in _Xltek.csv files\n\n")
+        f.write("- Annotations from the clinical acquisition workflow (Persyst spike/seizure detection) in _Xltek.csv files\n\n")
         f.write("## De-identification\n")
         f.write("- All dates have been shifted by a random offset per patient\n")
         f.write("- Patient identifiers have been removed from EDF headers\n")
