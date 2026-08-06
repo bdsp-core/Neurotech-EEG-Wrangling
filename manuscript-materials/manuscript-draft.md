@@ -2,7 +2,7 @@
 
 **Authors:** Keith Morgan^1^, Charles Pickering^1^, Matthew Goodwin^1^, Han Wu^2^, Manohar Ghanta^2^, Aditya Gupta^2^, Jin Jing^2^, ChenXi Sun^2^, Daniel Goldenholz^2^, M. Brandon Westover^2^
 
-^1^ Neurotech, [City, State]
+^1^ Neurotech, Waukesha, WI
 ^2^ Department of Neurology, Beth Israel Deaconess Medical Center, Harvard Medical School, Boston, MA
 
 **Corresponding author:** M. Brandon Westover, MD, PhD (bwestove@bidmc.harvard.edu)
@@ -161,7 +161,7 @@ The dataset has several important limitations. First, all recordings originate f
 
 ### Future directions
 
-Future versions of this dataset will add multi-expert re-annotation of a validation subset to establish inter-rater reliability, apply automated sleep staging to multi-day recordings, and develop a curated bank of teaching cases with an interactive web application for EEG education. We also plan to publish updates to the clinical metadata as additional patient documentation becomes available and as the name-linkage procedure is refined to capture more of the long tail of spelling variants.
+Future versions of this dataset may add multi-expert re-annotation of a validation subset to establish inter-rater reliability, apply automated sleep staging to multi-day recordings, and develop a curated bank of teaching cases with an interactive web application for EEG education. We also hope to publish updates to the clinical metadata as additional patient documentation becomes available and as the name-linkage procedure is refined to capture more of the long tail of spelling variants.
 
 ### Data access
 
@@ -204,11 +204,11 @@ Code for the BIDS conversion pipeline, de-identification procedures, and annotat
 
 ## Conflicts of Interest
 
-MBW is a co-founder, scientific advisor, consultant to, and has personal equity interest in Beacon Biosignals. KM, CP, and MG are employees of Neurotech. The other authors declare that they have no conflicts of interest.
+MBW is a co-founder, scientific advisor, consultant to, and has personal equity interest in Beacon Biosignals. KM, CP, and MG are employees of Neurotech. DMG has been provided speaker fees from Harvard Medical School, AAN, AES, ACNS, NNS, AI in Epilepsy and Neurology, Florida Epilepsy Alliance, and UT-Austin. He also previously has been a paid consultant for Neuro Event Labs, IDR, LivaNova, Health Advances, Duke University, Bloom Insights and Wiley. He has received grants from NIH, ABPN, BIDMC and the Lions Club. The other authors declare that they have no conflicts of interest.
 
 ## Funding
 
-MBW receives research funding from the NIH (RF1AG064312, RF1NS120947, R01AG073410, R01HL161253, R01NS126282, R01AG073598, R01NS131347, R01NS130119, R01NS131347). DMG receives research funding from the NIH (K23NS124656).
+MBW receives research funding from the NIH (RF1AG064312, RF1NS120947, R01AG073410, R01HL161253, R01NS126282, R01AG073598, R01NS131347, R01NS130119, R01NS131347). DMG receives research funding from the NIH (K23NS124656, R21NS142800) and the ABPN.
 
 ---
 

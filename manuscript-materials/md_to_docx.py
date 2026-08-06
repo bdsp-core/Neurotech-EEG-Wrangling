@@ -78,9 +78,10 @@ def _add_plain_with_links(paragraph, text, size, bold, italic):
 
 
 def add_formatted_text(paragraph, text, size=11, bold=False, italic=False):
-    """Add text to a paragraph, handling markdown bold/italic and clickable URLs."""
-    # Process bold (**text**) and italic (*text*) patterns
-    parts = re.split(r'(\*\*.*?\*\*|\*.*?\*)', text)
+    """Add text to a paragraph, handling markdown bold/italic, ^superscript^
+    (e.g. citation markers ^7^, ^3-6,12^) and clickable URLs."""
+    # Process bold (**text**), italic (*text*), and superscript (^text^) patterns
+    parts = re.split(r'(\*\*.*?\*\*|\*.*?\*|\^[^^]+?\^)', text)
     for part in parts:
         if part.startswith('**') and part.endswith('**'):
             run = paragraph.add_run(part[2:-2])
@@ -88,6 +89,10 @@ def add_formatted_text(paragraph, text, size=11, bold=False, italic=False):
         elif part.startswith('*') and part.endswith('*') and not part.startswith('**'):
             run = paragraph.add_run(part[1:-1])
             set_run_font(run, size=size, bold=bold, italic=True)
+        elif len(part) > 2 and part.startswith('^') and part.endswith('^'):
+            run = paragraph.add_run(part[1:-1])
+            set_run_font(run, size=size, bold=bold, italic=italic)
+            run.font.superscript = True
         else:
             _add_plain_with_links(paragraph, part, size, bold, italic)
 
@@ -119,13 +124,10 @@ def add_table_to_doc(doc, rows):
                 cell = table.cell(i, j)
                 cell.text = ""
                 p = cell.paragraphs[0]
-                # Header row in bold
+                # Header row in bold; render inline markup (bold, ^superscript^ citation
+                # markers) rather than dumping literal ** and ^ carets into the cell.
                 is_bold = (i == 0) or cell_text.startswith('**')
-                clean_text = cell_text.replace('**', '')
-                # Handle backticks
-                clean_text = clean_text.replace('`', '')
-                run = p.add_run(clean_text)
-                set_run_font(run, size=9, bold=is_bold)
+                add_formatted_text(p, cell_text.replace('`', ''), size=9, bold=is_bold)
     return table
 
 def add_figure(doc, fig_num, supplementary=False):
