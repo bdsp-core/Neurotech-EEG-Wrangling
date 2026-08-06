@@ -19,7 +19,7 @@ Keith Morgan, Charles Pickering, Matthew Goodwin, Han Wu, Manohar Ghanta, Aditya
 
 ## Topic Tags
 
-eeg, epilepsy, clinical-eeg, bids, ambulatory-eeg, home-eeg, continuous-eeg, scalp-eeg, natus-xltek
+eeg, epilepsy, clinical-eeg, bids, ambulatory-eeg, home-eeg, continuous-eeg, scalp-eeg, persyst
 
 ## Access Level
 
@@ -29,19 +29,19 @@ Credentialed
 
 ## Abstract
 
-The Neurotech EEG Dataset is a large clinical scalp EEG corpus comprising 23,607 EEG recordings from 4,914 patients acquired by a single EEG monitoring service provider between 2021 and 2025, totaling 212,186 hours of signal data (10.2 TB). A distinguishing feature is the large proportion of ambulatory recordings acquired in patients' homes, including multi-day studies — a real-world, out-of-hospital recording context largely absent from existing large clinical EEG corpora, which are predominantly hospital-based. Recordings span routine outpatient EEGs, ambulatory monitoring, and continuous inpatient/ICU EEG, all acquired with Natus/Xltek NeuroWorks hardware at 256 Hz using the standard International 10-20 montage. The dataset includes 226,486 technician-placed annotations — including 50,482 spike markers, 6,892 seizure markers, 21,330 sharp-wave annotations, activation-procedure documentation, and free-text clinical observations. De-identified patient-level clinical metadata (demographics, ICD-10 referral diagnoses, comorbidities, medications, EEG findings, and monitoring summaries) is included for the 4,812 patients with available clinical records. Data are released in BIDS-EEG format with HIPAA-compliant de-identification including per-patient date shifting and automated name scrubbing.
+The Neurotech EEG Dataset is a large clinical scalp EEG corpus comprising 23,607 EDF recording segments from 4,914 patients acquired by a single EEG monitoring service provider between 2021 and 2025, totaling 212,186 hours of signal data (10.2 TB). A distinguishing feature is the large proportion of ambulatory recordings acquired in patients' homes, including multi-day studies — a real-world, out-of-hospital recording context largely absent from existing large clinical EEG corpora, which are predominantly hospital-based. Recordings span routine outpatient EEGs, ambulatory monitoring, and prolonged multi-day ambulatory studies, all acquired with Lifelines or EMS ambulatory hardware (with Persyst spike/seizure detection) at 256 Hz using the standard International 10-20 montage. Because the acquisition system exports each continuous recording as multiple EDF files, these 23,607 signal-bearing segments correspond to far fewer distinct EEG studies (approximately one multi-day ambulatory study per patient). The dataset includes 226,486 technician-placed annotations — including 50,482 spike markers, 6,892 seizure markers, 21,330 sharp-wave annotations, activation-procedure documentation, and free-text clinical observations. De-identified patient-level clinical metadata (demographics, ICD-10 referral diagnoses, comorbidities, medications, EEG findings, and monitoring summaries) is included for the 4,812 patients with available clinical records. Data are released in BIDS-EEG format with HIPAA-compliant de-identification including per-patient date shifting and automated name scrubbing.
 
 ## Background
 
-Electroencephalography (EEG) remains the cornerstone of epilepsy diagnosis and management, yet the global shortage of trained EEG readers limits access to expert interpretation. Machine learning offers a path toward scalable automated EEG interpretation, but progress has been constrained by the scarcity of large, clinically representative public datasets. The Neurotech EEG Dataset addresses this gap by providing a large, unselected clinical EEG corpus spanning the full spectrum of clinical EEG practice — from routine 20-minute outpatient recordings to multi-day continuous ICU monitoring — with a uniquely large volume of multi-day ambulatory EEG recorded in patients' homes.
+Electroencephalography (EEG) remains the cornerstone of epilepsy diagnosis and management, yet the global shortage of trained EEG readers limits access to expert interpretation. Machine learning offers a path toward scalable automated EEG interpretation, but progress has been constrained by the scarcity of large, clinically representative public datasets. The Neurotech EEG Dataset addresses this gap by providing a large, unselected clinical EEG corpus spanning the full spectrum of clinical EEG practice — from routine 20-minute outpatient recordings to multi-day ambulatory home monitoring — with a uniquely large volume of multi-day ambulatory EEG recorded in patients' homes.
 
-This dataset complements the Harvard EEG Database (HEEDB; ~109,000 patients, ~329,000 recordings, ~3.3 million hours across four hospitals, on the same BDSP platform): whereas HEEDB comprises routine, EMU, and ICU recordings acquired in clinical facilities, the present corpus is far smaller overall but uniquely contributes out-of-hospital, in-home ambulatory EEG, Natus/Xltek hardware, and preserved workflow-native technician annotations that capture the variability of real-world clinical EEG practice.
+This dataset complements the Harvard EEG Database (HEEDB; ~109,000 patients, ~329,000 recordings, ~3.3 million hours across four hospitals, on the same BDSP platform): whereas HEEDB comprises routine, EMU, and ICU recordings acquired in clinical facilities, the present corpus is far smaller overall but uniquely contributes out-of-hospital, in-home ambulatory EEG, Lifelines/EMS ambulatory hardware, and preserved workflow-native technician annotations that capture the variability of real-world clinical EEG practice.
 
 ## Methods
 
 ### Recording
 
-All recordings were acquired using Natus/Xltek NeuroWorks EEG systems with standard International 10-20 electrode placement (25-29 channels; median 28, including ECG). Signals were sampled at 256 Hz and stored in EDF+C (continuous) format. Recording types include routine outpatient EEGs (<1 hour; 36%), ambulatory and short-term monitoring (1-24 hours; 53%), and prolonged continuous monitoring (>24 hours; 11%).
+All recordings were acquired using Lifelines or EMS ambulatory EEG systems (with Persyst spike and seizure detection), using standard International 10-20 electrode placement plus a two-channel ECG; additional electrodes were placed only on request (median 28 channels, range 22-30). Signals were sampled at 256 Hz and stored in EDF+C (continuous) format. Recording types include routine outpatient EEGs (<1 hour; 36%), ambulatory and short-term monitoring (1-24 hours; 53%), and prolonged continuous monitoring (>24 hours; 11%).
 
 ### Clinical metadata extraction
 
@@ -61,14 +61,15 @@ De-identification was performed in compliance with HIPAA Safe Harbor standards:
 | Characteristic | Value |
 |---|---|
 | Unique patients | 4,914 |
-| EEG recordings (with signal data) | 23,607 |
+| EDF recording segments (with signal data) | 23,607 |
+| Distinct EEG studies (approx.) | ~one multi-day ambulatory study per patient |
 | Additional header-only stub files | 30,819 |
 | Total EDF files | 54,426 |
 | Total recording hours | 212,186 |
 | Total dataset size | 10.2 TB (231,880 files) |
 | Recording duration, median (IQR) | 3.0 (0.3 - 12.3) hours |
-| Patients with multiple recordings | 3,570 (73%) |
-| Recordings per patient, median (IQR) | 3 (1 - 6) |
+| Patients with multiple EDF segments | 3,570 (73%) |
+| EDF segments per patient, median (IQR) | 3 (1 - 6) |
 | Recordings with ≥1 annotation file | 14,517 (61%) |
 | Total annotation events | 226,486 |
 | Spike markers | 50,482 |
@@ -76,7 +77,7 @@ De-identification was performed in compliance with HIPAA Safe Harbor standards:
 | Sharp wave annotations | 21,330 |
 | Patients with clinical metadata | 4,812 (98%) |
 | Referral ICD-10 codes (Epilepsy G40 / Convulsions R56) | 54% / 13% |
-| Hardware | Natus/Xltek NeuroWorks |
+| Hardware | Lifelines / EMS (Persyst detection) |
 | Sampling rate | 256 Hz |
 | Channels | 25-29 (10-20 + ECG + auxiliary) |
 | Date range | 2021-2025 |

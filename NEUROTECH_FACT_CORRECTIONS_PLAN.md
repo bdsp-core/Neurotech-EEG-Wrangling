@@ -126,3 +126,22 @@ then update the manuscript Methods and the bdsp.io Methods.
   **ambulatory (incl. multi-day home) + routine outpatient (some routine inpatient bedside)**. Keep HEEDB's
   EMU/ICU description (that dataset, correct). **PENDING sign-off** (the ICU/EMU wording added for Chenxi's
   consistency note should be removed, not kept).
+
+---
+
+## APPLIED (status)
+- ✅ **Manuscript** (`.md` + rebuilt `.docx`/`.pdf`): hardware → Lifelines/EMS + Persyst; count reframed to
+  EDF segments (~1 study/patient); ICU/EMU removed (kept HEEDB); electrodes (extended on request, 2-ch ECG);
+  Supp Fig 2 legend (equipment scrubbed, not preserved); abstract "inpatient" removed.
+- ✅ **Pipeline**: `build_bids.py` Manufacturer default → Lifelines/EMS; README annotation string.
+- ✅ **bdsp.io listing draft** (`bdsp_listing_draft.md`) corrected. ✅ **S3 `README`** corrected (rclone).
+- ⏳ **bdsp.io live listing page**: corrected content staged (`scratchpad/content_v2.json`) but **not yet
+  pushed — the prod EC2 (35.92.7.76) SSH was unreachable**. Apply when reachable: `docker cp` the JSON in and
+  `setattr` the PublishedProject fields (short_description, abstract, methods, content_description).
+- ⏳ **S3 `_eeg.json` sidecars** (~54k) still say `Manufacturer: Natus/Xltek`. **Recommended fix: regenerate on
+  the source machine** with the corrected `build_bids.py` (can also use the real per-file `equipment` from the
+  inventory), then re-sync — rather than a bulk generic patch from here. The static **Supp Fig 2 image** still
+  shows "Equipment — unchanged" (hand-made; artist to fix).
+- ⏳ **DataCite DOI abstract** could be refreshed to the corrected abstract (optional).
+- Not changed (decision): `_Xltek.csv` filename in the published tree (rename would break references / need a
+  version bump).
