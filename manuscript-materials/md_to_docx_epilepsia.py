@@ -68,6 +68,17 @@ def render_body(doc, body):
         line = lines[i]; s = line.strip()
         if not s or s == "---":
             i += 1; continue
+        # H1 title (supplement documents have no title-page block)
+        if s.startswith("# "):
+            p = doc.add_paragraph(); p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+            m.set_run_font(p.add_run(s[2:]), size=15, bold=True)
+            i += 1; continue
+        # supplementary figure legend -> insert supp figure image then legend
+        supp = re.match(r"\*\*Supplementary Figure (\d+)\.\*\*", s)
+        if supp:
+            m.add_figure(doc, supp.group(1), supplementary=True)
+            p = doc.add_paragraph(); m.add_formatted_text(p, s, size=12)
+            i += 1; continue
         # section heading (## ) and subsection (### )
         if s.startswith("### "):
             p = doc.add_paragraph(); m.set_run_font(p.add_run(s[4:]), size=12, bold=True, italic=True)
