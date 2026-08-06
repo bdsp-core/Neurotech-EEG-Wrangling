@@ -5,8 +5,32 @@ Most figures are **regenerated automatically from committed data** by
 figures below are **hand-drawn schematics / illustrations** (BioRender-style) that our
 code does not produce, so they must be updated by hand.
 
-**Authoritative cohort numbers (use these everywhere):**
-`4,914 patients · 23,607 EEG recordings · 212,186 hours · 10.2 TB · 2021–2025 · Natus/Xltek`
+**Authoritative facts (use these everywhere):**
+`4,914 patients · 23,607 EDF recording segments (≈ one multi-day ambulatory study per patient) ·
+212,186 hours · 10.2 TB · 2021–2025 · Lifelines/EMS ambulatory equipment + Persyst detection`
+
+---
+
+## ⚠️ CORRECTIONS NEEDED after Keith Morgan's review (2026-08) — two hand-made figures are now factually WRONG
+
+**Figure 1 — `figure1_pipeline.png` (pipeline schematic).** Two edits:
+- Stage 1: **"Natus/Xltek NeuroWorks" → "Lifelines / EMS ambulatory (Persyst detection)."**
+- Stage 2 headline: **"23,607 EEG recordings" → "23,607 EDF recording segments."** (Keep ".lay
+  annotation files" — that Persyst format is correct.) Optionally add a small line noting these
+  segments ≈ one multi-day ambulatory study per patient.
+
+**Supplementary Figure 2 — `supp_figure2_deidentification.png` (de-id header example).** Two edits:
+- Equipment example: **"Natus Xltek EMU40" → a Lifelines/EMS example** (e.g., "Lifelines ambulatory").
+- Equipment transformation: it currently says **"Keep unchanged"**, but the equipment field is in fact
+  **removed/scrubbed** in the released files (published EDFs show `X`). Change the transformation to
+  **"Remove"** and the "After" value to **"[removed]"** (matching the Technician row) — OR, if the team
+  decides equipment *should* be preserved (it is not PHI and is useful), update the de-id code to keep it
+  and then this panel becomes correct as-is. Decision needed. The manuscript legend is already corrected
+  ("equipment identifiers are removed").
+
+> The code-generated figures (Fig 2, 3, 4; Supp Fig 1, 3, 4) are factually fine — their numbers are
+> unchanged and they carry no hardware/ICU/EMU labels. Minor: Fig 2A's y-axis says "Number of
+> recordings" (could read "EDF segments" for consistency; regenerate via generate_tables_and_figures.py).
 
 ---
 
