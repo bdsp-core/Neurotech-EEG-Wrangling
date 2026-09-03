@@ -6,6 +6,12 @@ Pipeline for converting clinical Natus/Xltek NeuroWorks EEG recordings into a de
 
 **Target:** `s3://bdsp-opendata-repository/EEG/bids/Neurotech/`
 
+> **Where this fits.** **L1 — dataset & cohort onboarding** in the BDSP OMOP repo family.
+> Patient-level phenotype tables (demographics, diagnoses, comorbidities, medications, EEG
+> findings) are already built and published. Destined for OMOP `person`,
+> `condition_occurrence`, `drug_exposure`, `note_nlp`.
+> Family members carry the topic `bdsp-omop`.
+
 ## De-identification
 
 All recordings are de-identified before release. Patient names, IDs, and dates of birth are removed from EDF headers. Recording dates are shifted by a random per-patient offset. Names embedded in technician annotations are scrubbed.
