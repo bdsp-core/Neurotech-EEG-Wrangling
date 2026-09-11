@@ -1,0 +1,18 @@
+{
+    "TaskName": "EEG",
+    "Manufacturer": "Lifelines/EMS",
+    "PowerLineFrequency": 60,
+    "SamplingFrequency": 256.0,
+    "SoftwareFilters": "n/a",
+    "RecordingDuration": 0.0,
+    "RecordingType": "continuous",
+    "EEGReference": "n/a",
+    "EEGGround": "n/a",
+    "EEGPlacementScheme": "10-20",
+    "EEGChannelCount": 26,
+    "EOGChannelCount": 0,
+    "ECGChannelCount": 1,
+    "EMGChannelCount": 0,
+    "MiscChannelCount": 1,
+    "TriggerChannelCount": 0
+}
