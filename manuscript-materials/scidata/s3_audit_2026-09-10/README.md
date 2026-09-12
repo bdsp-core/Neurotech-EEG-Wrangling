@@ -48,21 +48,29 @@ cd /Users/mwestover/GithubRepos/NeuroTech-Wrangling
 ```
 Idempotent; rerun if interrupted. Skipped/errored keys go to `patch_s3_manufacturer.log`.
 
-## Fix 3 — the 107 absent sessions (needs the source drive)
+## Fix 3 — the 107 absent sessions + 31 EDF-less sessions (needs the Padlock_DT drive)
 
-Requires `/Volumes/Padlock_DT` (source export), the linking table (`output/linking_table.csv`, PHI; not on
-this machine), AWS write credentials in the environment, and the venv.
+`restore_missing_sessions.py` (repo root) regenerates exactly the 138 target sessions for 119 subjects
+using build_bids.py's own functions and numbering rule, after checking for each subject that every
+already-published session's source EDF has the published byte size (so the numbering lines up).
+Inputs, all available on 2026-09-11:
 
-1. `subjects_to_restore.txt` lists the 88 affected subjects. Remove their `folder_name` rows from
-   `output/bids_progress.tsv` (or `.csv`) so `build_bids.py` re-processes them; leave every other row so the
-   rest of the cohort is skipped.
-2. `NT_BIDS_ROOT=/Volumes/<scratch>/bids_output/Neurotech .venv/bin/python build_bids.py` — it re-converts and
-   re-uploads every session of those subjects. Session numbering is deterministic (sorted source files), so keys
-   match the existing ones; identical files are overwritten harmlessly and sidecars get the new Manufacturer.
-3. Regenerate `participants.tsv` (`ehr_pipeline/build_bids_phenotype.py`) so it lists every subject directory,
-   and re-upload it with `participants.json`.
-4. Re-run the listing audit:
-   `rclone lsf -R --files-only s3:bdsp-opendata-repository/EEG/bids/Neurotech/ > all.txt` and count by suffix;
-   expect 54,426 EDFs.
+- linking tables: `output/linking_table.csv` (batch 1, IDs 1-1748) and `output/linking_table_batch2.csv`
+  (IDs 1843-5321), both PHI and gitignored; recovered from Box
+  `Brandon - PHI/Datasets/zz_neuroTech/neurotech_wrangling/output/` (Box Drive had to be restarted first,
+  see the box-sync-repair skill).
+- source export: `/Volumes/Padlock_DT` (19 TB drive; NOT the Extreme SSD).
+- scratch output: `/Volumes/Extreme SSD/neurotech-restore/Neurotech` (~10 GB expected).
+
+```bash
+cd /Users/mwestover/GithubRepos/NeuroTech-Wrangling
+.venv/bin/python restore_missing_sessions.py \
+    --targets manuscript-materials/scidata/s3_audit_2026-09-10 \
+    --linking output/linking_table.csv --linking output/linking_table_batch2.csv \
+    --drive /Volumes/Padlock_DT --out "/Volumes/Extreme SSD/neurotech-restore/Neurotech" --dry-run   # then without --dry-run
+rclone copy "/Volumes/Extreme SSD/neurotech-restore/Neurotech" s3:bdsp-opendata-repository/EEG/bids/Neurotech/ --ignore-existing --transfers 8 -P
+```
+Then regenerate `participants.tsv` (`ehr_pipeline/build_bids_phenotype.py`) so it lists every subject
+directory, re-upload it with `participants.json`, and re-run the listing audit (expect 54,426 EDFs).
 
 Never use `rclone sync` or `aws s3 sync --delete` against the release root.
