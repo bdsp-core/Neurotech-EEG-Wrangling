@@ -29,7 +29,7 @@ Credentialed
 
 ## Abstract
 
-The Neurotech EEG Dataset is a large clinical scalp EEG corpus comprising 23,607 EDF recording segments from 4,914 patients acquired by a single EEG monitoring service provider between 2021 and 2025, totaling 212,186 hours of signal data (10.2 TB). A distinguishing feature is the large proportion of ambulatory recordings acquired in patients' homes, including multi-day studies — a real-world, out-of-hospital recording context largely absent from existing large clinical EEG corpora, which are predominantly hospital-based. Recordings span routine outpatient EEGs, ambulatory monitoring, and prolonged multi-day ambulatory studies, all acquired with Lifelines or EMS ambulatory hardware (with Persyst spike/seizure detection) at 256 Hz using the standard International 10-20 montage. Because the acquisition system exports each continuous recording as multiple EDF files, these 23,607 signal-bearing segments correspond to far fewer distinct EEG studies (approximately one multi-day ambulatory study per patient). The dataset includes 226,486 technician-placed annotations — including 50,482 spike markers, 6,892 seizure markers, 21,330 sharp-wave annotations, activation-procedure documentation, and free-text clinical observations. De-identified patient-level clinical metadata (demographics, ICD-10 referral diagnoses, comorbidities, medications, EEG findings, and monitoring summaries) is included for the 4,812 patients with available clinical records. Data are released in BIDS-EEG format with HIPAA-compliant de-identification including per-patient date shifting and automated name scrubbing.
+The Neurotech EEG Dataset is a large clinical scalp EEG corpus comprising 23,600 EDF recording segments from 4,912 patients acquired by a single EEG monitoring service provider between 2021 and 2025, totaling 212,133 hours of signal data (10.2 TB). A distinguishing feature is the large proportion of ambulatory recordings acquired in patients' homes, including multi-day studies — a real-world, out-of-hospital recording context largely absent from existing large clinical EEG corpora, which are predominantly hospital-based. Recordings span routine outpatient EEGs, ambulatory monitoring, and prolonged multi-day ambulatory studies, all acquired with Lifelines or EMS ambulatory hardware (with Persyst spike/seizure detection) at 256 Hz using the standard International 10-20 montage. Because the acquisition system exports each continuous recording as multiple EDF files, these 23,600 signal-bearing segments correspond to far fewer distinct EEG studies (approximately one multi-day ambulatory study per patient). The dataset includes 225,957 technician-placed annotations — including 51,546 spike markers, 6,956 seizure markers, 21,290 sharp-wave annotations, activation-procedure documentation, and free-text clinical observations. De-identified patient-level clinical metadata (demographics, ICD-10 referral diagnoses, comorbidities, medications, EEG findings, and monitoring summaries) is included for the 4,812 patients with available clinical records. Data are released in BIDS-EEG format with HIPAA-compliant de-identification including per-patient date shifting and automated name scrubbing.
 
 ## Background
 
@@ -45,7 +45,7 @@ All recordings were acquired using Lifelines or EMS ambulatory EEG systems (with
 
 ### Clinical metadata extraction
 
-For the 4,812 of 4,914 patients (98%) with available scanned clinical documentation, a three-stage on-premises pipeline (text extraction with OCR, document segmentation, and structured field extraction using deterministic parsers plus a locally hosted open-weight LLM) produced structured, de-identified fields: demographics, ICD-10 referral diagnoses, comorbidities, medications, EEG findings (posterior dominant rhythm, epileptiform discharges, seizures, slowing, impression), and hour-by-hour monitoring summaries. All clinical text was processed on-device; no clinical text left the secure environment.
+For the 4,812 of 4,912 patients (98%) with available scanned clinical documentation, a three-stage on-premises pipeline (text extraction with OCR, document segmentation, and structured field extraction using deterministic parsers plus a locally hosted open-weight LLM) produced structured, de-identified fields: demographics, ICD-10 referral diagnoses, comorbidities, medications, EEG findings (posterior dominant rhythm, epileptiform discharges, seizures, slowing, impression), and hour-by-hour monitoring summaries. All clinical text was processed on-device; no clinical text left the secure environment.
 
 ### De-identification
 
@@ -60,21 +60,21 @@ De-identification was performed in compliance with HIPAA Safe Harbor standards:
 
 | Characteristic | Value |
 |---|---|
-| Unique patients | 4,914 |
-| EDF recording segments (with signal data) | 23,607 |
+| Unique patients | 4,912 |
+| EDF recording segments (with signal data) | 23,600 |
 | Distinct EEG studies (approx.) | ~one multi-day ambulatory study per patient |
-| Additional header-only stub files | 30,819 |
-| Total EDF files | 54,426 |
-| Total recording hours | 212,186 |
+| Additional header-only stub files | 30,719 |
+| Total EDF files | 54,319 |
+| Total recording hours | 212,133 |
 | Total dataset size | 10.2 TB (231,880 files) |
 | Recording duration, median (IQR) | 3.0 (0.3 - 12.3) hours |
 | Patients with multiple EDF segments | 3,570 (73%) |
 | EDF segments per patient, median (IQR) | 3 (1 - 6) |
-| Recordings with ≥1 annotation file | 14,517 (61%) |
-| Total annotation events | 226,486 |
-| Spike markers | 50,482 |
-| Seizure markers | 6,892 |
-| Sharp wave annotations | 21,330 |
+| Recordings with ≥1 annotation file | 14,491 (61%) |
+| Total annotation events | 225,957 |
+| Spike markers | 51,546 |
+| Seizure markers | 6,956 |
+| Sharp wave annotations | 21,290 |
 | Patients with clinical metadata | 4,812 (98%) |
 | Referral ICD-10 codes (Epilepsy G40 / Convulsions R56) | 54% / 13% |
 | Hardware | Lifelines / EMS (Persyst detection) |

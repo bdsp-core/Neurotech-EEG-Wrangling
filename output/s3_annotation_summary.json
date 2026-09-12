@@ -1,0 +1,15 @@
+{
+  "annotation_files": 14491,
+  "annotation_total": 225957,
+  "per_annotated_segment_median_iqr": [
+    8,
+    3,
+    19
+  ],
+  "per_hour_median_iqr": [
+    1.08,
+    0.46,
+    2.9
+  ],
+  "method": "rows of every published *_Xltek.csv (csv records, not lines); categories via extract_inventory.classify_annotation (multi-label); computed 2026-09-12 from the S3 release after removing 32 EDF-less sessions"
+}

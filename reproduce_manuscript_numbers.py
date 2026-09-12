@@ -32,7 +32,9 @@ def _pdr_hz(s):
         return float(s)
     except ValueError:
         return None
-ANN_TOTAL = 226486   # total annotation events = count of rows across all published *_Xltek.csv (see compute_eeg_stats_from_s3.py)
+import json as _json
+_ANN = _json.load(open(OUT / "s3_annotation_summary.json"))
+ANN_TOTAL = _ANN["annotation_total"]   # rows across all published *_Xltek.csv (see compute_eeg_stats_from_s3.py); summary regenerated 2026-09-12
 
 
 def p(label, value):
@@ -65,6 +67,9 @@ def annotations():
     c = pd.read_csv(OUT / "s3_annotation_categories.csv").set_index("category")["count"]
     print("\n=== Annotations (from output/s3_annotation_categories.csv) ===")
     p("Total annotation events", f"{ANN_TOTAL:,}")
+    p("Annotated recordings (files)", f"{_ANN['annotation_files']:,}")
+    p("Annotations per annotated recording, median (IQR)", "{} ({}-{})".format(*_ANN["per_annotated_segment_median_iqr"]))
+    p("Annotations per hour, median (IQR)", "{:.2f} ({:.2f}-{:.2f})".format(*_ANN["per_hour_median_iqr"]))
     for k, lab in [("spike","Spike markers"),("seizure","Seizure markers"),("sharp_wave","Sharp waves"),
                    ("clip","Technician clips"),("activation","Activation procedures"),("slowing","Slowing")]:
         p(lab, f"{int(c.get(k,0)):,}")
@@ -128,7 +133,7 @@ def ehr():
     if hcol:
         p("Total monitoring hours", f"{pd.to_numeric(mon[hcol[0]], errors='coerce').fillna(0).sum():,.0f}")
     # Annotated recordings (reproducible from S3: count of published *_Xltek.csv files)
-    print("\n  (Annotated recordings = 14,517 = number of published *_Xltek.csv files on S3;\n"
+    print("\n  (Annotated recordings = 14,491 = number of published *_Xltek.csv files on S3 (after the 2026-09-12 removal of 32 EDF-less sessions);\n"
           "   reproduce with: python compute_eeg_stats_from_s3.py)")
 
 

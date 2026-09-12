@@ -19053,7 +19053,6 @@ sub-Neurotech1894,8,sub-Neurotech1894/ses-8/eeg/sub-Neurotech1894_ses-8_task-EEG
 sub-Neurotech1895,1,sub-Neurotech1895/ses-1/eeg/sub-Neurotech1895_ses-1_task-EEG_eeg.edf,433376460,413.3,29981.0,8.33,28,29981
 sub-Neurotech1895,2,sub-Neurotech1895/ses-2/eeg/sub-Neurotech1895_ses-2_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech1895,3,sub-Neurotech1895/ses-3/eeg/sub-Neurotech1895_ses-3_task-EEG_eeg.edf,486119833,463.6,33630.0,9.34,28,33630
-sub-Neurotech1899,1,sub-Neurotech1899/ses-1/eeg/sub-Neurotech1899_ses-1_task-EEG_eeg.edf,1411278438,1345.9,0.0,0.0,0,0
 sub-Neurotech1901,1,sub-Neurotech1901/ses-1/eeg/sub-Neurotech1901_ses-1_task-EEG_eeg.edf,1238053683,1180.7,85645.0,23.79,28,85645
 sub-Neurotech1901,2,sub-Neurotech1901/ses-2/eeg/sub-Neurotech1901_ses-2_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech1901,3,sub-Neurotech1901/ses-3/eeg/sub-Neurotech1901_ses-3_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
@@ -19176,7 +19175,6 @@ sub-Neurotech1917,5,sub-Neurotech1917/ses-5/eeg/sub-Neurotech1917_ses-5_task-EEG
 sub-Neurotech1917,6,sub-Neurotech1917/ses-6/eeg/sub-Neurotech1917_ses-6_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech1917,7,sub-Neurotech1917/ses-7/eeg/sub-Neurotech1917_ses-7_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech1917,8,sub-Neurotech1917/ses-8/eeg/sub-Neurotech1917_ses-8_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
-sub-Neurotech1917,9,sub-Neurotech1917/ses-9/eeg/sub-Neurotech1917_ses-9_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech1917,10,sub-Neurotech1917/ses-10/eeg/sub-Neurotech1917_ses-10_task-EEG_eeg.edf,180145356,171.8,15141.0,4.21,23,15141
 sub-Neurotech1918,1,sub-Neurotech1918/ses-1/eeg/sub-Neurotech1918_ses-1_task-EEG_eeg.edf,495347302,472.4,34263.0,9.52,28,34263
 sub-Neurotech1918,2,sub-Neurotech1918/ses-2/eeg/sub-Neurotech1918_ses-2_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
@@ -19245,9 +19243,7 @@ sub-Neurotech1924,33,sub-Neurotech1924/ses-33/eeg/sub-Neurotech1924_ses-33_task-
 sub-Neurotech1924,34,sub-Neurotech1924/ses-34/eeg/sub-Neurotech1924_ses-34_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech1924,35,sub-Neurotech1924/ses-35/eeg/sub-Neurotech1924_ses-35_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech1924,36,sub-Neurotech1924/ses-36/eeg/sub-Neurotech1924_ses-36_task-EEG_eeg.edf,412929228,393.8,28563.0,7.93,28,28563
-sub-Neurotech1924,37,sub-Neurotech1924/ses-37/eeg/sub-Neurotech1924_ses-37_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech1924,38,sub-Neurotech1924/ses-38/eeg/sub-Neurotech1924_ses-38_task-EEG_eeg.edf,253231104,241.5,17518.0,4.87,28,17518
-sub-Neurotech1924,39,sub-Neurotech1924/ses-39/eeg/sub-Neurotech1924_ses-39_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech1924,40,sub-Neurotech1924/ses-40/eeg/sub-Neurotech1924_ses-40_task-EEG_eeg.edf,156971827,149.7,10855.0,3.02,28,10855
 sub-Neurotech1925,1,sub-Neurotech1925/ses-1/eeg/sub-Neurotech1925_ses-1_task-EEG_eeg.edf,446693376,426.0,30901.0,8.58,28,30901
 sub-Neurotech1925,2,sub-Neurotech1925/ses-2/eeg/sub-Neurotech1925_ses-2_task-EEG_eeg.edf,6606028,6.3,0.0,0.0,0,0
@@ -20070,7 +20066,6 @@ sub-Neurotech2100,4,sub-Neurotech2100/ses-4/eeg/sub-Neurotech2100_ses-4_task-EEG
 sub-Neurotech2100,5,sub-Neurotech2100/ses-5/eeg/sub-Neurotech2100_ses-5_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2100,6,sub-Neurotech2100/ses-6/eeg/sub-Neurotech2100_ses-6_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2100,7,sub-Neurotech2100/ses-7/eeg/sub-Neurotech2100_ses-7_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
-sub-Neurotech2100,8,sub-Neurotech2100/ses-8/eeg/sub-Neurotech2100_ses-8_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2100,9,sub-Neurotech2100/ses-9/eeg/sub-Neurotech2100_ses-9_task-EEG_eeg.edf,31876710,30.4,2208.0,0.61,28,2208
 sub-Neurotech2100,10,sub-Neurotech2100/ses-10/eeg/sub-Neurotech2100_ses-10_task-EEG_eeg.edf,124046540,118.3,8580.0,2.38,28,8580
 sub-Neurotech2100,11,sub-Neurotech2100/ses-11/eeg/sub-Neurotech2100_ses-11_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
@@ -20187,7 +20182,6 @@ sub-Neurotech2107,41,sub-Neurotech2107/ses-41/eeg/sub-Neurotech2107_ses-41_task-
 sub-Neurotech2107,42,sub-Neurotech2107/ses-42/eeg/sub-Neurotech2107_ses-42_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2107,43,sub-Neurotech2107/ses-43/eeg/sub-Neurotech2107_ses-43_task-EEG_eeg.edf,41838182,39.9,2896.0,0.8,28,2896
 sub-Neurotech2107,44,sub-Neurotech2107/ses-44/eeg/sub-Neurotech2107_ses-44_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
-sub-Neurotech2107,45,sub-Neurotech2107/ses-45/eeg/sub-Neurotech2107_ses-45_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2107,46,sub-Neurotech2107/ses-46/eeg/sub-Neurotech2107_ses-46_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2107,47,sub-Neurotech2107/ses-47/eeg/sub-Neurotech2107_ses-47_task-EEG_eeg.edf,838860,0.8,56.0,0.02,28,56
 sub-Neurotech2107,48,sub-Neurotech2107/ses-48/eeg/sub-Neurotech2107_ses-48_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
@@ -21563,7 +21557,6 @@ sub-Neurotech2218,14,sub-Neurotech2218/ses-14/eeg/sub-Neurotech2218_ses-14_task-
 sub-Neurotech2218,15,sub-Neurotech2218/ses-15/eeg/sub-Neurotech2218_ses-15_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2218,16,sub-Neurotech2218/ses-16/eeg/sub-Neurotech2218_ses-16_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2218,17,sub-Neurotech2218/ses-17/eeg/sub-Neurotech2218_ses-17_task-EEG_eeg.edf,8912896,8.5,617.0,0.17,28,617
-sub-Neurotech2218,18,sub-Neurotech2218/ses-18/eeg/sub-Neurotech2218_ses-18_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2219,1,sub-Neurotech2219/ses-1/eeg/sub-Neurotech2219_ses-1_task-EEG_eeg.edf,1124283187,1072.2,77770.0,21.6,28,77770
 sub-Neurotech2219,2,sub-Neurotech2219/ses-2/eeg/sub-Neurotech2219_ses-2_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2219,3,sub-Neurotech2219/ses-3/eeg/sub-Neurotech2219_ses-3_task-EEG_eeg.edf,1143052697,1090.1,79070.0,21.96,28,79070
@@ -21746,7 +21739,6 @@ sub-Neurotech2251,1,sub-Neurotech2251/ses-1/eeg/sub-Neurotech2251_ses-1_task-EEG
 sub-Neurotech2251,2,sub-Neurotech2251/ses-2/eeg/sub-Neurotech2251_ses-2_task-EEG_eeg.edf,490209280,467.5,33907.0,9.42,28,33907
 sub-Neurotech2251,3,sub-Neurotech2251/ses-3/eeg/sub-Neurotech2251_ses-3_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2251,4,sub-Neurotech2251/ses-4/eeg/sub-Neurotech2251_ses-4_task-EEG_eeg.edf,102236160,97.5,7070.0,1.96,28,7070
-sub-Neurotech2251,5,sub-Neurotech2251/ses-5/eeg/sub-Neurotech2251_ses-5_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2251,6,sub-Neurotech2251/ses-6/eeg/sub-Neurotech2251_ses-6_task-EEG_eeg.edf,14889779,14.2,1026.0,0.28,28,1026
 sub-Neurotech2251,7,sub-Neurotech2251/ses-7/eeg/sub-Neurotech2251_ses-7_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2251,8,sub-Neurotech2251/ses-8/eeg/sub-Neurotech2251_ses-8_task-EEG_eeg.edf,901041356,859.3,62327.0,17.31,28,62327
@@ -21896,7 +21888,6 @@ sub-Neurotech2265,79,sub-Neurotech2265/ses-79/eeg/sub-Neurotech2265_ses-79_task-
 sub-Neurotech2265,80,sub-Neurotech2265/ses-80/eeg/sub-Neurotech2265_ses-80_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2265,81,sub-Neurotech2265/ses-81/eeg/sub-Neurotech2265_ses-81_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2265,82,sub-Neurotech2265/ses-82/eeg/sub-Neurotech2265_ses-82_task-EEG_eeg.edf,38902169,37.1,3132.0,0.87,24,3132
-sub-Neurotech2265,83,sub-Neurotech2265/ses-83/eeg/sub-Neurotech2265_ses-83_task-EEG_eeg.edf,5662310,5.4,452.0,0.13,24,452
 sub-Neurotech2265,84,sub-Neurotech2265/ses-84/eeg/sub-Neurotech2265_ses-84_task-EEG_eeg.edf,629145,0.6,53.0,0.01,24,53
 sub-Neurotech2265,85,sub-Neurotech2265/ses-85/eeg/sub-Neurotech2265_ses-85_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2265,86,sub-Neurotech2265/ses-86/eeg/sub-Neurotech2265_ses-86_task-EEG_eeg.edf,7444889,7.1,599.0,0.17,24,599
@@ -22352,7 +22343,6 @@ sub-Neurotech2298,25,sub-Neurotech2298/ses-25/eeg/sub-Neurotech2298_ses-25_task-
 sub-Neurotech2298,26,sub-Neurotech2298/ses-26/eeg/sub-Neurotech2298_ses-26_task-EEG_eeg.edf,29150412,27.8,2019.0,0.56,28,2019
 sub-Neurotech2298,27,sub-Neurotech2298/ses-27/eeg/sub-Neurotech2298_ses-27_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2298,28,sub-Neurotech2298/ses-28/eeg/sub-Neurotech2298_ses-28_task-EEG_eeg.edf,629145,0.6,45.0,0.01,28,45
-sub-Neurotech2298,29,sub-Neurotech2298/ses-29/eeg/sub-Neurotech2298_ses-29_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2298,30,sub-Neurotech2298/ses-30/eeg/sub-Neurotech2298_ses-30_task-EEG_eeg.edf,330720870,315.4,22878.0,6.36,28,22878
 sub-Neurotech2298,31,sub-Neurotech2298/ses-31/eeg/sub-Neurotech2298_ses-31_task-EEG_eeg.edf,161690419,154.2,11188.0,3.11,28,11188
 sub-Neurotech2298,32,sub-Neurotech2298/ses-32/eeg/sub-Neurotech2298_ses-32_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
@@ -22362,7 +22352,6 @@ sub-Neurotech2298,35,sub-Neurotech2298/ses-35/eeg/sub-Neurotech2298_ses-35_task-
 sub-Neurotech2298,36,sub-Neurotech2298/ses-36/eeg/sub-Neurotech2298_ses-36_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2298,37,sub-Neurotech2298/ses-37/eeg/sub-Neurotech2298_ses-37_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2298,38,sub-Neurotech2298/ses-38/eeg/sub-Neurotech2298_ses-38_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
-sub-Neurotech2298,39,sub-Neurotech2298/ses-39/eeg/sub-Neurotech2298_ses-39_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2298,40,sub-Neurotech2298/ses-40/eeg/sub-Neurotech2298_ses-40_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2298,41,sub-Neurotech2298/ses-41/eeg/sub-Neurotech2298_ses-41_task-EEG_eeg.edf,906074521,864.1,62681.0,17.41,28,62681
 sub-Neurotech2298,42,sub-Neurotech2298/ses-42/eeg/sub-Neurotech2298_ses-42_task-EEG_eeg.edf,99405004,94.8,6877.0,1.91,28,6877
@@ -22370,13 +22359,11 @@ sub-Neurotech2298,43,sub-Neurotech2298/ses-43/eeg/sub-Neurotech2298_ses-43_task-
 sub-Neurotech2298,44,sub-Neurotech2298/ses-44/eeg/sub-Neurotech2298_ses-44_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2298,45,sub-Neurotech2298/ses-45/eeg/sub-Neurotech2298_ses-45_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2298,46,sub-Neurotech2298/ses-46/eeg/sub-Neurotech2298_ses-46_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
-sub-Neurotech2298,47,sub-Neurotech2298/ses-47/eeg/sub-Neurotech2298_ses-47_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2298,48,sub-Neurotech2298/ses-48/eeg/sub-Neurotech2298_ses-48_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2298,49,sub-Neurotech2298/ses-49/eeg/sub-Neurotech2298_ses-49_task-EEG_eeg.edf,5557452,5.3,381.0,0.11,28,381
 sub-Neurotech2298,50,sub-Neurotech2298/ses-50/eeg/sub-Neurotech2298_ses-50_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2298,51,sub-Neurotech2298/ses-51/eeg/sub-Neurotech2298_ses-51_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2298,52,sub-Neurotech2298/ses-52/eeg/sub-Neurotech2298_ses-52_task-EEG_eeg.edf,0,0.0,1.0,0.0,28,1
-sub-Neurotech2298,53,sub-Neurotech2298/ses-53/eeg/sub-Neurotech2298_ses-53_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2298,54,sub-Neurotech2298/ses-54/eeg/sub-Neurotech2298_ses-54_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2298,55,sub-Neurotech2298/ses-55/eeg/sub-Neurotech2298_ses-55_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2298,56,sub-Neurotech2298/ses-56/eeg/sub-Neurotech2298_ses-56_task-EEG_eeg.edf,6186598,5.9,431.0,0.12,28,431
@@ -22603,7 +22590,6 @@ sub-Neurotech2331,16,sub-Neurotech2331/ses-16/eeg/sub-Neurotech2331_ses-16_task-
 sub-Neurotech2331,17,sub-Neurotech2331/ses-17/eeg/sub-Neurotech2331_ses-17_task-EEG_eeg.edf,50646220,48.3,3501.0,0.97,28,3501
 sub-Neurotech2331,18,sub-Neurotech2331/ses-18/eeg/sub-Neurotech2331_ses-18_task-EEG_eeg.edf,5767168,5.5,396.0,0.11,28,396
 sub-Neurotech2331,19,sub-Neurotech2331/ses-19/eeg/sub-Neurotech2331_ses-19_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
-sub-Neurotech2331,20,sub-Neurotech2331/ses-20/eeg/sub-Neurotech2331_ses-20_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2331,21,sub-Neurotech2331/ses-21/eeg/sub-Neurotech2331_ses-21_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2331,22,sub-Neurotech2331/ses-22/eeg/sub-Neurotech2331_ses-22_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2331,23,sub-Neurotech2331/ses-23/eeg/sub-Neurotech2331_ses-23_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
@@ -22699,7 +22685,6 @@ sub-Neurotech2338,4,sub-Neurotech2338/ses-4/eeg/sub-Neurotech2338_ses-4_task-EEG
 sub-Neurotech2338,5,sub-Neurotech2338/ses-5/eeg/sub-Neurotech2338_ses-5_task-EEG_eeg.edf,116496793,111.1,8061.0,2.24,28,8061
 sub-Neurotech2338,6,sub-Neurotech2338/ses-6/eeg/sub-Neurotech2338_ses-6_task-EEG_eeg.edf,529321164,504.8,36618.0,10.17,28,36618
 sub-Neurotech2338,7,sub-Neurotech2338/ses-7/eeg/sub-Neurotech2338_ses-7_task-EEG_eeg.edf,255537971,243.7,17676.0,4.91,28,17676
-sub-Neurotech2338,8,sub-Neurotech2338/ses-8/eeg/sub-Neurotech2338_ses-8_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2339,1,sub-Neurotech2339/ses-1/eeg/sub-Neurotech2339_ses-1_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2339,2,sub-Neurotech2339/ses-2/eeg/sub-Neurotech2339_ses-2_task-EEG_eeg.edf,1186358886,1131.4,82064.0,22.8,28,82064
 sub-Neurotech2339,3,sub-Neurotech2339/ses-3/eeg/sub-Neurotech2339_ses-3_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
@@ -23050,7 +23035,6 @@ sub-Neurotech2352,31,sub-Neurotech2352/ses-31/eeg/sub-Neurotech2352_ses-31_task-
 sub-Neurotech2352,32,sub-Neurotech2352/ses-32/eeg/sub-Neurotech2352_ses-32_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2352,33,sub-Neurotech2352/ses-33/eeg/sub-Neurotech2352_ses-33_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2352,34,sub-Neurotech2352/ses-34/eeg/sub-Neurotech2352_ses-34_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
-sub-Neurotech2352,35,sub-Neurotech2352/ses-35/eeg/sub-Neurotech2352_ses-35_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2352,36,sub-Neurotech2352/ses-36/eeg/sub-Neurotech2352_ses-36_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2352,37,sub-Neurotech2352/ses-37/eeg/sub-Neurotech2352_ses-37_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2352,38,sub-Neurotech2352/ses-38/eeg/sub-Neurotech2352_ses-38_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
@@ -23997,7 +23981,6 @@ sub-Neurotech2386,734,sub-Neurotech2386/ses-734/eeg/sub-Neurotech2386_ses-734_ta
 sub-Neurotech2386,735,sub-Neurotech2386/ses-735/eeg/sub-Neurotech2386_ses-735_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2386,736,sub-Neurotech2386/ses-736/eeg/sub-Neurotech2386_ses-736_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2386,737,sub-Neurotech2386/ses-737/eeg/sub-Neurotech2386_ses-737_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
-sub-Neurotech2386,738,sub-Neurotech2386/ses-738/eeg/sub-Neurotech2386_ses-738_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2386,739,sub-Neurotech2386/ses-739/eeg/sub-Neurotech2386_ses-739_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2386,740,sub-Neurotech2386/ses-740/eeg/sub-Neurotech2386_ses-740_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2386,741,sub-Neurotech2386/ses-741/eeg/sub-Neurotech2386_ses-741_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
@@ -24172,7 +24155,6 @@ sub-Neurotech2386,909,sub-Neurotech2386/ses-909/eeg/sub-Neurotech2386_ses-909_ta
 sub-Neurotech2386,910,sub-Neurotech2386/ses-910/eeg/sub-Neurotech2386_ses-910_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2386,911,sub-Neurotech2386/ses-911/eeg/sub-Neurotech2386_ses-911_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2386,912,sub-Neurotech2386/ses-912/eeg/sub-Neurotech2386_ses-912_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
-sub-Neurotech2386,913,sub-Neurotech2386/ses-913/eeg/sub-Neurotech2386_ses-913_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2386,914,sub-Neurotech2386/ses-914/eeg/sub-Neurotech2386_ses-914_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2386,915,sub-Neurotech2386/ses-915/eeg/sub-Neurotech2386_ses-915_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2386,916,sub-Neurotech2386/ses-916/eeg/sub-Neurotech2386_ses-916_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
@@ -25380,7 +25362,6 @@ sub-Neurotech2386,2117,sub-Neurotech2386/ses-2117/eeg/sub-Neurotech2386_ses-2117
 sub-Neurotech2386,2118,sub-Neurotech2386/ses-2118/eeg/sub-Neurotech2386_ses-2118_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2386,2119,sub-Neurotech2386/ses-2119/eeg/sub-Neurotech2386_ses-2119_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2386,2120,sub-Neurotech2386/ses-2120/eeg/sub-Neurotech2386_ses-2120_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
-sub-Neurotech2386,2121,sub-Neurotech2386/ses-2121/eeg/sub-Neurotech2386_ses-2121_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2386,2122,sub-Neurotech2386/ses-2122/eeg/sub-Neurotech2386_ses-2122_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2386,2123,sub-Neurotech2386/ses-2123/eeg/sub-Neurotech2386_ses-2123_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2386,2124,sub-Neurotech2386/ses-2124/eeg/sub-Neurotech2386_ses-2124_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
@@ -25986,7 +25967,6 @@ sub-Neurotech2409,21,sub-Neurotech2409/ses-21/eeg/sub-Neurotech2409_ses-21_task-
 sub-Neurotech2409,22,sub-Neurotech2409/ses-22/eeg/sub-Neurotech2409_ses-22_task-EEG_eeg.edf,29045555,27.7,2011.0,0.56,28,2011
 sub-Neurotech2409,23,sub-Neurotech2409/ses-23/eeg/sub-Neurotech2409_ses-23_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2409,24,sub-Neurotech2409/ses-24/eeg/sub-Neurotech2409_ses-24_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
-sub-Neurotech2409,25,sub-Neurotech2409/ses-25/eeg/sub-Neurotech2409_ses-25_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2409,26,sub-Neurotech2409/ses-26/eeg/sub-Neurotech2409_ses-26_task-EEG_eeg.edf,31562137,30.1,2184.0,0.61,28,2184
 sub-Neurotech2410,1,sub-Neurotech2410/ses-1/eeg/sub-Neurotech2410_ses-1_task-EEG_eeg.edf,15099494,14.4,1045.0,0.29,28,1045
 sub-Neurotech2410,2,sub-Neurotech2410/ses-2/eeg/sub-Neurotech2410_ses-2_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
@@ -26225,7 +26205,6 @@ sub-Neurotech2436,25,sub-Neurotech2436/ses-25/eeg/sub-Neurotech2436_ses-25_task-
 sub-Neurotech2436,26,sub-Neurotech2436/ses-26/eeg/sub-Neurotech2436_ses-26_task-EEG_eeg.edf,73295462,69.9,5676.0,1.58,25,5676
 sub-Neurotech2436,27,sub-Neurotech2436/ses-27/eeg/sub-Neurotech2436_ses-27_task-EEG_eeg.edf,8178892,7.8,634.0,0.18,25,634
 sub-Neurotech2436,28,sub-Neurotech2436/ses-28/eeg/sub-Neurotech2436_ses-28_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
-sub-Neurotech2436,29,sub-Neurotech2436/ses-29/eeg/sub-Neurotech2436_ses-29_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2436,30,sub-Neurotech2436/ses-30/eeg/sub-Neurotech2436_ses-30_task-EEG_eeg.edf,629145,0.6,52.0,0.01,25,52
 sub-Neurotech2436,31,sub-Neurotech2436/ses-31/eeg/sub-Neurotech2436_ses-31_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2436,32,sub-Neurotech2436/ses-32/eeg/sub-Neurotech2436_ses-32_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
@@ -26351,7 +26330,6 @@ sub-Neurotech2436,151,sub-Neurotech2436/ses-151/eeg/sub-Neurotech2436_ses-151_ta
 sub-Neurotech2436,152,sub-Neurotech2436/ses-152/eeg/sub-Neurotech2436_ses-152_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2436,153,sub-Neurotech2436/ses-153/eeg/sub-Neurotech2436_ses-153_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2436,154,sub-Neurotech2436/ses-154/eeg/sub-Neurotech2436_ses-154_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
-sub-Neurotech2436,155,sub-Neurotech2436/ses-155/eeg/sub-Neurotech2436_ses-155_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2436,156,sub-Neurotech2436/ses-156/eeg/sub-Neurotech2436_ses-156_task-EEG_eeg.edf,19608371,18.7,1517.0,0.42,25,1517
 sub-Neurotech2436,157,sub-Neurotech2436/ses-157/eeg/sub-Neurotech2436_ses-157_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2436,158,sub-Neurotech2436/ses-158/eeg/sub-Neurotech2436_ses-158_task-EEG_eeg.edf,629145,0.6,51.0,0.01,25,51
@@ -27295,7 +27273,6 @@ sub-Neurotech2487,1,sub-Neurotech2487/ses-1/eeg/sub-Neurotech2487_ses-1_task-EEG
 sub-Neurotech2488,1,sub-Neurotech2488/ses-1/eeg/sub-Neurotech2488_ses-1_task-EEG_eeg.edf,1229769932,1172.8,85069.0,23.63,28,85069
 sub-Neurotech2489,1,sub-Neurotech2489/ses-1/eeg/sub-Neurotech2489_ses-1_task-EEG_eeg.edf,1447559168,1380.5,100134.0,27.82,28,100134
 sub-Neurotech2489,2,sub-Neurotech2489/ses-2/eeg/sub-Neurotech2489_ses-2_task-EEG_eeg.edf,10380902,9.9,719.0,0.2,28,719
-sub-Neurotech2489,3,sub-Neurotech2489/ses-3/eeg/sub-Neurotech2489_ses-3_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2489,4,sub-Neurotech2489/ses-4/eeg/sub-Neurotech2489_ses-4_task-EEG_eeg.edf,143130624,136.5,9901.0,2.75,28,9901
 sub-Neurotech2489,5,sub-Neurotech2489/ses-5/eeg/sub-Neurotech2489_ses-5_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2489,6,sub-Neurotech2489/ses-6/eeg/sub-Neurotech2489_ses-6_task-EEG_eeg.edf,1369020825,1305.6,0.0,0.0,0,0
@@ -27341,7 +27318,6 @@ sub-Neurotech2496,20,sub-Neurotech2496/ses-20/eeg/sub-Neurotech2496_ses-20_task-
 sub-Neurotech2496,21,sub-Neurotech2496/ses-21/eeg/sub-Neurotech2496_ses-21_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2496,22,sub-Neurotech2496/ses-22/eeg/sub-Neurotech2496_ses-22_task-EEG_eeg.edf,409783500,390.8,28345.0,7.87,28,28345
 sub-Neurotech2496,23,sub-Neurotech2496/ses-23/eeg/sub-Neurotech2496_ses-23_task-EEG_eeg.edf,22439526,21.4,1553.0,0.43,28,1553
-sub-Neurotech2496,24,sub-Neurotech2496/ses-24/eeg/sub-Neurotech2496_ses-24_task-EEG_eeg.edf,98146713,93.6,6791.0,1.89,28,6791
 sub-Neurotech2496,25,sub-Neurotech2496/ses-25/eeg/sub-Neurotech2496_ses-25_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2496,26,sub-Neurotech2496/ses-26/eeg/sub-Neurotech2496_ses-26_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2496,27,sub-Neurotech2496/ses-27/eeg/sub-Neurotech2496_ses-27_task-EEG_eeg.edf,300836454,286.9,20807.0,5.78,28,20807
@@ -27399,7 +27375,6 @@ sub-Neurotech2496,78,sub-Neurotech2496/ses-78/eeg/sub-Neurotech2496_ses-78_task-
 sub-Neurotech2498,1,sub-Neurotech2498/ses-1/eeg/sub-Neurotech2498_ses-1_task-EEG_eeg.edf,1800300134,1716.9,139341.0,38.71,25,139341
 sub-Neurotech2499,1,sub-Neurotech2499/ses-1/eeg/sub-Neurotech2499_ses-1_task-EEG_eeg.edf,237187891,226.2,17009.0,4.72,27,17009
 sub-Neurotech2499,2,sub-Neurotech2499/ses-2/eeg/sub-Neurotech2499_ses-2_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
-sub-Neurotech2499,3,sub-Neurotech2499/ses-3/eeg/sub-Neurotech2499_ses-3_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2499,4,sub-Neurotech2499/ses-4/eeg/sub-Neurotech2499_ses-4_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2499,5,sub-Neurotech2499/ses-5/eeg/sub-Neurotech2499_ses-5_task-EEG_eeg.edf,508769075,485.2,36488.0,10.14,27,36488
 sub-Neurotech2499,6,sub-Neurotech2499/ses-6/eeg/sub-Neurotech2499_ses-6_task-EEG_eeg.edf,149212364,142.3,10704.0,2.97,27,10704
@@ -27895,7 +27870,6 @@ sub-Neurotech2571,20,sub-Neurotech2571/ses-20/eeg/sub-Neurotech2571_ses-20_task-
 sub-Neurotech2571,21,sub-Neurotech2571/ses-21/eeg/sub-Neurotech2571_ses-21_task-EEG_eeg.edf,1558603366,1486.4,120634.0,33.51,25,120634
 sub-Neurotech2572,1,sub-Neurotech2572/ses-1/eeg/sub-Neurotech2572_ses-1_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2572,2,sub-Neurotech2572/ses-2/eeg/sub-Neurotech2572_ses-2_task-EEG_eeg.edf,1887436,1.8,131.0,0.04,28,131
-sub-Neurotech2572,3,sub-Neurotech2572/ses-3/eeg/sub-Neurotech2572_ses-3_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2572,4,sub-Neurotech2572/ses-4/eeg/sub-Neurotech2572_ses-4_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2572,5,sub-Neurotech2572/ses-5/eeg/sub-Neurotech2572_ses-5_task-EEG_eeg.edf,26109542,24.9,0.0,0.0,0,0
 sub-Neurotech2572,6,sub-Neurotech2572/ses-6/eeg/sub-Neurotech2572_ses-6_task-EEG_eeg.edf,927465472,884.5,64159.0,17.82,28,64159
@@ -28056,7 +28030,6 @@ sub-Neurotech2599,10,sub-Neurotech2599/ses-10/eeg/sub-Neurotech2599_ses-10_task-
 sub-Neurotech2599,11,sub-Neurotech2599/ses-11/eeg/sub-Neurotech2599_ses-11_task-EEG_eeg.edf,67528294,64.4,5225.0,1.45,25,5225
 sub-Neurotech2599,12,sub-Neurotech2599/ses-12/eeg/sub-Neurotech2599_ses-12_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2599,13,sub-Neurotech2599/ses-13/eeg/sub-Neurotech2599_ses-13_task-EEG_eeg.edf,69940019,66.7,5411.0,1.5,25,5411
-sub-Neurotech2599,14,sub-Neurotech2599/ses-14/eeg/sub-Neurotech2599_ses-14_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2599,15,sub-Neurotech2599/ses-15/eeg/sub-Neurotech2599_ses-15_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2599,16,sub-Neurotech2599/ses-16/eeg/sub-Neurotech2599_ses-16_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2599,17,sub-Neurotech2599/ses-17/eeg/sub-Neurotech2599_ses-17_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
@@ -28118,7 +28091,6 @@ sub-Neurotech2612,2,sub-Neurotech2612/ses-2/eeg/sub-Neurotech2612_ses-2_task-EEG
 sub-Neurotech2612,3,sub-Neurotech2612/ses-3/eeg/sub-Neurotech2612_ses-3_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2612,4,sub-Neurotech2612/ses-4/eeg/sub-Neurotech2612_ses-4_task-EEG_eeg.edf,235824742,224.9,16915.0,4.7,27,16915
 sub-Neurotech2612,5,sub-Neurotech2612/ses-5/eeg/sub-Neurotech2612_ses-5_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
-sub-Neurotech2612,6,sub-Neurotech2612/ses-6/eeg/sub-Neurotech2612_ses-6_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2612,7,sub-Neurotech2612/ses-7/eeg/sub-Neurotech2612_ses-7_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2612,8,sub-Neurotech2612/ses-8/eeg/sub-Neurotech2612_ses-8_task-EEG_eeg.edf,411566080,392.5,29516.0,8.2,27,29516
 sub-Neurotech2612,9,sub-Neurotech2612/ses-9/eeg/sub-Neurotech2612_ses-9_task-EEG_eeg.edf,207303475,197.7,14864.0,4.13,27,14864
@@ -28822,7 +28794,6 @@ sub-Neurotech2628,625,sub-Neurotech2628/ses-625/eeg/sub-Neurotech2628_ses-625_ta
 sub-Neurotech2628,626,sub-Neurotech2628/ses-626/eeg/sub-Neurotech2628_ses-626_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2628,627,sub-Neurotech2628/ses-627/eeg/sub-Neurotech2628_ses-627_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2628,628,sub-Neurotech2628/ses-628/eeg/sub-Neurotech2628_ses-628_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
-sub-Neurotech2628,629,sub-Neurotech2628/ses-629/eeg/sub-Neurotech2628_ses-629_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2628,630,sub-Neurotech2628/ses-630/eeg/sub-Neurotech2628_ses-630_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2628,631,sub-Neurotech2628/ses-631/eeg/sub-Neurotech2628_ses-631_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2628,632,sub-Neurotech2628/ses-632/eeg/sub-Neurotech2628_ses-632_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
@@ -28897,7 +28868,6 @@ sub-Neurotech2628,700,sub-Neurotech2628/ses-700/eeg/sub-Neurotech2628_ses-700_ta
 sub-Neurotech2628,701,sub-Neurotech2628/ses-701/eeg/sub-Neurotech2628_ses-701_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2628,702,sub-Neurotech2628/ses-702/eeg/sub-Neurotech2628_ses-702_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2628,703,sub-Neurotech2628/ses-703/eeg/sub-Neurotech2628_ses-703_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
-sub-Neurotech2630,1,sub-Neurotech2630/ses-1/eeg/sub-Neurotech2630_ses-1_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2630,2,sub-Neurotech2630/ses-2/eeg/sub-Neurotech2630_ses-2_task-EEG_eeg.edf,315306803,300.7,26501.0,7.36,23,26501
 sub-Neurotech2630,3,sub-Neurotech2630/ses-3/eeg/sub-Neurotech2630_ses-3_task-EEG_eeg.edf,394264576,376.0,33141.0,9.21,23,33141
 sub-Neurotech2630,4,sub-Neurotech2630/ses-4/eeg/sub-Neurotech2630_ses-4_task-EEG_eeg.edf,118174515,112.7,9933.0,2.76,23,9933
@@ -29106,7 +29076,6 @@ sub-Neurotech2656,6,sub-Neurotech2656/ses-6/eeg/sub-Neurotech2656_ses-6_task-EEG
 sub-Neurotech2656,7,sub-Neurotech2656/ses-7/eeg/sub-Neurotech2656_ses-7_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2656,8,sub-Neurotech2656/ses-8/eeg/sub-Neurotech2656_ses-8_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2656,9,sub-Neurotech2656/ses-9/eeg/sub-Neurotech2656_ses-9_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
-sub-Neurotech2656,10,sub-Neurotech2656/ses-10/eeg/sub-Neurotech2656_ses-10_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2656,11,sub-Neurotech2656/ses-11/eeg/sub-Neurotech2656_ses-11_task-EEG_eeg.edf,1004116377,957.6,0.0,0.0,0,0
 sub-Neurotech2656,12,sub-Neurotech2656/ses-12/eeg/sub-Neurotech2656_ses-12_task-EEG_eeg.edf,765879910,730.4,52981.0,14.72,28,52981
 sub-Neurotech2657,1,sub-Neurotech2657/ses-1/eeg/sub-Neurotech2657_ses-1_task-EEG_eeg.edf,2322805555,2215.2,160680.0,44.63,28,160680
@@ -30245,7 +30214,6 @@ sub-Neurotech2785,6,sub-Neurotech2785/ses-6/eeg/sub-Neurotech2785_ses-6_task-EEG
 sub-Neurotech2785,7,sub-Neurotech2785/ses-7/eeg/sub-Neurotech2785_ses-7_task-EEG_eeg.edf,287100108,273.8,20586.0,5.72,27,20586
 sub-Neurotech2785,8,sub-Neurotech2785/ses-8/eeg/sub-Neurotech2785_ses-8_task-EEG_eeg.edf,548929536,523.5,39364.0,10.93,27,39364
 sub-Neurotech2785,9,sub-Neurotech2785/ses-9/eeg/sub-Neurotech2785_ses-9_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
-sub-Neurotech2785,10,sub-Neurotech2785/ses-10/eeg/sub-Neurotech2785_ses-10_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2785,11,sub-Neurotech2785/ses-11/eeg/sub-Neurotech2785_ses-11_task-EEG_eeg.edf,1233125376,1176.0,88437.0,24.57,27,88437
 sub-Neurotech2785,12,sub-Neurotech2785/ses-12/eeg/sub-Neurotech2785_ses-12_task-EEG_eeg.edf,25270681,24.1,1811.0,0.5,27,1811
 sub-Neurotech2786,1,sub-Neurotech2786/ses-1/eeg/sub-Neurotech2786_ses-1_task-EEG_eeg.edf,1362519654,1299.4,94250.0,26.18,28,94250
@@ -30264,7 +30232,6 @@ sub-Neurotech2790,2,sub-Neurotech2790/ses-2/eeg/sub-Neurotech2790_ses-2_task-EEG
 sub-Neurotech2790,3,sub-Neurotech2790/ses-3/eeg/sub-Neurotech2790_ses-3_task-EEG_eeg.edf,18769510,17.9,1299.0,0.36,28,1299
 sub-Neurotech2790,4,sub-Neurotech2790/ses-4/eeg/sub-Neurotech2790_ses-4_task-EEG_eeg.edf,955672166,911.4,66111.0,18.36,28,66111
 sub-Neurotech2790,5,sub-Neurotech2790/ses-5/eeg/sub-Neurotech2790_ses-5_task-EEG_eeg.edf,6501171,6.2,448.0,0.12,28,448
-sub-Neurotech2790,6,sub-Neurotech2790/ses-6/eeg/sub-Neurotech2790_ses-6_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2790,7,sub-Neurotech2790/ses-7/eeg/sub-Neurotech2790_ses-7_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2790,8,sub-Neurotech2790/ses-8/eeg/sub-Neurotech2790_ses-8_task-EEG_eeg.edf,50331648,48.0,3484.0,0.97,28,3484
 sub-Neurotech2790,9,sub-Neurotech2790/ses-9/eeg/sub-Neurotech2790_ses-9_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
@@ -30276,7 +30243,6 @@ sub-Neurotech2792,2,sub-Neurotech2792/ses-2/eeg/sub-Neurotech2792_ses-2_task-EEG
 sub-Neurotech2792,3,sub-Neurotech2792/ses-3/eeg/sub-Neurotech2792_ses-3_task-EEG_eeg.edf,7969177,7.6,548.0,0.15,28,548
 sub-Neurotech2792,4,sub-Neurotech2792/ses-4/eeg/sub-Neurotech2792_ses-4_task-EEG_eeg.edf,451831398,430.9,31252.0,8.68,28,31252
 sub-Neurotech2792,5,sub-Neurotech2792/ses-5/eeg/sub-Neurotech2792_ses-5_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
-sub-Neurotech2792,6,sub-Neurotech2792/ses-6/eeg/sub-Neurotech2792_ses-6_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2792,7,sub-Neurotech2792/ses-7/eeg/sub-Neurotech2792_ses-7_task-EEG_eeg.edf,57566822,54.9,3985.0,1.11,28,3985
 sub-Neurotech2792,8,sub-Neurotech2792/ses-8/eeg/sub-Neurotech2792_ses-8_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2792,9,sub-Neurotech2792/ses-9/eeg/sub-Neurotech2792_ses-9_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
@@ -30309,7 +30275,6 @@ sub-Neurotech2797,12,sub-Neurotech2797/ses-12/eeg/sub-Neurotech2797_ses-12_task-
 sub-Neurotech2797,13,sub-Neurotech2797/ses-13/eeg/sub-Neurotech2797_ses-13_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2797,14,sub-Neurotech2797/ses-14/eeg/sub-Neurotech2797_ses-14_task-EEG_eeg.edf,34603008,33.0,2392.0,0.66,28,2392
 sub-Neurotech2797,15,sub-Neurotech2797/ses-15/eeg/sub-Neurotech2797_ses-15_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
-sub-Neurotech2797,16,sub-Neurotech2797/ses-16/eeg/sub-Neurotech2797_ses-16_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2797,17,sub-Neurotech2797/ses-17/eeg/sub-Neurotech2797_ses-17_task-EEG_eeg.edf,14889779,14.2,1031.0,0.29,28,1031
 sub-Neurotech2797,18,sub-Neurotech2797/ses-18/eeg/sub-Neurotech2797_ses-18_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2797,19,sub-Neurotech2797/ses-19/eeg/sub-Neurotech2797_ses-19_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
@@ -30424,7 +30389,6 @@ sub-Neurotech2815,9,sub-Neurotech2815/ses-9/eeg/sub-Neurotech2815_ses-9_task-EEG
 sub-Neurotech2815,10,sub-Neurotech2815/ses-10/eeg/sub-Neurotech2815_ses-10_task-EEG_eeg.edf,19398656,18.5,1628.0,0.45,23,1628
 sub-Neurotech2815,11,sub-Neurotech2815/ses-11/eeg/sub-Neurotech2815_ses-11_task-EEG_eeg.edf,524288,0.5,40.0,0.01,23,40
 sub-Neurotech2815,12,sub-Neurotech2815/ses-12/eeg/sub-Neurotech2815_ses-12_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
-sub-Neurotech2815,13,sub-Neurotech2815/ses-13/eeg/sub-Neurotech2815_ses-13_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2815,14,sub-Neurotech2815/ses-14/eeg/sub-Neurotech2815_ses-14_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2815,15,sub-Neurotech2815/ses-15/eeg/sub-Neurotech2815_ses-15_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2815,16,sub-Neurotech2815/ses-16/eeg/sub-Neurotech2815_ses-16_task-EEG_eeg.edf,209715,0.2,16.0,0.0,23,16
@@ -31333,7 +31297,6 @@ sub-Neurotech2885,23,sub-Neurotech2885/ses-23/eeg/sub-Neurotech2885_ses-23_task-
 sub-Neurotech2885,24,sub-Neurotech2885/ses-24/eeg/sub-Neurotech2885_ses-24_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2885,25,sub-Neurotech2885/ses-25/eeg/sub-Neurotech2885_ses-25_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2885,26,sub-Neurotech2885/ses-26/eeg/sub-Neurotech2885_ses-26_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
-sub-Neurotech2885,27,sub-Neurotech2885/ses-27/eeg/sub-Neurotech2885_ses-27_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2885,28,sub-Neurotech2885/ses-28/eeg/sub-Neurotech2885_ses-28_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2885,29,sub-Neurotech2885/ses-29/eeg/sub-Neurotech2885_ses-29_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2885,30,sub-Neurotech2885/ses-30/eeg/sub-Neurotech2885_ses-30_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
@@ -31361,7 +31324,6 @@ sub-Neurotech2885,51,sub-Neurotech2885/ses-51/eeg/sub-Neurotech2885_ses-51_task-
 sub-Neurotech2885,52,sub-Neurotech2885/ses-52/eeg/sub-Neurotech2885_ses-52_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2885,53,sub-Neurotech2885/ses-53/eeg/sub-Neurotech2885_ses-53_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2885,54,sub-Neurotech2885/ses-54/eeg/sub-Neurotech2885_ses-54_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
-sub-Neurotech2885,55,sub-Neurotech2885/ses-55/eeg/sub-Neurotech2885_ses-55_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2885,56,sub-Neurotech2885/ses-56/eeg/sub-Neurotech2885_ses-56_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2885,57,sub-Neurotech2885/ses-57/eeg/sub-Neurotech2885_ses-57_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2885,58,sub-Neurotech2885/ses-58/eeg/sub-Neurotech2885_ses-58_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
@@ -31647,7 +31609,6 @@ sub-Neurotech2922,2,sub-Neurotech2922/ses-2/eeg/sub-Neurotech2922_ses-2_task-EEG
 sub-Neurotech2922,3,sub-Neurotech2922/ses-3/eeg/sub-Neurotech2922_ses-3_task-EEG_eeg.edf,17301504,16.5,1287.0,0.36,26,1287
 sub-Neurotech2922,4,sub-Neurotech2922/ses-4/eeg/sub-Neurotech2922_ses-4_task-EEG_eeg.edf,24641536,23.5,1907.0,0.53,25,1907
 sub-Neurotech2922,5,sub-Neurotech2922/ses-5/eeg/sub-Neurotech2922_ses-5_task-EEG_eeg.edf,23592960,22.5,1824.0,0.51,25,1824
-sub-Neurotech2924,1,sub-Neurotech2924/ses-1/eeg/sub-Neurotech2924_ses-1_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2924,2,sub-Neurotech2924/ses-2/eeg/sub-Neurotech2924_ses-2_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2924,3,sub-Neurotech2924/ses-3/eeg/sub-Neurotech2924_ses-3_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2924,4,sub-Neurotech2924/ses-4/eeg/sub-Neurotech2924_ses-4_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
@@ -32054,7 +32015,6 @@ sub-Neurotech2976,17,sub-Neurotech2976/ses-17/eeg/sub-Neurotech2976_ses-17_task-
 sub-Neurotech2976,18,sub-Neurotech2976/ses-18/eeg/sub-Neurotech2976_ses-18_task-EEG_eeg.edf,131072000,125.0,9068.0,2.52,28,9068
 sub-Neurotech2976,19,sub-Neurotech2976/ses-19/eeg/sub-Neurotech2976_ses-19_task-EEG_eeg.edf,653053132,622.8,45176.0,12.55,28,45176
 sub-Neurotech2978,1,sub-Neurotech2978/ses-1/eeg/sub-Neurotech2978_ses-1_task-EEG_eeg.edf,60397977,57.6,4677.0,1.3,25,4677
-sub-Neurotech2978,2,sub-Neurotech2978/ses-2/eeg/sub-Neurotech2978_ses-2_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech2978,3,sub-Neurotech2978/ses-3/eeg/sub-Neurotech2978_ses-3_task-EEG_eeg.edf,741238374,706.9,57374.0,15.94,25,57374
 sub-Neurotech2978,4,sub-Neurotech2978/ses-4/eeg/sub-Neurotech2978_ses-4_task-EEG_eeg.edf,214853222,204.9,16626.0,4.62,25,16626
 sub-Neurotech2978,5,sub-Neurotech2978/ses-5/eeg/sub-Neurotech2978_ses-5_task-EEG_eeg.edf,957140172,912.8,74079.0,20.58,25,74079
@@ -32237,7 +32197,6 @@ sub-Neurotech3011,3,sub-Neurotech3011/ses-3/eeg/sub-Neurotech3011_ses-3_task-EEG
 sub-Neurotech3011,4,sub-Neurotech3011/ses-4/eeg/sub-Neurotech3011_ses-4_task-EEG_eeg.edf,15204352,14.5,1054.0,0.29,28,1054
 sub-Neurotech3011,5,sub-Neurotech3011/ses-5/eeg/sub-Neurotech3011_ses-5_task-EEG_eeg.edf,915511705,873.1,63327.0,17.59,28,63327
 sub-Neurotech3011,6,sub-Neurotech3011/ses-6/eeg/sub-Neurotech3011_ses-6_task-EEG_eeg.edf,71827456,68.5,4965.0,1.38,28,4965
-sub-Neurotech3011,7,sub-Neurotech3011/ses-7/eeg/sub-Neurotech3011_ses-7_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech3011,8,sub-Neurotech3011/ses-8/eeg/sub-Neurotech3011_ses-8_task-EEG_eeg.edf,367106457,350.1,25391.0,7.05,28,25391
 sub-Neurotech3011,9,sub-Neurotech3011/ses-9/eeg/sub-Neurotech3011_ses-9_task-EEG_eeg.edf,511075942,487.4,35353.0,9.82,28,35353
 sub-Neurotech3013,1,sub-Neurotech3013/ses-1/eeg/sub-Neurotech3013_ses-1_task-EEG_eeg.edf,999083212,952.8,69108.0,19.2,28,69108
@@ -32673,7 +32632,6 @@ sub-Neurotech3064,23,sub-Neurotech3064/ses-23/eeg/sub-Neurotech3064_ses-23_task-
 sub-Neurotech3064,24,sub-Neurotech3064/ses-24/eeg/sub-Neurotech3064_ses-24_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech3064,25,sub-Neurotech3064/ses-25/eeg/sub-Neurotech3064_ses-25_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech3064,26,sub-Neurotech3064/ses-26/eeg/sub-Neurotech3064_ses-26_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
-sub-Neurotech3064,27,sub-Neurotech3064/ses-27/eeg/sub-Neurotech3064_ses-27_task-EEG_eeg.edf,0,0.0,1.0,0.0,28,1
 sub-Neurotech3064,28,sub-Neurotech3064/ses-28/eeg/sub-Neurotech3064_ses-28_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech3064,29,sub-Neurotech3064/ses-29/eeg/sub-Neurotech3064_ses-29_task-EEG_eeg.edf,350224384,334.0,24227.0,6.73,28,24227
 sub-Neurotech3064,30,sub-Neurotech3064/ses-30/eeg/sub-Neurotech3064_ses-30_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
@@ -33292,7 +33250,6 @@ sub-Neurotech3105,93,sub-Neurotech3105/ses-93/eeg/sub-Neurotech3105_ses-93_task-
 sub-Neurotech3105,94,sub-Neurotech3105/ses-94/eeg/sub-Neurotech3105_ses-94_task-EEG_eeg.edf,70883737,67.6,5485.0,1.52,25,5485
 sub-Neurotech3105,95,sub-Neurotech3105/ses-95/eeg/sub-Neurotech3105_ses-95_task-EEG_eeg.edf,7864320,7.5,606.0,0.17,25,606
 sub-Neurotech3105,96,sub-Neurotech3105/ses-96/eeg/sub-Neurotech3105_ses-96_task-EEG_eeg.edf,1887436,1.8,149.0,0.04,25,149
-sub-Neurotech3105,97,sub-Neurotech3105/ses-97/eeg/sub-Neurotech3105_ses-97_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech3105,98,sub-Neurotech3105/ses-98/eeg/sub-Neurotech3105_ses-98_task-EEG_eeg.edf,2831155,2.7,217.0,0.06,25,217
 sub-Neurotech3105,99,sub-Neurotech3105/ses-99/eeg/sub-Neurotech3105_ses-99_task-EEG_eeg.edf,10066329,9.6,780.0,0.22,25,780
 sub-Neurotech3105,100,sub-Neurotech3105/ses-100/eeg/sub-Neurotech3105_ses-100_task-EEG_eeg.edf,3879731,3.7,296.0,0.08,25,296
@@ -34681,7 +34638,6 @@ sub-Neurotech3294,4,sub-Neurotech3294/ses-4/eeg/sub-Neurotech3294_ses-4_task-EEG
 sub-Neurotech3294,5,sub-Neurotech3294/ses-5/eeg/sub-Neurotech3294_ses-5_task-EEG_eeg.edf,734003,0.7,52.0,0.01,28,52
 sub-Neurotech3294,6,sub-Neurotech3294/ses-6/eeg/sub-Neurotech3294_ses-6_task-EEG_eeg.edf,104857,0.1,6.0,0.0,28,6
 sub-Neurotech3294,7,sub-Neurotech3294/ses-7/eeg/sub-Neurotech3294_ses-7_task-EEG_eeg.edf,1022361600,975.0,70723.0,19.65,28,70723
-sub-Neurotech3295,1,sub-Neurotech3295/ses-1/eeg/sub-Neurotech3295_ses-1_task-EEG_eeg.edf,17930649,17.1,0.0,0.0,0,0
 sub-Neurotech3296,1,sub-Neurotech3296/ses-1/eeg/sub-Neurotech3296_ses-1_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech3296,2,sub-Neurotech3296/ses-2/eeg/sub-Neurotech3296_ses-2_task-EEG_eeg.edf,564448460,538.3,43689.0,12.14,25,43689
 sub-Neurotech3296,3,sub-Neurotech3296/ses-3/eeg/sub-Neurotech3296_ses-3_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
@@ -35501,7 +35457,6 @@ sub-Neurotech3407,22,sub-Neurotech3407/ses-22/eeg/sub-Neurotech3407_ses-22_task-
 sub-Neurotech3407,23,sub-Neurotech3407/ses-23/eeg/sub-Neurotech3407_ses-23_task-EEG_eeg.edf,11324620,10.8,782.0,0.22,28,782
 sub-Neurotech3407,24,sub-Neurotech3407/ses-24/eeg/sub-Neurotech3407_ses-24_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech3407,25,sub-Neurotech3407/ses-25/eeg/sub-Neurotech3407_ses-25_task-EEG_eeg.edf,204472320,195.0,14142.0,3.93,28,14142
-sub-Neurotech3407,26,sub-Neurotech3407/ses-26/eeg/sub-Neurotech3407_ses-26_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech3407,27,sub-Neurotech3407/ses-27/eeg/sub-Neurotech3407_ses-27_task-EEG_eeg.edf,170603315,162.7,11801.0,3.28,28,11801
 sub-Neurotech3407,28,sub-Neurotech3407/ses-28/eeg/sub-Neurotech3407_ses-28_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech3407,29,sub-Neurotech3407/ses-29/eeg/sub-Neurotech3407_ses-29_task-EEG_eeg.edf,793562316,756.8,54894.0,15.25,28,54894
@@ -35665,7 +35620,6 @@ sub-Neurotech3436,6,sub-Neurotech3436/ses-6/eeg/sub-Neurotech3436_ses-6_task-EEG
 sub-Neurotech3437,1,sub-Neurotech3437/ses-1/eeg/sub-Neurotech3437_ses-1_task-EEG_eeg.edf,552180121,526.6,38194.0,10.61,28,38194
 sub-Neurotech3437,2,sub-Neurotech3437/ses-2/eeg/sub-Neurotech3437_ses-2_task-EEG_eeg.edf,154350387,147.2,10678.0,2.97,28,10678
 sub-Neurotech3437,3,sub-Neurotech3437/ses-3/eeg/sub-Neurotech3437_ses-3_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
-sub-Neurotech3437,4,sub-Neurotech3437/ses-4/eeg/sub-Neurotech3437_ses-4_task-EEG_eeg.edf,569376768,543.0,39389.0,10.94,28,39389
 sub-Neurotech3437,5,sub-Neurotech3437/ses-5/eeg/sub-Neurotech3437_ses-5_task-EEG_eeg.edf,113141350,107.9,7825.0,2.17,28,7825
 sub-Neurotech3437,6,sub-Neurotech3437/ses-6/eeg/sub-Neurotech3437_ses-6_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech3437,7,sub-Neurotech3437/ses-7/eeg/sub-Neurotech3437_ses-7_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
@@ -36077,7 +36031,6 @@ sub-Neurotech3473,3,sub-Neurotech3473/ses-3/eeg/sub-Neurotech3473_ses-3_task-EEG
 sub-Neurotech3474,1,sub-Neurotech3474/ses-1/eeg/sub-Neurotech3474_ses-1_task-EEG_eeg.edf,38482739,36.7,2663.0,0.74,28,2663
 sub-Neurotech3475,1,sub-Neurotech3475/ses-1/eeg/sub-Neurotech3475_ses-1_task-EEG_eeg.edf,585419980,558.3,40498.0,11.25,28,40498
 sub-Neurotech3475,2,sub-Neurotech3475/ses-2/eeg/sub-Neurotech3475_ses-2_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
-sub-Neurotech3475,3,sub-Neurotech3475/ses-3/eeg/sub-Neurotech3475_ses-3_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech3475,4,sub-Neurotech3475/ses-4/eeg/sub-Neurotech3475_ses-4_task-EEG_eeg.edf,430230732,410.3,29764.0,8.27,28,29764
 sub-Neurotech3476,1,sub-Neurotech3476/ses-1/eeg/sub-Neurotech3476_ses-1_task-EEG_eeg.edf,59663974,56.9,4130.0,1.15,28,4130
 sub-Neurotech3476,2,sub-Neurotech3476/ses-2/eeg/sub-Neurotech3476_ses-2_task-EEG_eeg.edf,3567570124,3402.3,246788.0,68.55,28,246788
@@ -36506,7 +36459,6 @@ sub-Neurotech3523,27,sub-Neurotech3523/ses-27/eeg/sub-Neurotech3523_ses-27_task-
 sub-Neurotech3523,28,sub-Neurotech3523/ses-28/eeg/sub-Neurotech3523_ses-28_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech3523,29,sub-Neurotech3523/ses-29/eeg/sub-Neurotech3523_ses-29_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech3523,30,sub-Neurotech3523/ses-30/eeg/sub-Neurotech3523_ses-30_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
-sub-Neurotech3523,31,sub-Neurotech3523/ses-31/eeg/sub-Neurotech3523_ses-31_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech3523,32,sub-Neurotech3523/ses-32/eeg/sub-Neurotech3523_ses-32_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech3523,33,sub-Neurotech3523/ses-33/eeg/sub-Neurotech3523_ses-33_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech3523,34,sub-Neurotech3523/ses-34/eeg/sub-Neurotech3523_ses-34_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
@@ -37098,7 +37050,6 @@ sub-Neurotech3544,85,sub-Neurotech3544/ses-85/eeg/sub-Neurotech3544_ses-85_task-
 sub-Neurotech3544,86,sub-Neurotech3544/ses-86/eeg/sub-Neurotech3544_ses-86_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech3544,87,sub-Neurotech3544/ses-87/eeg/sub-Neurotech3544_ses-87_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech3544,88,sub-Neurotech3544/ses-88/eeg/sub-Neurotech3544_ses-88_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
-sub-Neurotech3544,89,sub-Neurotech3544/ses-89/eeg/sub-Neurotech3544_ses-89_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech3544,90,sub-Neurotech3544/ses-90/eeg/sub-Neurotech3544_ses-90_task-EEG_eeg.edf,655045427,624.7,45316.0,12.59,28,45316
 sub-Neurotech3545,1,sub-Neurotech3545/ses-1/eeg/sub-Neurotech3545_ses-1_task-EEG_eeg.edf,4928307,4.7,342.0,0.1,28,342
 sub-Neurotech3545,2,sub-Neurotech3545/ses-2/eeg/sub-Neurotech3545_ses-2_task-EEG_eeg.edf,274622054,261.9,18996.0,5.28,28,18996
@@ -37158,12 +37109,10 @@ sub-Neurotech3550,10,sub-Neurotech3550/ses-10/eeg/sub-Neurotech3550_ses-10_task-
 sub-Neurotech3550,11,sub-Neurotech3550/ses-11/eeg/sub-Neurotech3550_ses-11_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech3550,12,sub-Neurotech3550/ses-12/eeg/sub-Neurotech3550_ses-12_task-EEG_eeg.edf,974651392,929.5,72564.0,20.16,26,72564
 sub-Neurotech3550,13,sub-Neurotech3550/ses-13/eeg/sub-Neurotech3550_ses-13_task-EEG_eeg.edf,74239180,70.8,5525.0,1.53,26,5525
-sub-Neurotech3550,14,sub-Neurotech3550/ses-14/eeg/sub-Neurotech3550_ses-14_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech3550,15,sub-Neurotech3550/ses-15/eeg/sub-Neurotech3550_ses-15_task-EEG_eeg.edf,2411724,2.3,182.0,0.05,26,182
 sub-Neurotech3550,16,sub-Neurotech3550/ses-16/eeg/sub-Neurotech3550_ses-16_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech3550,17,sub-Neurotech3550/ses-17/eeg/sub-Neurotech3550_ses-17_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech3550,18,sub-Neurotech3550/ses-18/eeg/sub-Neurotech3550_ses-18_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
-sub-Neurotech3550,19,sub-Neurotech3550/ses-19/eeg/sub-Neurotech3550_ses-19_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech3550,20,sub-Neurotech3550/ses-20/eeg/sub-Neurotech3550_ses-20_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech3550,21,sub-Neurotech3550/ses-21/eeg/sub-Neurotech3550_ses-21_task-EEG_eeg.edf,556688998,530.9,41447.0,11.51,26,41447
 sub-Neurotech3550,22,sub-Neurotech3550/ses-22/eeg/sub-Neurotech3550_ses-22_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
@@ -37204,7 +37153,6 @@ sub-Neurotech3556,4,sub-Neurotech3556/ses-4/eeg/sub-Neurotech3556_ses-4_task-EEG
 sub-Neurotech3556,5,sub-Neurotech3556/ses-5/eeg/sub-Neurotech3556_ses-5_task-EEG_eeg.edf,3460300,3.3,236.0,0.07,28,236
 sub-Neurotech3557,1,sub-Neurotech3557/ses-1/eeg/sub-Neurotech3557_ses-1_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech3557,2,sub-Neurotech3557/ses-2/eeg/sub-Neurotech3557_ses-2_task-EEG_eeg.edf,895483904,854.0,72172.0,20.05,24,72172
-sub-Neurotech3557,3,sub-Neurotech3557/ses-3/eeg/sub-Neurotech3557_ses-3_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech3558,1,sub-Neurotech3558/ses-1/eeg/sub-Neurotech3558_ses-1_task-EEG_eeg.edf,864341196,824.3,66900.0,18.58,25,66900
 sub-Neurotech3559,1,sub-Neurotech3559/ses-1/eeg/sub-Neurotech3559_ses-1_task-EEG_eeg.edf,1250951168,1193.0,96825.0,26.9,25,96825
 sub-Neurotech3559,2,sub-Neurotech3559/ses-2/eeg/sub-Neurotech3559_ses-2_task-EEG_eeg.edf,2656147865,2533.1,205587.0,57.11,25,205587
@@ -38170,7 +38118,6 @@ sub-Neurotech3604,1,sub-Neurotech3604/ses-1/eeg/sub-Neurotech3604_ses-1_task-EEG
 sub-Neurotech3604,2,sub-Neurotech3604/ses-2/eeg/sub-Neurotech3604_ses-2_task-EEG_eeg.edf,825124454,786.9,57081.0,15.86,28,57081
 sub-Neurotech3604,3,sub-Neurotech3604/ses-3/eeg/sub-Neurotech3604_ses-3_task-EEG_eeg.edf,22124953,21.1,1528.0,0.42,28,1528
 sub-Neurotech3604,4,sub-Neurotech3604/ses-4/eeg/sub-Neurotech3604_ses-4_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
-sub-Neurotech3604,5,sub-Neurotech3604/ses-5/eeg/sub-Neurotech3604_ses-5_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech3604,6,sub-Neurotech3604/ses-6/eeg/sub-Neurotech3604_ses-6_task-EEG_eeg.edf,1095237632,1044.5,75764.0,21.05,28,75764
 sub-Neurotech3604,7,sub-Neurotech3604/ses-7/eeg/sub-Neurotech3604_ses-7_task-EEG_eeg.edf,9856614,9.4,681.0,0.19,28,681
 sub-Neurotech3604,8,sub-Neurotech3604/ses-8/eeg/sub-Neurotech3604_ses-8_task-EEG_eeg.edf,143340339,136.7,9912.0,2.75,28,9912
@@ -38798,7 +38745,6 @@ sub-Neurotech3674,3,sub-Neurotech3674/ses-3/eeg/sub-Neurotech3674_ses-3_task-EEG
 sub-Neurotech3674,4,sub-Neurotech3674/ses-4/eeg/sub-Neurotech3674_ses-4_task-EEG_eeg.edf,314572,0.3,24.0,0.01,28,24
 sub-Neurotech3674,5,sub-Neurotech3674/ses-5/eeg/sub-Neurotech3674_ses-5_task-EEG_eeg.edf,961544192,917.0,66518.0,18.48,28,66518
 sub-Neurotech3675,1,sub-Neurotech3675/ses-1/eeg/sub-Neurotech3675_ses-1_task-EEG_eeg.edf,66689433,63.6,5377.0,1.49,24,5377
-sub-Neurotech3675,2,sub-Neurotech3675/ses-2/eeg/sub-Neurotech3675_ses-2_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech3675,3,sub-Neurotech3675/ses-3/eeg/sub-Neurotech3675_ses-3_task-EEG_eeg.edf,5033164,4.8,402.0,0.11,24,402
 sub-Neurotech3675,4,sub-Neurotech3675/ses-4/eeg/sub-Neurotech3675_ses-4_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech3675,5,sub-Neurotech3675/ses-5/eeg/sub-Neurotech3675_ses-5_task-EEG_eeg.edf,5347737,5.1,429.0,0.12,24,429
@@ -39130,7 +39076,6 @@ sub-Neurotech3738,21,sub-Neurotech3738/ses-21/eeg/sub-Neurotech3738_ses-21_task-
 sub-Neurotech3738,22,sub-Neurotech3738/ses-22/eeg/sub-Neurotech3738_ses-22_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech3738,23,sub-Neurotech3738/ses-23/eeg/sub-Neurotech3738_ses-23_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech3738,24,sub-Neurotech3738/ses-24/eeg/sub-Neurotech3738_ses-24_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
-sub-Neurotech3738,25,sub-Neurotech3738/ses-25/eeg/sub-Neurotech3738_ses-25_task-EEG_eeg.edf,734003,0.7,49.0,0.01,28,49
 sub-Neurotech3738,26,sub-Neurotech3738/ses-26/eeg/sub-Neurotech3738_ses-26_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech3738,27,sub-Neurotech3738/ses-27/eeg/sub-Neurotech3738_ses-27_task-EEG_eeg.edf,111358771,106.2,7705.0,2.14,28,7705
 sub-Neurotech3738,28,sub-Neurotech3738/ses-28/eeg/sub-Neurotech3738_ses-28_task-EEG_eeg.edf,497759027,474.7,0.0,0.0,0,0
@@ -40627,7 +40572,6 @@ sub-Neurotech3835,5,sub-Neurotech3835/ses-5/eeg/sub-Neurotech3835_ses-5_task-EEG
 sub-Neurotech3835,6,sub-Neurotech3835/ses-6/eeg/sub-Neurotech3835_ses-6_task-EEG_eeg.edf,214119219,204.2,14814.0,4.12,28,14814
 sub-Neurotech3835,7,sub-Neurotech3835/ses-7/eeg/sub-Neurotech3835_ses-7_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech3835,8,sub-Neurotech3835/ses-8/eeg/sub-Neurotech3835_ses-8_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
-sub-Neurotech3835,9,sub-Neurotech3835/ses-9/eeg/sub-Neurotech3835_ses-9_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech3835,10,sub-Neurotech3835/ses-10/eeg/sub-Neurotech3835_ses-10_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech3836,1,sub-Neurotech3836/ses-1/eeg/sub-Neurotech3836_ses-1_task-EEG_eeg.edf,1468006,1.4,102.0,0.03,27,102
 sub-Neurotech3836,2,sub-Neurotech3836/ses-2/eeg/sub-Neurotech3836_ses-2_task-EEG_eeg.edf,530474598,505.9,38039.0,10.57,27,38039
@@ -40733,7 +40677,6 @@ sub-Neurotech3844,16,sub-Neurotech3844/ses-16/eeg/sub-Neurotech3844_ses-16_task-
 sub-Neurotech3844,17,sub-Neurotech3844/ses-17/eeg/sub-Neurotech3844_ses-17_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech3844,18,sub-Neurotech3844/ses-18/eeg/sub-Neurotech3844_ses-18_task-EEG_eeg.edf,314572,0.3,21.0,0.01,28,21
 sub-Neurotech3844,19,sub-Neurotech3844/ses-19/eeg/sub-Neurotech3844_ses-19_task-EEG_eeg.edf,559310438,533.4,38691.0,10.75,28,38691
-sub-Neurotech3844,20,sub-Neurotech3844/ses-20/eeg/sub-Neurotech3844_ses-20_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech3844,21,sub-Neurotech3844/ses-21/eeg/sub-Neurotech3844_ses-21_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech3844,22,sub-Neurotech3844/ses-22/eeg/sub-Neurotech3844_ses-22_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech3844,23,sub-Neurotech3844/ses-23/eeg/sub-Neurotech3844_ses-23_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
@@ -40798,7 +40741,6 @@ sub-Neurotech3855,13,sub-Neurotech3855/ses-13/eeg/sub-Neurotech3855_ses-13_task-
 sub-Neurotech3855,14,sub-Neurotech3855/ses-14/eeg/sub-Neurotech3855_ses-14_task-EEG_eeg.edf,352950681,336.6,24413.0,6.78,28,24413
 sub-Neurotech3855,15,sub-Neurotech3855/ses-15/eeg/sub-Neurotech3855_ses-15_task-EEG_eeg.edf,240543334,229.4,16639.0,4.62,28,16639
 sub-Neurotech3856,1,sub-Neurotech3856/ses-1/eeg/sub-Neurotech3856_ses-1_task-EEG_eeg.edf,843893964,804.8,58376.0,16.22,28,58376
-sub-Neurotech3857,1,sub-Neurotech3857/ses-1/eeg/sub-Neurotech3857_ses-1_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech3857,2,sub-Neurotech3857/ses-2/eeg/sub-Neurotech3857_ses-2_task-EEG_eeg.edf,169659596,161.8,11737.0,3.26,28,11737
 sub-Neurotech3857,3,sub-Neurotech3857/ses-3/eeg/sub-Neurotech3857_ses-3_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech3857,4,sub-Neurotech3857/ses-4/eeg/sub-Neurotech3857_ses-4_task-EEG_eeg.edf,175951052,167.8,12172.0,3.38,28,12172
@@ -41564,7 +41506,6 @@ sub-Neurotech3946,4,sub-Neurotech3946/ses-4/eeg/sub-Neurotech3946_ses-4_task-EEG
 sub-Neurotech3946,5,sub-Neurotech3946/ses-5/eeg/sub-Neurotech3946_ses-5_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech3946,6,sub-Neurotech3946/ses-6/eeg/sub-Neurotech3946_ses-6_task-EEG_eeg.edf,1192545484,1137.3,82491.0,22.91,28,82491
 sub-Neurotech3948,1,sub-Neurotech3948/ses-1/eeg/sub-Neurotech3948_ses-1_task-EEG_eeg.edf,104857,0.1,4.0,0.0,28,4
-sub-Neurotech3948,2,sub-Neurotech3948/ses-2/eeg/sub-Neurotech3948_ses-2_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech3948,3,sub-Neurotech3948/ses-3/eeg/sub-Neurotech3948_ses-3_task-EEG_eeg.edf,329252864,314.0,22773.0,6.33,28,22773
 sub-Neurotech3948,4,sub-Neurotech3948/ses-4/eeg/sub-Neurotech3948_ses-4_task-EEG_eeg.edf,56623104,54.0,3914.0,1.09,28,3914
 sub-Neurotech3948,5,sub-Neurotech3948/ses-5/eeg/sub-Neurotech3948_ses-5_task-EEG_eeg.edf,14784921,14.1,1019.0,0.28,28,1019
@@ -41812,7 +41753,6 @@ sub-Neurotech3972,12,sub-Neurotech3972/ses-12/eeg/sub-Neurotech3972_ses-12_task-
 sub-Neurotech3972,13,sub-Neurotech3972/ses-13/eeg/sub-Neurotech3972_ses-13_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech3972,14,sub-Neurotech3972/ses-14/eeg/sub-Neurotech3972_ses-14_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech3972,15,sub-Neurotech3972/ses-15/eeg/sub-Neurotech3972_ses-15_task-EEG_eeg.edf,226282700,215.8,15651.0,4.35,28,15651
-sub-Neurotech3972,16,sub-Neurotech3972/ses-16/eeg/sub-Neurotech3972_ses-16_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech3972,17,sub-Neurotech3972/ses-17/eeg/sub-Neurotech3972_ses-17_task-EEG_eeg.edf,318033100,303.3,22002.0,6.11,28,22002
 sub-Neurotech3972,18,sub-Neurotech3972/ses-18/eeg/sub-Neurotech3972_ses-18_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech3972,19,sub-Neurotech3972/ses-19/eeg/sub-Neurotech3972_ses-19_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
@@ -41983,7 +41923,6 @@ sub-Neurotech4001,1,sub-Neurotech4001/ses-1/eeg/sub-Neurotech4001_ses-1_task-EEG
 sub-Neurotech4002,1,sub-Neurotech4002/ses-1/eeg/sub-Neurotech4002_ses-1_task-EEG_eeg.edf,1757937664,1676.5,121607.0,33.78,28,121607
 sub-Neurotech4002,2,sub-Neurotech4002/ses-2/eeg/sub-Neurotech4002_ses-2_task-EEG_eeg.edf,1842557747,1757.2,127460.0,35.41,28,127460
 sub-Neurotech4003,1,sub-Neurotech4003/ses-1/eeg/sub-Neurotech4003_ses-1_task-EEG_eeg.edf,862453760,822.5,59657.0,16.57,28,59657
-sub-Neurotech4003,2,sub-Neurotech4003/ses-2/eeg/sub-Neurotech4003_ses-2_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4003,3,sub-Neurotech4003/ses-3/eeg/sub-Neurotech4003_ses-3_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4003,4,sub-Neurotech4003/ses-4/eeg/sub-Neurotech4003_ses-4_task-EEG_eeg.edf,1363148,1.3,96.0,0.03,28,96
 sub-Neurotech4003,5,sub-Neurotech4003/ses-5/eeg/sub-Neurotech4003_ses-5_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
@@ -41995,7 +41934,6 @@ sub-Neurotech4003,10,sub-Neurotech4003/ses-10/eeg/sub-Neurotech4003_ses-10_task-
 sub-Neurotech4003,11,sub-Neurotech4003/ses-11/eeg/sub-Neurotech4003_ses-11_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4003,12,sub-Neurotech4003/ses-12/eeg/sub-Neurotech4003_ses-12_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4003,13,sub-Neurotech4003/ses-13/eeg/sub-Neurotech4003_ses-13_task-EEG_eeg.edf,155818393,148.6,10778.0,2.99,28,10778
-sub-Neurotech4003,14,sub-Neurotech4003/ses-14/eeg/sub-Neurotech4003_ses-14_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4003,15,sub-Neurotech4003/ses-15/eeg/sub-Neurotech4003_ses-15_task-EEG_eeg.edf,264346009,252.1,18289.0,5.08,28,18289
 sub-Neurotech4003,16,sub-Neurotech4003/ses-16/eeg/sub-Neurotech4003_ses-16_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4003,17,sub-Neurotech4003/ses-17/eeg/sub-Neurotech4003_ses-17_task-EEG_eeg.edf,52323942,49.9,3616.0,1.0,28,3616
@@ -42125,7 +42063,6 @@ sub-Neurotech4021,6,sub-Neurotech4021/ses-6/eeg/sub-Neurotech4021_ses-6_task-EEG
 sub-Neurotech4021,7,sub-Neurotech4021/ses-7/eeg/sub-Neurotech4021_ses-7_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4021,8,sub-Neurotech4021/ses-8/eeg/sub-Neurotech4021_ses-8_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4021,9,sub-Neurotech4021/ses-9/eeg/sub-Neurotech4021_ses-9_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
-sub-Neurotech4021,10,sub-Neurotech4021/ses-10/eeg/sub-Neurotech4021_ses-10_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4021,11,sub-Neurotech4021/ses-11/eeg/sub-Neurotech4021_ses-11_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4021,12,sub-Neurotech4021/ses-12/eeg/sub-Neurotech4021_ses-12_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4021,13,sub-Neurotech4021/ses-13/eeg/sub-Neurotech4021_ses-13_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
@@ -42200,7 +42137,6 @@ sub-Neurotech4030,28,sub-Neurotech4030/ses-28/eeg/sub-Neurotech4030_ses-28_task-
 sub-Neurotech4030,29,sub-Neurotech4030/ses-29/eeg/sub-Neurotech4030_ses-29_task-EEG_eeg.edf,205311180,195.8,14200.0,3.94,28,14200
 sub-Neurotech4030,30,sub-Neurotech4030/ses-30/eeg/sub-Neurotech4030_ses-30_task-EEG_eeg.edf,838860,0.8,57.0,0.02,28,57
 sub-Neurotech4030,31,sub-Neurotech4030/ses-31/eeg/sub-Neurotech4030_ses-31_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
-sub-Neurotech4030,32,sub-Neurotech4030/ses-32/eeg/sub-Neurotech4030_ses-32_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4030,33,sub-Neurotech4030/ses-33/eeg/sub-Neurotech4030_ses-33_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4030,34,sub-Neurotech4030/ses-34/eeg/sub-Neurotech4030_ses-34_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4030,35,sub-Neurotech4030/ses-35/eeg/sub-Neurotech4030_ses-35_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
@@ -42215,7 +42151,6 @@ sub-Neurotech4030,43,sub-Neurotech4030/ses-43/eeg/sub-Neurotech4030_ses-43_task-
 sub-Neurotech4030,44,sub-Neurotech4030/ses-44/eeg/sub-Neurotech4030_ses-44_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4030,45,sub-Neurotech4030/ses-45/eeg/sub-Neurotech4030_ses-45_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4030,46,sub-Neurotech4030/ses-46/eeg/sub-Neurotech4030_ses-46_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
-sub-Neurotech4030,47,sub-Neurotech4030/ses-47/eeg/sub-Neurotech4030_ses-47_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4030,48,sub-Neurotech4030/ses-48/eeg/sub-Neurotech4030_ses-48_task-EEG_eeg.edf,52533657,50.1,3635.0,1.01,28,3635
 sub-Neurotech4030,49,sub-Neurotech4030/ses-49/eeg/sub-Neurotech4030_ses-49_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4030,50,sub-Neurotech4030/ses-50/eeg/sub-Neurotech4030_ses-50_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
@@ -42242,7 +42177,6 @@ sub-Neurotech4033,11,sub-Neurotech4033/ses-11/eeg/sub-Neurotech4033_ses-11_task-
 sub-Neurotech4033,12,sub-Neurotech4033/ses-12/eeg/sub-Neurotech4033_ses-12_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4033,13,sub-Neurotech4033/ses-13/eeg/sub-Neurotech4033_ses-13_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4033,14,sub-Neurotech4033/ses-14/eeg/sub-Neurotech4033_ses-14_task-EEG_eeg.edf,16462643,15.7,1326.0,0.37,24,1326
-sub-Neurotech4033,15,sub-Neurotech4033/ses-15/eeg/sub-Neurotech4033_ses-15_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4033,16,sub-Neurotech4033/ses-16/eeg/sub-Neurotech4033_ses-16_task-EEG_eeg.edf,39007027,37.2,3142.0,0.87,24,3142
 sub-Neurotech4033,17,sub-Neurotech4033/ses-17/eeg/sub-Neurotech4033_ses-17_task-EEG_eeg.edf,8598323,8.2,694.0,0.19,24,694
 sub-Neurotech4033,18,sub-Neurotech4033/ses-18/eeg/sub-Neurotech4033_ses-18_task-EEG_eeg.edf,943718,0.9,72.0,0.02,24,72
@@ -42298,7 +42232,6 @@ sub-Neurotech4037,11,sub-Neurotech4037/ses-11/eeg/sub-Neurotech4037_ses-11_task-
 sub-Neurotech4037,12,sub-Neurotech4037/ses-12/eeg/sub-Neurotech4037_ses-12_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4037,13,sub-Neurotech4037/ses-13/eeg/sub-Neurotech4037_ses-13_task-EEG_eeg.edf,20132659,19.2,1395.0,0.39,28,1395
 sub-Neurotech4037,14,sub-Neurotech4037/ses-14/eeg/sub-Neurotech4037_ses-14_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
-sub-Neurotech4037,15,sub-Neurotech4037/ses-15/eeg/sub-Neurotech4037_ses-15_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4037,16,sub-Neurotech4037/ses-16/eeg/sub-Neurotech4037_ses-16_task-EEG_eeg.edf,22544384,21.5,1557.0,0.43,28,1557
 sub-Neurotech4037,17,sub-Neurotech4037/ses-17/eeg/sub-Neurotech4037_ses-17_task-EEG_eeg.edf,286156390,272.9,19792.0,5.5,28,19792
 sub-Neurotech4037,18,sub-Neurotech4037/ses-18/eeg/sub-Neurotech4037_ses-18_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
@@ -42801,7 +42734,6 @@ sub-Neurotech4105,5,sub-Neurotech4105/ses-5/eeg/sub-Neurotech4105_ses-5_task-EEG
 sub-Neurotech4105,6,sub-Neurotech4105/ses-6/eeg/sub-Neurotech4105_ses-6_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4105,7,sub-Neurotech4105/ses-7/eeg/sub-Neurotech4105_ses-7_task-EEG_eeg.edf,1010302976,963.5,69886.0,19.41,28,69886
 sub-Neurotech4105,8,sub-Neurotech4105/ses-8/eeg/sub-Neurotech4105_ses-8_task-EEG_eeg.edf,72351744,69.0,5003.0,1.39,28,5003
-sub-Neurotech4105,9,sub-Neurotech4105/ses-9/eeg/sub-Neurotech4105_ses-9_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4105,10,sub-Neurotech4105/ses-10/eeg/sub-Neurotech4105_ses-10_task-EEG_eeg.edf,788529152,752.0,54546.0,15.15,28,54546
 sub-Neurotech4105,11,sub-Neurotech4105/ses-11/eeg/sub-Neurotech4105_ses-11_task-EEG_eeg.edf,1156159897,1102.6,79979.0,22.22,28,79979
 sub-Neurotech4105,12,sub-Neurotech4105/ses-12/eeg/sub-Neurotech4105_ses-12_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
@@ -42942,7 +42874,6 @@ sub-Neurotech4122,4,sub-Neurotech4122/ses-4/eeg/sub-Neurotech4122_ses-4_task-EEG
 sub-Neurotech4122,5,sub-Neurotech4122/ses-5/eeg/sub-Neurotech4122_ses-5_task-EEG_eeg.edf,13841203,13.2,0.0,0.0,0,0
 sub-Neurotech4122,6,sub-Neurotech4122/ses-6/eeg/sub-Neurotech4122_ses-6_task-EEG_eeg.edf,2885052006,2751.4,199576.0,55.44,28,199576
 sub-Neurotech4122,7,sub-Neurotech4122/ses-7/eeg/sub-Neurotech4122_ses-7_task-EEG_eeg.edf,63543705,60.6,4395.0,1.22,28,4395
-sub-Neurotech4122,8,sub-Neurotech4122/ses-8/eeg/sub-Neurotech4122_ses-8_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4122,9,sub-Neurotech4122/ses-9/eeg/sub-Neurotech4122_ses-9_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4122,10,sub-Neurotech4122/ses-10/eeg/sub-Neurotech4122_ses-10_task-EEG_eeg.edf,224080691,213.7,15502.0,4.31,28,15502
 sub-Neurotech4122,11,sub-Neurotech4122/ses-11/eeg/sub-Neurotech4122_ses-11_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
@@ -42963,7 +42894,6 @@ sub-Neurotech4122,25,sub-Neurotech4122/ses-25/eeg/sub-Neurotech4122_ses-25_task-
 sub-Neurotech4122,26,sub-Neurotech4122/ses-26/eeg/sub-Neurotech4122_ses-26_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4122,27,sub-Neurotech4122/ses-27/eeg/sub-Neurotech4122_ses-27_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4122,28,sub-Neurotech4122/ses-28/eeg/sub-Neurotech4122_ses-28_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
-sub-Neurotech4122,29,sub-Neurotech4122/ses-29/eeg/sub-Neurotech4122_ses-29_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4122,30,sub-Neurotech4122/ses-30/eeg/sub-Neurotech4122_ses-30_task-EEG_eeg.edf,14365491,13.7,990.0,0.28,28,990
 sub-Neurotech4122,31,sub-Neurotech4122/ses-31/eeg/sub-Neurotech4122_ses-31_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4122,32,sub-Neurotech4122/ses-32/eeg/sub-Neurotech4122_ses-32_task-EEG_eeg.edf,280074649,267.1,19375.0,5.38,28,19375
@@ -43594,7 +43524,6 @@ sub-Neurotech4218,2,sub-Neurotech4218/ses-2/eeg/sub-Neurotech4218_ses-2_task-EEG
 sub-Neurotech4218,3,sub-Neurotech4218/ses-3/eeg/sub-Neurotech4218_ses-3_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4218,4,sub-Neurotech4218/ses-4/eeg/sub-Neurotech4218_ses-4_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4218,5,sub-Neurotech4218/ses-5/eeg/sub-Neurotech4218_ses-5_task-EEG_eeg.edf,2831155,2.7,229.0,0.06,24,229
-sub-Neurotech4218,6,sub-Neurotech4218/ses-6/eeg/sub-Neurotech4218_ses-6_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4218,7,sub-Neurotech4218/ses-7/eeg/sub-Neurotech4218_ses-7_task-EEG_eeg.edf,696149606,663.9,56107.0,15.59,24,56107
 sub-Neurotech4219,1,sub-Neurotech4219/ses-1/eeg/sub-Neurotech4219_ses-1_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4219,2,sub-Neurotech4219/ses-2/eeg/sub-Neurotech4219_ses-2_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
@@ -44412,7 +44341,6 @@ sub-Neurotech4292,40,sub-Neurotech4292/ses-40/eeg/sub-Neurotech4292_ses-40_task-
 sub-Neurotech4292,41,sub-Neurotech4292/ses-41/eeg/sub-Neurotech4292_ses-41_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4292,42,sub-Neurotech4292/ses-42/eeg/sub-Neurotech4292_ses-42_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4292,43,sub-Neurotech4292/ses-43/eeg/sub-Neurotech4292_ses-43_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
-sub-Neurotech4292,44,sub-Neurotech4292/ses-44/eeg/sub-Neurotech4292_ses-44_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4292,45,sub-Neurotech4292/ses-45/eeg/sub-Neurotech4292_ses-45_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4292,46,sub-Neurotech4292/ses-46/eeg/sub-Neurotech4292_ses-46_task-EEG_eeg.edf,943718,0.9,68.0,0.02,28,68
 sub-Neurotech4292,47,sub-Neurotech4292/ses-47/eeg/sub-Neurotech4292_ses-47_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
@@ -44870,7 +44798,6 @@ sub-Neurotech4306,356,sub-Neurotech4306/ses-356/eeg/sub-Neurotech4306_ses-356_ta
 sub-Neurotech4306,357,sub-Neurotech4306/ses-357/eeg/sub-Neurotech4306_ses-357_task-EEG_eeg.edf,104857,0.1,10.0,0.0,25,10
 sub-Neurotech4306,358,sub-Neurotech4306/ses-358/eeg/sub-Neurotech4306_ses-358_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4306,359,sub-Neurotech4306/ses-359/eeg/sub-Neurotech4306_ses-359_task-EEG_eeg.edf,0,0.0,1.0,0.0,25,1
-sub-Neurotech4306,360,sub-Neurotech4306/ses-360/eeg/sub-Neurotech4306_ses-360_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4306,361,sub-Neurotech4306/ses-361/eeg/sub-Neurotech4306_ses-361_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4306,362,sub-Neurotech4306/ses-362/eeg/sub-Neurotech4306_ses-362_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4306,363,sub-Neurotech4306/ses-363/eeg/sub-Neurotech4306_ses-363_task-EEG_eeg.edf,1887436,1.8,143.0,0.04,25,143
@@ -45021,7 +44948,6 @@ sub-Neurotech4306,507,sub-Neurotech4306/ses-507/eeg/sub-Neurotech4306_ses-507_ta
 sub-Neurotech4306,508,sub-Neurotech4306/ses-508/eeg/sub-Neurotech4306_ses-508_task-EEG_eeg.edf,104857,0.1,4.0,0.0,25,4
 sub-Neurotech4306,509,sub-Neurotech4306/ses-509/eeg/sub-Neurotech4306_ses-509_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4306,510,sub-Neurotech4306/ses-510/eeg/sub-Neurotech4306_ses-510_task-EEG_eeg.edf,3670016,3.5,282.0,0.08,25,282
-sub-Neurotech4306,511,sub-Neurotech4306/ses-511/eeg/sub-Neurotech4306_ses-511_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4307,1,sub-Neurotech4307/ses-1/eeg/sub-Neurotech4307_ses-1_task-EEG_eeg.edf,35127296,33.5,2430.0,0.68,28,2430
 sub-Neurotech4307,2,sub-Neurotech4307/ses-2/eeg/sub-Neurotech4307_ses-2_task-EEG_eeg.edf,3774873,3.6,263.0,0.07,28,263
 sub-Neurotech4307,3,sub-Neurotech4307/ses-3/eeg/sub-Neurotech4307_ses-3_task-EEG_eeg.edf,7969177,7.6,549.0,0.15,28,549
@@ -45041,7 +44967,6 @@ sub-Neurotech4312,4,sub-Neurotech4312/ses-4/eeg/sub-Neurotech4312_ses-4_task-EEG
 sub-Neurotech4312,5,sub-Neurotech4312/ses-5/eeg/sub-Neurotech4312_ses-5_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4312,6,sub-Neurotech4312/ses-6/eeg/sub-Neurotech4312_ses-6_task-EEG_eeg.edf,250295091,238.7,17312.0,4.81,28,17312
 sub-Neurotech4312,7,sub-Neurotech4312/ses-7/eeg/sub-Neurotech4312_ses-7_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
-sub-Neurotech4312,8,sub-Neurotech4312/ses-8/eeg/sub-Neurotech4312_ses-8_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4312,9,sub-Neurotech4312/ses-9/eeg/sub-Neurotech4312_ses-9_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4312,10,sub-Neurotech4312/ses-10/eeg/sub-Neurotech4312_ses-10_task-EEG_eeg.edf,1242667417,1185.1,85965.0,23.88,28,85965
 sub-Neurotech4312,11,sub-Neurotech4312/ses-11/eeg/sub-Neurotech4312_ses-11_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
@@ -45073,14 +44998,11 @@ sub-Neurotech4312,36,sub-Neurotech4312/ses-36/eeg/sub-Neurotech4312_ses-36_task-
 sub-Neurotech4312,37,sub-Neurotech4312/ses-37/eeg/sub-Neurotech4312_ses-37_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4312,38,sub-Neurotech4312/ses-38/eeg/sub-Neurotech4312_ses-38_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4312,39,sub-Neurotech4312/ses-39/eeg/sub-Neurotech4312_ses-39_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
-sub-Neurotech4312,40,sub-Neurotech4312/ses-40/eeg/sub-Neurotech4312_ses-40_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
-sub-Neurotech4312,41,sub-Neurotech4312/ses-41/eeg/sub-Neurotech4312_ses-41_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4312,42,sub-Neurotech4312/ses-42/eeg/sub-Neurotech4312_ses-42_task-EEG_eeg.edf,446588518,425.9,0.0,0.0,0,0
 sub-Neurotech4312,43,sub-Neurotech4312/ses-43/eeg/sub-Neurotech4312_ses-43_task-EEG_eeg.edf,114923929,109.6,7951.0,2.21,28,7951
 sub-Neurotech4312,44,sub-Neurotech4312/ses-44/eeg/sub-Neurotech4312_ses-44_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4312,45,sub-Neurotech4312/ses-45/eeg/sub-Neurotech4312_ses-45_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4312,46,sub-Neurotech4312/ses-46/eeg/sub-Neurotech4312_ses-46_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
-sub-Neurotech4312,47,sub-Neurotech4312/ses-47/eeg/sub-Neurotech4312_ses-47_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4312,48,sub-Neurotech4312/ses-48/eeg/sub-Neurotech4312_ses-48_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4312,49,sub-Neurotech4312/ses-49/eeg/sub-Neurotech4312_ses-49_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4312,50,sub-Neurotech4312/ses-50/eeg/sub-Neurotech4312_ses-50_task-EEG_eeg.edf,95525273,91.1,6611.0,1.84,28,6611
@@ -45139,7 +45061,6 @@ sub-Neurotech4313,1,sub-Neurotech4313/ses-1/eeg/sub-Neurotech4313_ses-1_task-EEG
 sub-Neurotech4313,2,sub-Neurotech4313/ses-2/eeg/sub-Neurotech4313_ses-2_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4313,3,sub-Neurotech4313/ses-3/eeg/sub-Neurotech4313_ses-3_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4313,4,sub-Neurotech4313/ses-4/eeg/sub-Neurotech4313_ses-4_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
-sub-Neurotech4313,5,sub-Neurotech4313/ses-5/eeg/sub-Neurotech4313_ses-5_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4313,6,sub-Neurotech4313/ses-6/eeg/sub-Neurotech4313_ses-6_task-EEG_eeg.edf,1425119641,1359.1,98582.0,27.38,28,98582
 sub-Neurotech4313,7,sub-Neurotech4313/ses-7/eeg/sub-Neurotech4313_ses-7_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4313,8,sub-Neurotech4313/ses-8/eeg/sub-Neurotech4313_ses-8_task-EEG_eeg.edf,2411724,2.3,165.0,0.05,28,165
@@ -45899,7 +45820,6 @@ sub-Neurotech4420,6,sub-Neurotech4420/ses-6/eeg/sub-Neurotech4420_ses-6_task-EEG
 sub-Neurotech4420,7,sub-Neurotech4420/ses-7/eeg/sub-Neurotech4420_ses-7_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4420,8,sub-Neurotech4420/ses-8/eeg/sub-Neurotech4420_ses-8_task-EEG_eeg.edf,556059852,530.3,38468.0,10.69,28,38468
 sub-Neurotech4420,9,sub-Neurotech4420/ses-9/eeg/sub-Neurotech4420_ses-9_task-EEG_eeg.edf,559729868,533.8,38718.0,10.76,28,38718
-sub-Neurotech4420,10,sub-Neurotech4420/ses-10/eeg/sub-Neurotech4420_ses-10_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4420,11,sub-Neurotech4420/ses-11/eeg/sub-Neurotech4420_ses-11_task-EEG_eeg.edf,7235174,6.9,503.0,0.14,28,503
 sub-Neurotech4421,1,sub-Neurotech4421/ses-1/eeg/sub-Neurotech4421_ses-1_task-EEG_eeg.edf,1209742131,1153.7,97499.0,27.08,24,97499
 sub-Neurotech4421,2,sub-Neurotech4421/ses-2/eeg/sub-Neurotech4421_ses-2_task-EEG_eeg.edf,750570700,715.8,60488.0,16.8,24,60488
@@ -45952,7 +45872,6 @@ sub-Neurotech4434,14,sub-Neurotech4434/ses-14/eeg/sub-Neurotech4434_ses-14_task-
 sub-Neurotech4435,1,sub-Neurotech4435/ses-1/eeg/sub-Neurotech4435_ses-1_task-EEG_eeg.edf,3747400908,3573.8,259225.0,72.01,28,259225
 sub-Neurotech4435,2,sub-Neurotech4435/ses-2/eeg/sub-Neurotech4435_ses-2_task-EEG_eeg.edf,25585254,24.4,1771.0,0.49,28,1771
 sub-Neurotech4435,3,sub-Neurotech4435/ses-3/eeg/sub-Neurotech4435_ses-3_task-EEG_eeg.edf,23068672,22.0,1781.0,0.49,25,1781
-sub-Neurotech4435,4,sub-Neurotech4435/ses-4/eeg/sub-Neurotech4435_ses-4_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4435,5,sub-Neurotech4435/ses-5/eeg/sub-Neurotech4435_ses-5_task-EEG_eeg.edf,20971520,20.0,1625.0,0.45,25,1625
 sub-Neurotech4436,1,sub-Neurotech4436/ses-1/eeg/sub-Neurotech4436_ses-1_task-EEG_eeg.edf,407896064,389.0,34287.0,9.52,23,34287
 sub-Neurotech4436,2,sub-Neurotech4436/ses-2/eeg/sub-Neurotech4436_ses-2_task-EEG_eeg.edf,55155097,52.6,4639.0,1.29,23,4639
@@ -46045,7 +45964,6 @@ sub-Neurotech4440,34,sub-Neurotech4440/ses-34/eeg/sub-Neurotech4440_ses-34_task-
 sub-Neurotech4440,35,sub-Neurotech4440/ses-35/eeg/sub-Neurotech4440_ses-35_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4440,36,sub-Neurotech4440/ses-36/eeg/sub-Neurotech4440_ses-36_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4440,37,sub-Neurotech4440/ses-37/eeg/sub-Neurotech4440_ses-37_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
-sub-Neurotech4440,38,sub-Neurotech4440/ses-38/eeg/sub-Neurotech4440_ses-38_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4440,39,sub-Neurotech4440/ses-39/eeg/sub-Neurotech4440_ses-39_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4440,40,sub-Neurotech4440/ses-40/eeg/sub-Neurotech4440_ses-40_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4440,41,sub-Neurotech4440/ses-41/eeg/sub-Neurotech4440_ses-41_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
@@ -46089,7 +46007,6 @@ sub-Neurotech4444,12,sub-Neurotech4444/ses-12/eeg/sub-Neurotech4444_ses-12_task-
 sub-Neurotech4444,13,sub-Neurotech4444/ses-13/eeg/sub-Neurotech4444_ses-13_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4444,14,sub-Neurotech4444/ses-14/eeg/sub-Neurotech4444_ses-14_task-EEG_eeg.edf,209715,0.2,19.0,0.01,24,19
 sub-Neurotech4444,15,sub-Neurotech4444/ses-15/eeg/sub-Neurotech4444_ses-15_task-EEG_eeg.edf,5033164,4.8,404.0,0.11,24,404
-sub-Neurotech4444,16,sub-Neurotech4444/ses-16/eeg/sub-Neurotech4444_ses-16_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4444,17,sub-Neurotech4444/ses-17/eeg/sub-Neurotech4444_ses-17_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4444,18,sub-Neurotech4444/ses-18/eeg/sub-Neurotech4444_ses-18_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4444,19,sub-Neurotech4444/ses-19/eeg/sub-Neurotech4444_ses-19_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
@@ -46146,7 +46063,6 @@ sub-Neurotech4450,9,sub-Neurotech4450/ses-9/eeg/sub-Neurotech4450_ses-9_task-EEG
 sub-Neurotech4450,10,sub-Neurotech4450/ses-10/eeg/sub-Neurotech4450_ses-10_task-EEG_eeg.edf,359766425,343.1,24884.0,6.91,28,24884
 sub-Neurotech4450,11,sub-Neurotech4450/ses-11/eeg/sub-Neurotech4450_ses-11_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4450,12,sub-Neurotech4450/ses-12/eeg/sub-Neurotech4450_ses-12_task-EEG_eeg.edf,426141286,406.4,29479.0,8.19,28,29479
-sub-Neurotech4450,13,sub-Neurotech4450/ses-13/eeg/sub-Neurotech4450_ses-13_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4450,14,sub-Neurotech4450/ses-14/eeg/sub-Neurotech4450_ses-14_task-EEG_eeg.edf,355047833,338.6,24562.0,6.82,28,24562
 sub-Neurotech4450,15,sub-Neurotech4450/ses-15/eeg/sub-Neurotech4450_ses-15_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4450,16,sub-Neurotech4450/ses-16/eeg/sub-Neurotech4450_ses-16_task-EEG_eeg.edf,319815680,305.0,22125.0,6.15,28,22125
@@ -46286,7 +46202,6 @@ sub-Neurotech4468,19,sub-Neurotech4468/ses-19/eeg/sub-Neurotech4468_ses-19_task-
 sub-Neurotech4469,1,sub-Neurotech4469/ses-1/eeg/sub-Neurotech4469_ses-1_task-EEG_eeg.edf,1097334784,1046.5,75910.0,21.09,28,75910
 sub-Neurotech4472,1,sub-Neurotech4472/ses-1/eeg/sub-Neurotech4472_ses-1_task-EEG_eeg.edf,3984588,3.8,275.0,0.08,28,275
 sub-Neurotech4472,2,sub-Neurotech4472/ses-2/eeg/sub-Neurotech4472_ses-2_task-EEG_eeg.edf,217579520,207.5,15053.0,4.18,28,15053
-sub-Neurotech4472,3,sub-Neurotech4472/ses-3/eeg/sub-Neurotech4472_ses-3_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4472,4,sub-Neurotech4472/ses-4/eeg/sub-Neurotech4472_ses-4_task-EEG_eeg.edf,121529958,115.9,8403.0,2.33,28,8403
 sub-Neurotech4472,5,sub-Neurotech4472/ses-5/eeg/sub-Neurotech4472_ses-5_task-EEG_eeg.edf,71408025,68.1,4937.0,1.37,28,4937
 sub-Neurotech4472,6,sub-Neurotech4472/ses-6/eeg/sub-Neurotech4472_ses-6_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
@@ -46402,7 +46317,6 @@ sub-Neurotech4492,3,sub-Neurotech4492/ses-3/eeg/sub-Neurotech4492_ses-3_task-EEG
 sub-Neurotech4492,4,sub-Neurotech4492/ses-4/eeg/sub-Neurotech4492_ses-4_task-EEG_eeg.edf,591711436,564.3,40931.0,11.37,28,40931
 sub-Neurotech4492,5,sub-Neurotech4492/ses-5/eeg/sub-Neurotech4492_ses-5_task-EEG_eeg.edf,230477004,219.8,0.0,0.0,0,0
 sub-Neurotech4492,6,sub-Neurotech4492/ses-6/eeg/sub-Neurotech4492_ses-6_task-EEG_eeg.edf,40999321,39.1,2834.0,0.79,28,2834
-sub-Neurotech4492,7,sub-Neurotech4492/ses-7/eeg/sub-Neurotech4492_ses-7_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4492,8,sub-Neurotech4492/ses-8/eeg/sub-Neurotech4492_ses-8_task-EEG_eeg.edf,199753728,190.5,0.0,0.0,0,0
 sub-Neurotech4492,9,sub-Neurotech4492/ses-9/eeg/sub-Neurotech4492_ses-9_task-EEG_eeg.edf,551550976,526.0,38155.0,10.6,28,38155
 sub-Neurotech4492,10,sub-Neurotech4492/ses-10/eeg/sub-Neurotech4492_ses-10_task-EEG_eeg.edf,7969177,7.6,552.0,0.15,28,552
@@ -46513,7 +46427,6 @@ sub-Neurotech4513,4,sub-Neurotech4513/ses-4/eeg/sub-Neurotech4513_ses-4_task-EEG
 sub-Neurotech4513,5,sub-Neurotech4513/ses-5/eeg/sub-Neurotech4513_ses-5_task-EEG_eeg.edf,1015021568,968.0,70216.0,19.5,28,70216
 sub-Neurotech4513,6,sub-Neurotech4513/ses-6/eeg/sub-Neurotech4513_ses-6_task-EEG_eeg.edf,124570828,118.8,8620.0,2.39,28,8620
 sub-Neurotech4513,7,sub-Neurotech4513/ses-7/eeg/sub-Neurotech4513_ses-7_task-EEG_eeg.edf,534354329,509.6,36965.0,10.27,28,36965
-sub-Neurotech4513,8,sub-Neurotech4513/ses-8/eeg/sub-Neurotech4513_ses-8_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4513,9,sub-Neurotech4513/ses-9/eeg/sub-Neurotech4513_ses-9_task-EEG_eeg.edf,1992294,1.9,134.0,0.04,28,134
 sub-Neurotech4513,10,sub-Neurotech4513/ses-10/eeg/sub-Neurotech4513_ses-10_task-EEG_eeg.edf,299997593,286.1,20750.0,5.76,28,20750
 sub-Neurotech4513,11,sub-Neurotech4513/ses-11/eeg/sub-Neurotech4513_ses-11_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
@@ -46731,7 +46644,6 @@ sub-Neurotech4544,1,sub-Neurotech4544/ses-1/eeg/sub-Neurotech4544_ses-1_task-EEG
 sub-Neurotech4544,2,sub-Neurotech4544/ses-2/eeg/sub-Neurotech4544_ses-2_task-EEG_eeg.edf,831206195,792.7,57497.0,15.97,28,57497
 sub-Neurotech4544,3,sub-Neurotech4544/ses-3/eeg/sub-Neurotech4544_ses-3_task-EEG_eeg.edf,92169830,87.9,6378.0,1.77,28,6378
 sub-Neurotech4545,1,sub-Neurotech4545/ses-1/eeg/sub-Neurotech4545_ses-1_task-EEG_eeg.edf,1590375219,1516.7,110011.0,30.56,28,110011
-sub-Neurotech4545,2,sub-Neurotech4545/ses-2/eeg/sub-Neurotech4545_ses-2_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4545,3,sub-Neurotech4545/ses-3/eeg/sub-Neurotech4545_ses-3_task-EEG_eeg.edf,87556096,83.5,6057.0,1.68,28,6057
 sub-Neurotech4545,4,sub-Neurotech4545/ses-4/eeg/sub-Neurotech4545_ses-4_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4545,5,sub-Neurotech4545/ses-5/eeg/sub-Neurotech4545_ses-5_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
@@ -46916,7 +46828,6 @@ sub-Neurotech4577,38,sub-Neurotech4577/ses-38/eeg/sub-Neurotech4577_ses-38_task-
 sub-Neurotech4578,1,sub-Neurotech4578/ses-1/eeg/sub-Neurotech4578_ses-1_task-EEG_eeg.edf,3413744025,3255.6,236148.0,65.6,28,236148
 sub-Neurotech4579,1,sub-Neurotech4579/ses-1/eeg/sub-Neurotech4579_ses-1_task-EEG_eeg.edf,1479226163,1410.7,102326.0,28.42,28,102326
 sub-Neurotech4579,2,sub-Neurotech4579/ses-2/eeg/sub-Neurotech4579_ses-2_task-EEG_eeg.edf,365219020,348.3,0.0,0.0,0,0
-sub-Neurotech4579,3,sub-Neurotech4579/ses-3/eeg/sub-Neurotech4579_ses-3_task-EEG_eeg.edf,1572025139,1499.2,108746.0,30.21,28,108746
 sub-Neurotech4579,4,sub-Neurotech4579/ses-4/eeg/sub-Neurotech4579_ses-4_task-EEG_eeg.edf,93952409,89.6,6498.0,1.8,28,6498
 sub-Neurotech4579,5,sub-Neurotech4579/ses-5/eeg/sub-Neurotech4579_ses-5_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4579,6,sub-Neurotech4579/ses-6/eeg/sub-Neurotech4579_ses-6_task-EEG_eeg.edf,35546726,33.9,0.0,0.0,0,0
@@ -46983,7 +46894,6 @@ sub-Neurotech4592,4,sub-Neurotech4592/ses-4/eeg/sub-Neurotech4592_ses-4_task-EEG
 sub-Neurotech4593,1,sub-Neurotech4593/ses-1/eeg/sub-Neurotech4593_ses-1_task-EEG_eeg.edf,1835951718,1750.9,127004.0,35.28,28,127004
 sub-Neurotech4593,2,sub-Neurotech4593/ses-2/eeg/sub-Neurotech4593_ses-2_task-EEG_eeg.edf,305135616,291.0,21106.0,5.86,28,21106
 sub-Neurotech4593,3,sub-Neurotech4593/ses-3/eeg/sub-Neurotech4593_ses-3_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
-sub-Neurotech4593,4,sub-Neurotech4593/ses-4/eeg/sub-Neurotech4593_ses-4_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4593,5,sub-Neurotech4593/ses-5/eeg/sub-Neurotech4593_ses-5_task-EEG_eeg.edf,962802483,918.2,66600.0,18.5,28,66600
 sub-Neurotech4593,6,sub-Neurotech4593/ses-6/eeg/sub-Neurotech4593_ses-6_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4593,7,sub-Neurotech4593/ses-7/eeg/sub-Neurotech4593_ses-7_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
@@ -47265,7 +47175,6 @@ sub-Neurotech4605,22,sub-Neurotech4605/ses-22/eeg/sub-Neurotech4605_ses-22_task-
 sub-Neurotech4605,23,sub-Neurotech4605/ses-23/eeg/sub-Neurotech4605_ses-23_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4605,24,sub-Neurotech4605/ses-24/eeg/sub-Neurotech4605_ses-24_task-EEG_eeg.edf,40789606,38.9,2824.0,0.78,28,2824
 sub-Neurotech4605,25,sub-Neurotech4605/ses-25/eeg/sub-Neurotech4605_ses-25_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
-sub-Neurotech4605,26,sub-Neurotech4605/ses-26/eeg/sub-Neurotech4605_ses-26_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4605,27,sub-Neurotech4605/ses-27/eeg/sub-Neurotech4605_ses-27_task-EEG_eeg.edf,70674022,67.4,4886.0,1.36,28,4886
 sub-Neurotech4605,28,sub-Neurotech4605/ses-28/eeg/sub-Neurotech4605_ses-28_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4605,29,sub-Neurotech4605/ses-29/eeg/sub-Neurotech4605_ses-29_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
@@ -47288,7 +47197,6 @@ sub-Neurotech4605,45,sub-Neurotech4605/ses-45/eeg/sub-Neurotech4605_ses-45_task-
 sub-Neurotech4605,46,sub-Neurotech4605/ses-46/eeg/sub-Neurotech4605_ses-46_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4605,47,sub-Neurotech4605/ses-47/eeg/sub-Neurotech4605_ses-47_task-EEG_eeg.edf,458752000,437.5,31733.0,8.81,28,31733
 sub-Neurotech4605,48,sub-Neurotech4605/ses-48/eeg/sub-Neurotech4605_ses-48_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
-sub-Neurotech4605,49,sub-Neurotech4605/ses-49/eeg/sub-Neurotech4605_ses-49_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4605,50,sub-Neurotech4605/ses-50/eeg/sub-Neurotech4605_ses-50_task-EEG_eeg.edf,1677721,1.6,114.0,0.03,28,114
 sub-Neurotech4605,51,sub-Neurotech4605/ses-51/eeg/sub-Neurotech4605_ses-51_task-EEG_eeg.edf,27158118,25.9,0.0,0.0,0,0
 sub-Neurotech4605,52,sub-Neurotech4605/ses-52/eeg/sub-Neurotech4605_ses-52_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
@@ -47585,7 +47493,6 @@ sub-Neurotech4641,11,sub-Neurotech4641/ses-11/eeg/sub-Neurotech4641_ses-11_task-
 sub-Neurotech4641,12,sub-Neurotech4641/ses-12/eeg/sub-Neurotech4641_ses-12_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4641,13,sub-Neurotech4641/ses-13/eeg/sub-Neurotech4641_ses-13_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4641,14,sub-Neurotech4641/ses-14/eeg/sub-Neurotech4641_ses-14_task-EEG_eeg.edf,314572,0.3,18.0,0.01,29,18
-sub-Neurotech4641,15,sub-Neurotech4641/ses-15/eeg/sub-Neurotech4641_ses-15_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4641,16,sub-Neurotech4641/ses-16/eeg/sub-Neurotech4641_ses-16_task-EEG_eeg.edf,97412710,92.9,6505.0,1.81,29,6505
 sub-Neurotech4641,17,sub-Neurotech4641/ses-17/eeg/sub-Neurotech4641_ses-17_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4641,18,sub-Neurotech4641/ses-18/eeg/sub-Neurotech4641_ses-18_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
@@ -47852,7 +47759,6 @@ sub-Neurotech4679,6,sub-Neurotech4679/ses-6/eeg/sub-Neurotech4679_ses-6_task-EEG
 sub-Neurotech4679,7,sub-Neurotech4679/ses-7/eeg/sub-Neurotech4679_ses-7_task-EEG_eeg.edf,48339353,46.1,3893.0,1.08,24,3893
 sub-Neurotech4679,8,sub-Neurotech4679/ses-8/eeg/sub-Neurotech4679_ses-8_task-EEG_eeg.edf,57566822,54.9,3983.0,1.11,28,3983
 sub-Neurotech4679,9,sub-Neurotech4679/ses-9/eeg/sub-Neurotech4679_ses-9_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
-sub-Neurotech4679,10,sub-Neurotech4679/ses-10/eeg/sub-Neurotech4679_ses-10_task-EEG_eeg.edf,522924851,498.7,36173.0,10.05,28,36173
 sub-Neurotech4679,11,sub-Neurotech4679/ses-11/eeg/sub-Neurotech4679_ses-11_task-EEG_eeg.edf,8598323,8.2,694.0,0.19,24,694
 sub-Neurotech4679,12,sub-Neurotech4679/ses-12/eeg/sub-Neurotech4679_ses-12_task-EEG_eeg.edf,147849216,141.0,11919.0,3.31,24,11919
 sub-Neurotech4679,13,sub-Neurotech4679/ses-13/eeg/sub-Neurotech4679_ses-13_task-EEG_eeg.edf,193357414,184.4,15580.0,4.33,24,15580
@@ -49305,7 +49211,6 @@ sub-Neurotech4754,641,sub-Neurotech4754/ses-641/eeg/sub-Neurotech4754_ses-641_ta
 sub-Neurotech4754,642,sub-Neurotech4754/ses-642/eeg/sub-Neurotech4754_ses-642_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4754,643,sub-Neurotech4754/ses-643/eeg/sub-Neurotech4754_ses-643_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4754,644,sub-Neurotech4754/ses-644/eeg/sub-Neurotech4754_ses-644_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
-sub-Neurotech4754,645,sub-Neurotech4754/ses-645/eeg/sub-Neurotech4754_ses-645_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4754,646,sub-Neurotech4754/ses-646/eeg/sub-Neurotech4754_ses-646_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4754,647,sub-Neurotech4754/ses-647/eeg/sub-Neurotech4754_ses-647_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4754,648,sub-Neurotech4754/ses-648/eeg/sub-Neurotech4754_ses-648_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
@@ -49842,7 +49747,6 @@ sub-Neurotech4794,3,sub-Neurotech4794/ses-3/eeg/sub-Neurotech4794_ses-3_task-EEG
 sub-Neurotech4794,4,sub-Neurotech4794/ses-4/eeg/sub-Neurotech4794_ses-4_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4794,5,sub-Neurotech4794/ses-5/eeg/sub-Neurotech4794_ses-5_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4794,6,sub-Neurotech4794/ses-6/eeg/sub-Neurotech4794_ses-6_task-EEG_eeg.edf,23697817,22.6,1640.0,0.46,28,1640
-sub-Neurotech4794,7,sub-Neurotech4794/ses-7/eeg/sub-Neurotech4794_ses-7_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4794,8,sub-Neurotech4794/ses-8/eeg/sub-Neurotech4794_ses-8_task-EEG_eeg.edf,13946060,13.3,961.0,0.27,28,961
 sub-Neurotech4794,9,sub-Neurotech4794/ses-9/eeg/sub-Neurotech4794_ses-9_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4794,10,sub-Neurotech4794/ses-10/eeg/sub-Neurotech4794_ses-10_task-EEG_eeg.edf,132120576,126.0,9141.0,2.54,28,9141
@@ -49911,7 +49815,6 @@ sub-Neurotech4795,2,sub-Neurotech4795/ses-2/eeg/sub-Neurotech4795_ses-2_task-EEG
 sub-Neurotech4795,3,sub-Neurotech4795/ses-3/eeg/sub-Neurotech4795_ses-3_task-EEG_eeg.edf,259103129,247.1,17924.0,4.98,28,17924
 sub-Neurotech4795,4,sub-Neurotech4795/ses-4/eeg/sub-Neurotech4795_ses-4_task-EEG_eeg.edf,415131238,395.9,28715.0,7.98,28,28715
 sub-Neurotech4795,5,sub-Neurotech4795/ses-5/eeg/sub-Neurotech4795_ses-5_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
-sub-Neurotech4795,6,sub-Neurotech4795/ses-6/eeg/sub-Neurotech4795_ses-6_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4795,7,sub-Neurotech4795/ses-7/eeg/sub-Neurotech4795_ses-7_task-EEG_eeg.edf,341206630,325.4,23600.0,6.56,28,23600
 sub-Neurotech4795,8,sub-Neurotech4795/ses-8/eeg/sub-Neurotech4795_ses-8_task-EEG_eeg.edf,1128162918,1075.9,78042.0,21.68,28,78042
 sub-Neurotech4796,1,sub-Neurotech4796/ses-1/eeg/sub-Neurotech4796_ses-1_task-EEG_eeg.edf,1166960230,1112.9,80724.0,22.42,28,80724
@@ -50879,7 +50782,6 @@ sub-Neurotech4895,6,sub-Neurotech4895/ses-6/eeg/sub-Neurotech4895_ses-6_task-EEG
 sub-Neurotech4895,7,sub-Neurotech4895/ses-7/eeg/sub-Neurotech4895_ses-7_task-EEG_eeg.edf,1154062745,1100.6,89320.0,24.81,25,89320
 sub-Neurotech4895,8,sub-Neurotech4895/ses-8/eeg/sub-Neurotech4895_ses-8_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4895,9,sub-Neurotech4895/ses-9/eeg/sub-Neurotech4895_ses-9_task-EEG_eeg.edf,419430,0.4,30.0,0.01,25,30
-sub-Neurotech4895,10,sub-Neurotech4895/ses-10/eeg/sub-Neurotech4895_ses-10_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4895,11,sub-Neurotech4895/ses-11/eeg/sub-Neurotech4895_ses-11_task-EEG_eeg.edf,291923558,278.4,22594.0,6.28,25,22594
 sub-Neurotech4895,12,sub-Neurotech4895/ses-12/eeg/sub-Neurotech4895_ses-12_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4895,13,sub-Neurotech4895/ses-13/eeg/sub-Neurotech4895_ses-13_task-EEG_eeg.edf,57671680,55.0,4466.0,1.24,25,4466
@@ -51355,7 +51257,6 @@ sub-Neurotech4952,3,sub-Neurotech4952/ses-3/eeg/sub-Neurotech4952_ses-3_task-EEG
 sub-Neurotech4952,4,sub-Neurotech4952/ses-4/eeg/sub-Neurotech4952_ses-4_task-EEG_eeg.edf,35441868,33.8,2641.0,0.73,26,2641
 sub-Neurotech4952,5,sub-Neurotech4952/ses-5/eeg/sub-Neurotech4952_ses-5_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4952,6,sub-Neurotech4952/ses-6/eeg/sub-Neurotech4952_ses-6_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
-sub-Neurotech4952,7,sub-Neurotech4952/ses-7/eeg/sub-Neurotech4952_ses-7_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech4952,8,sub-Neurotech4952/ses-8/eeg/sub-Neurotech4952_ses-8_task-EEG_eeg.edf,1103521382,1052.4,82154.0,22.82,26,82154
 sub-Neurotech4952,9,sub-Neurotech4952/ses-9/eeg/sub-Neurotech4952_ses-9_task-EEG_eeg.edf,1829135974,1744.4,136177.0,37.83,26,136177
 sub-Neurotech4952,10,sub-Neurotech4952/ses-10/eeg/sub-Neurotech4952_ses-10_task-EEG_eeg.edf,734003,0.7,58.0,0.02,26,58
@@ -51756,7 +51657,6 @@ sub-Neurotech5015,3,sub-Neurotech5015/ses-3/eeg/sub-Neurotech5015_ses-3_task-EEG
 sub-Neurotech5016,1,sub-Neurotech5016/ses-1/eeg/sub-Neurotech5016_ses-1_task-EEG_eeg.edf,3456211353,3296.1,239087.0,66.41,28,239087
 sub-Neurotech5017,1,sub-Neurotech5017/ses-1/eeg/sub-Neurotech5017_ses-1_task-EEG_eeg.edf,1157837619,1104.2,86201.0,23.94,26,86201
 sub-Neurotech5017,2,sub-Neurotech5017/ses-2/eeg/sub-Neurotech5017_ses-2_task-EEG_eeg.edf,229743001,219.1,17104.0,4.75,26,17104
-sub-Neurotech5017,3,sub-Neurotech5017/ses-3/eeg/sub-Neurotech5017_ses-3_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech5017,4,sub-Neurotech5017/ses-4/eeg/sub-Neurotech5017_ses-4_task-EEG_eeg.edf,911527116,869.3,67862.0,18.85,26,67862
 sub-Neurotech5018,1,sub-Neurotech5018/ses-1/eeg/sub-Neurotech5018_ses-1_task-EEG_eeg.edf,896322764,854.8,69375.0,19.27,25,69375
 sub-Neurotech5019,1,sub-Neurotech5019/ses-1/eeg/sub-Neurotech5019_ses-1_task-EEG_eeg.edf,2322805555,2215.2,160680.0,44.63,28,160680
@@ -52576,7 +52476,6 @@ sub-Neurotech5122,72,sub-Neurotech5122/ses-72/eeg/sub-Neurotech5122_ses-72_task-
 sub-Neurotech5122,73,sub-Neurotech5122/ses-73/eeg/sub-Neurotech5122_ses-73_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech5122,74,sub-Neurotech5122/ses-74/eeg/sub-Neurotech5122_ses-74_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech5122,75,sub-Neurotech5122/ses-75/eeg/sub-Neurotech5122_ses-75_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
-sub-Neurotech5122,76,sub-Neurotech5122/ses-76/eeg/sub-Neurotech5122_ses-76_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech5122,77,sub-Neurotech5122/ses-77/eeg/sub-Neurotech5122_ses-77_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech5122,78,sub-Neurotech5122/ses-78/eeg/sub-Neurotech5122_ses-78_task-EEG_eeg.edf,160432128,153.0,11094.0,3.08,28,11094
 sub-Neurotech5122,79,sub-Neurotech5122/ses-79/eeg/sub-Neurotech5122_ses-79_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
@@ -52663,7 +52562,6 @@ sub-Neurotech5122,159,sub-Neurotech5122/ses-159/eeg/sub-Neurotech5122_ses-159_ta
 sub-Neurotech5122,160,sub-Neurotech5122/ses-160/eeg/sub-Neurotech5122_ses-160_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech5122,161,sub-Neurotech5122/ses-161/eeg/sub-Neurotech5122_ses-161_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech5122,162,sub-Neurotech5122/ses-162/eeg/sub-Neurotech5122_ses-162_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
-sub-Neurotech5122,163,sub-Neurotech5122/ses-163/eeg/sub-Neurotech5122_ses-163_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech5122,164,sub-Neurotech5122/ses-164/eeg/sub-Neurotech5122_ses-164_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech5122,165,sub-Neurotech5122/ses-165/eeg/sub-Neurotech5122_ses-165_task-EEG_eeg.edf,668676915,637.7,46259.0,12.85,28,46259
 sub-Neurotech5122,166,sub-Neurotech5122/ses-166/eeg/sub-Neurotech5122_ses-166_task-EEG_eeg.edf,4194304,4.0,292.0,0.08,28,292
@@ -52712,7 +52610,6 @@ sub-Neurotech5122,208,sub-Neurotech5122/ses-208/eeg/sub-Neurotech5122_ses-208_ta
 sub-Neurotech5122,209,sub-Neurotech5122/ses-209/eeg/sub-Neurotech5122_ses-209_task-EEG_eeg.edf,6920601,6.6,475.0,0.13,28,475
 sub-Neurotech5122,210,sub-Neurotech5122/ses-210/eeg/sub-Neurotech5122_ses-210_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech5122,211,sub-Neurotech5122/ses-211/eeg/sub-Neurotech5122_ses-211_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
-sub-Neurotech5122,212,sub-Neurotech5122/ses-212/eeg/sub-Neurotech5122_ses-212_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech5122,213,sub-Neurotech5122/ses-213/eeg/sub-Neurotech5122_ses-213_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech5122,214,sub-Neurotech5122/ses-214/eeg/sub-Neurotech5122_ses-214_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech5122,215,sub-Neurotech5122/ses-215/eeg/sub-Neurotech5122_ses-215_task-EEG_eeg.edf,8178892,7.8,564.0,0.16,28,564
@@ -53448,7 +53345,6 @@ sub-Neurotech5186,1,sub-Neurotech5186/ses-1/eeg/sub-Neurotech5186_ses-1_task-EEG
 sub-Neurotech5186,2,sub-Neurotech5186/ses-2/eeg/sub-Neurotech5186_ses-2_task-EEG_eeg.edf,13736345,13.1,1155.0,0.32,23,1155
 sub-Neurotech5186,3,sub-Neurotech5186/ses-3/eeg/sub-Neurotech5186_ses-3_task-EEG_eeg.edf,62599987,59.7,0.0,0.0,0,0
 sub-Neurotech5186,4,sub-Neurotech5186/ses-4/eeg/sub-Neurotech5186_ses-4_task-EEG_eeg.edf,94057267,89.7,7906.0,2.2,23,7906
-sub-Neurotech5186,5,sub-Neurotech5186/ses-5/eeg/sub-Neurotech5186_ses-5_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech5186,6,sub-Neurotech5186/ses-6/eeg/sub-Neurotech5186_ses-6_task-EEG_eeg.edf,348127232,332.0,29268.0,8.13,23,29268
 sub-Neurotech5186,7,sub-Neurotech5186/ses-7/eeg/sub-Neurotech5186_ses-7_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech5186,8,sub-Neurotech5186/ses-8/eeg/sub-Neurotech5186_ses-8_task-EEG_eeg.edf,432118169,412.1,36323.0,10.09,23,36323
@@ -53814,7 +53710,6 @@ sub-Neurotech5239,6,sub-Neurotech5239/ses-6/eeg/sub-Neurotech5239_ses-6_task-EEG
 sub-Neurotech5239,7,sub-Neurotech5239/ses-7/eeg/sub-Neurotech5239_ses-7_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech5239,8,sub-Neurotech5239/ses-8/eeg/sub-Neurotech5239_ses-8_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech5239,9,sub-Neurotech5239/ses-9/eeg/sub-Neurotech5239_ses-9_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
-sub-Neurotech5239,10,sub-Neurotech5239/ses-10/eeg/sub-Neurotech5239_ses-10_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech5239,11,sub-Neurotech5239/ses-11/eeg/sub-Neurotech5239_ses-11_task-EEG_eeg.edf,661756313,631.1,0.0,0.0,0,0
 sub-Neurotech5239,12,sub-Neurotech5239/ses-12/eeg/sub-Neurotech5239_ses-12_task-EEG_eeg.edf,1147666432,1094.5,79388.0,22.05,28,79388
 sub-Neurotech5240,1,sub-Neurotech5240/ses-1/eeg/sub-Neurotech5240_ses-1_task-EEG_eeg.edf,26214400,25.0,1814.0,0.5,28,1814
@@ -54239,7 +54134,6 @@ sub-Neurotech5293,1,sub-Neurotech5293/ses-1/eeg/sub-Neurotech5293_ses-1_task-EEG
 sub-Neurotech5293,2,sub-Neurotech5293/ses-2/eeg/sub-Neurotech5293_ses-2_task-EEG_eeg.edf,1560071372,1487.8,107915.0,29.98,28,107915
 sub-Neurotech5294,1,sub-Neurotech5294/ses-1/eeg/sub-Neurotech5294_ses-1_task-EEG_eeg.edf,3452960768,3293.0,0.0,0.0,0,0
 sub-Neurotech5295,1,sub-Neurotech5295/ses-1/eeg/sub-Neurotech5295_ses-1_task-EEG_eeg.edf,1191392051,1136.2,82417.0,22.89,28,82417
-sub-Neurotech5295,2,sub-Neurotech5295/ses-2/eeg/sub-Neurotech5295_ses-2_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech5295,3,sub-Neurotech5295/ses-3/eeg/sub-Neurotech5295_ses-3_task-EEG_eeg.edf,383464243,365.7,0.0,0.0,0,0
 sub-Neurotech5295,4,sub-Neurotech5295/ses-4/eeg/sub-Neurotech5295_ses-4_task-EEG_eeg.edf,694576742,662.4,48045.0,13.35,28,48045
 sub-Neurotech5296,1,sub-Neurotech5296/ses-1/eeg/sub-Neurotech5296_ses-1_task-EEG_eeg.edf,256062259,244.2,19815.0,5.5,25,19815
@@ -54363,7 +54257,6 @@ sub-Neurotech5317,3,sub-Neurotech5317/ses-3/eeg/sub-Neurotech5317_ses-3_task-EEG
 sub-Neurotech5317,4,sub-Neurotech5317/ses-4/eeg/sub-Neurotech5317_ses-4_task-EEG_eeg.edf,1547907891,1476.2,107075.0,29.74,28,107075
 sub-Neurotech5318,1,sub-Neurotech5318/ses-1/eeg/sub-Neurotech5318_ses-1_task-EEG_eeg.edf,2321652121,2214.1,160601.0,44.61,28,160601
 sub-Neurotech5319,1,sub-Neurotech5319/ses-1/eeg/sub-Neurotech5319_ses-1_task-EEG_eeg.edf,67633152,64.5,4681.0,1.3,28,4681
-sub-Neurotech5319,2,sub-Neurotech5319/ses-2/eeg/sub-Neurotech5319_ses-2_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0
 sub-Neurotech5319,3,sub-Neurotech5319/ses-3/eeg/sub-Neurotech5319_ses-3_task-EEG_eeg.edf,1354340761,1291.6,93684.0,26.02,28,93684
 sub-Neurotech5319,4,sub-Neurotech5319/ses-4/eeg/sub-Neurotech5319_ses-4_task-EEG_eeg.edf,69310873,66.1,4795.0,1.33,28,4795
 sub-Neurotech5319,5,sub-Neurotech5319/ses-5/eeg/sub-Neurotech5319_ses-5_task-EEG_eeg.edf,0,0.0,0.0,0.0,0,0

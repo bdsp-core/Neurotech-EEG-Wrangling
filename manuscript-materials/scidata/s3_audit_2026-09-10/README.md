@@ -1,5 +1,7 @@
 # Audit of the published S3 release — 2026-09-10
 
+> **Decision 2026-09-12:** the source drive is unavailable and Neurotech cannot re-export, so the release is described **as published**: 4,912 subjects with EDF sessions (4,882 with signal), 23,600 signal-bearing segments, 212,133 h, 30,719 stubs, 225,957 annotations in 14,491 files. The 32 EDF-less sessions are to be deleted (`orphan_session_objects_to_delete.txt`) and `participants.tsv` trimmed to 4,912 rows; the 107 never-uploaded sessions are simply dropped from `output/s3_recordings.csv` (the built-release table is archived as `output/s3_recordings_built_2026-07.csv`). If Padlock_DT turns up, `restore_missing_sessions.py` can still add the 39 recordings as a versioned update.
+
 Full listing of `s3://bdsp-opendata-repository/EEG/bids/Neurotech/` (231,893 objects) compared with
 `output/s3_recordings.csv` (54,426 EDF sessions; 23,607 signal-bearing).
 

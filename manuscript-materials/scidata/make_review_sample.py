@@ -35,8 +35,15 @@ def pick_subjects(max_gb: float, per_class: int) -> list[str]:
             s = by_subj[r["subject"]]
             s["hours"].append(float(r.get("duration_hours") or 0))
             s["bytes"] += float(r.get("file_size_bytes") or r.get("size_bytes") or 0)
+    # never sample a subject touched by the 2026-09 audit (missing or orphaned sessions)
+    audit = Path(__file__).resolve().parent / "s3_audit_2026-09-10"
+    excluded = set()
+    for name in ("missing_edf_paths.txt", "missing_sidecar_paths.txt"):
+        excluded |= {l.split("/")[0] for l in (audit / name).read_text().splitlines() if l.strip()}
     classes = {"routine": [], "ambulatory": [], "multiday": []}
     for subj, s in by_subj.items():
+        if subj in excluded:
+            continue
         mx = max(s["hours"])
         cls = "routine" if mx < 1 else ("ambulatory" if mx <= 24 else "multiday")
         classes[cls].append((s["bytes"], subj))

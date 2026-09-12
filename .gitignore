@@ -75,3 +75,7 @@ output/*_snapshot_*/
 # Parallel Qwen extraction outputs (comparison only; ehr_qwen holds PHI) — never commit
 output/ehr_qwen/
 output/ehr_deid_tables_qwen/
+
+# reviewer sample package (patient data; hosted separately)
+manuscript-materials/scidata/review_sample/
+manuscript-materials/scidata/review_sample.zip
