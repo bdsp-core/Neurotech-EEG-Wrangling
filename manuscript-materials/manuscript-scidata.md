@@ -176,7 +176,7 @@ Manual review of 30 randomly sampled patient records compared every extracted fi
 
 ### Access procedure
 
-The dataset is distributed under controlled access because it contains patient-level health information (diagnoses, medications, EEG findings) together with age and sex, which under the applicable regulations requires safeguards against re-identification. Users register at https://bdsp.io with their name, institution, and email address, complete BDSP credentialing, and sign the BDSP data use agreement, which prohibits attempts at re-identification and redistribution of the data. Credentialed users then receive access credentials for direct download from the storage location given in Data Records; the BDSP site provides the agreement text and download instructions.
+The dataset is distributed under controlled access because it contains patient-level health information (diagnoses, medications, EEG findings) together with age and sex, which under the applicable regulations requires safeguards against re-identification. Users register at https://bdsp.io with their name, institution, and email address, complete BDSP credentialing, and sign the BDSP data use agreement, which prohibits attempts at re-identification and redistribution of the data. Credentialed users then receive access credentials for direct download from the storage location given in Data Records. The text of the data use agreement is publicly viewable at https://bdsp.io/content/nf89816gtxbon11kbr9a/view-dua/1.0/ and the dataset license at https://bdsp.io/content/nf89816gtxbon11kbr9a/view-license/1.0/.
 
 ### Reading the data
 

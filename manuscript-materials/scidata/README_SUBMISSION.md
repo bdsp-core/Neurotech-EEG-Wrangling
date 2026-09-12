@@ -15,26 +15,22 @@ mandated headings are already in the article file.
 | `Human_Data_Checklist_FILLED.docx` | **Related Manuscript file** | Six boxes ticked and all answer boxes filled; **type the signature and date on the last page** before upload |
 | `cover_letter.docx` / `.md` | Cover letter box | Contains no data-access instructions (journal rule) |
 | `email_to_editorial_office_pediatric_waiver.md` | Send by email to scientificdata@nature.com | Recommended before or at submission (see §4) |
-| `bdsp_dua_copy.pdf` (obtain) | Related Manuscript file | Download the BDSP data use agreement text from bdsp.io and add it; the checklist says a copy is supplied |
 
 Fields entered in the submission system (copy from the article file, keep identical): Author Contributions,
 Competing Interests (answer "Yes", paste the statement), Funding, Ethics (BIDMC IRB 2022P000417, waiver of consent).
 APC: answer the payment questions in the system; waiver requests go there, not in the cover letter.
 
-## 2. Two S3 commands that must be run before reviewers are invited (blocked for Claude, allowed for you)
+## 2. ONE remaining S3 command (Claude Code's safety classifier refuses deletes; credentials are fine)
 
-The manuscript describes the release as it will be after these two commands. Run from the repo root on Brandon's Mac
-(rclone remote `s3` is configured there). Both are idempotent.
+The manuscript describes the release as it will be after this command. Run from the repo root on Brandon's Mac
+(rclone remote `s3` is configured there). Idempotent.
 
 ```bash
 cd /Users/mwestover/GithubRepos/NeuroTech-Wrangling
-# a) remove the 32 sessions that have sidecars but no EDF (120 objects; versioned bucket, so reversible)
+# remove the 32 sessions that have sidecars but no EDF (120 objects; versioned bucket, so reversible)
 rclone delete s3:bdsp-opendata-repository/EEG/bids/Neurotech/ \
   --files-from manuscript-materials/scidata/s3_audit_2026-09-10/orphan_session_objects_to_delete.txt --no-traverse -v
-# b) upload the trimmed participants table (4,912 rows; drops the three subjects that had only those sessions)
-rclone copyto output/bids_release_staging/participants.tsv s3:bdsp-opendata-repository/EEG/bids/Neurotech/participants.tsv
-# verify
-rclone cat s3:bdsp-opendata-repository/EEG/bids/Neurotech/participants.tsv | tail -n +2 | wc -l      # 4912
+# verify (participants.tsv was already uploaded with 4,912 rows on 2026-09-12)
 rclone lsf -R s3:bdsp-opendata-repository/EEG/bids/Neurotech/sub-Neurotech934/ | wc -l                # 0
 .venv/bin/python manuscript-materials/scidata/release_gate.py --downloads ~/Downloads/SciData_submission_2026-09-12
 ```

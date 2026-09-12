@@ -20,7 +20,7 @@ Tick: **Controlled access.** The DUA (BDSP data use agreement) is signed by ever
 - Tick **"Contains sensitive or protected fields"**: health data — ICD-10 referral diagnoses, comorbid conditions, medications, technologist-reported EEG findings, and the EEG recordings themselves.
 
 ## Q5 — Where the DUA can be found
-"The BDSP data use agreement is presented to every user during registration at https://bdsp.io and is available at [INSERT PUBLIC URL OF THE DUA TEXT]." If no public URL exists, attach a copy of the DUA as a Related Manuscript file and state that here.
+"The BDSP Credentialed Health Data Use Agreement is publicly viewable at https://bdsp.io/content/nf89816gtxbon11kbr9a/view-dua/1.0/ (license: https://bdsp.io/content/nf89816gtxbon11kbr9a/view-license/1.0/) and is presented to every user during registration." No attachment needed.
 
 ## Q6 — Practical controls and reviewer access
 Tick: **"Manual application or registration process via the repository (beyond basic email validation)."**
