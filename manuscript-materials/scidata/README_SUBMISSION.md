@@ -12,7 +12,7 @@ mandated headings are already in the article file.
 | `Neurotech_EEG_Dataset_SciData.pdf` | Article file (review copy) | Same content, for reviewers |
 | `reviewer_data_access_note.docx` | **Article file, uploaded FIRST** so it sits in front of the paper | Fill the `[INSERT USERNAME]` / `[INSERT PASSWORD]` fields after §3, then export to PDF |
 | `figures/Figure1.png` … `Figure4.png` | **Figure files**, one per figure | Panels merged, lower-case bold letters; PDFs of Figures 2-4 also included |
-| `Human_Data_Checklist_FILLED.docx` | **Related Manuscript file** | Six boxes ticked and all answer boxes filled; **type the signature and date on the last page** before upload |
+| `Human_Data_Checklist_FILLED.docx` | **Related Manuscript file** | Six boxes ticked, all answer boxes filled, signed and dated (12 September 2026) |
 | `cover_letter.docx` / `.md` | Cover letter box | Contains no data-access instructions (journal rule) |
 
 Fields entered in the submission system (copy from the article file, keep identical): Author Contributions,
