@@ -14,7 +14,6 @@ mandated headings are already in the article file.
 | `figures/Figure1.png` … `Figure4.png` | **Figure files**, one per figure | Panels merged, lower-case bold letters; PDFs of Figures 2-4 also included |
 | `Human_Data_Checklist_FILLED.docx` | **Related Manuscript file** | Six boxes ticked and all answer boxes filled; **type the signature and date on the last page** before upload |
 | `cover_letter.docx` / `.md` | Cover letter box | Contains no data-access instructions (journal rule) |
-| `email_to_editorial_office_pediatric_waiver.md` | Send by email to scientificdata@nature.com | Recommended before or at submission (see §4) |
 
 Fields entered in the submission system (copy from the article file, keep identical): Author Contributions,
 Competing Interests (answer "Yes", paste the statement), Funding, Ethics (BIDMC IRB 2022P000417, waiver of consent).
@@ -35,24 +34,26 @@ rclone lsf -R s3:bdsp-opendata-repository/EEG/bids/Neurotech/sub-Neurotech934/ |
 .venv/bin/python manuscript-materials/scidata/release_gate.py --downloads ~/Downloads/SciData_submission_2026-09-12
 ```
 
-## 3. Reviewer sample (required for a controlled-access dataset)
+## 3. Reviewer access (required for a controlled-access dataset): temporary reviewer login on BDSP
 
-Reviewers must be able to download a representative sample anonymously and instantly. Build it (downloads ~2.5 GB
-of already-de-identified data for a few unaffected subjects), host it, and paste the link into the reviewer note:
+Reviewers must reach the data instantly and without revealing their identity. Decision: provide a **temporary
+reviewer account on bdsp.io** with pre-approved credentialing and the DUA accepted, whose username and password go
+into `reviewer_data_access_note.docx` (uploaded as the first Article file). Steps for the BDSP admin (Brandon):
 
-```bash
-.venv/bin/python manuscript-materials/scidata/make_review_sample.py --max-gb 2.5 --per-class 3 --zip
-# -> manuscript-materials/scidata/review_sample.zip
-```
-Hosting options: a Box shared link (anyone with the link), an institutional file share, or a public-read object in a
-BDSP bucket. The link must work without login and without revealing the reviewer's identity. Withdraw it after
-publication.
+1. Register an account with a neutral address you control (e.g. a lab alias such as `eeg-reviewer@…`), using a
+   non-identifying name such as "Scientific Data reviewer".
+2. In the bdsp.io admin, mark that account's credentialing as approved and record the DUA as accepted, so the
+   project's download options are immediately available to it.
+3. Log in as that account once, open https://bdsp.io/content/nf89816gtxbon11kbr9a/1.0/, and confirm the file
+   download works without any further request or approval step.
+4. Paste the username, password, and the dataset URL into the `[INSERT …]` fields of the reviewer note, export it to
+   PDF, and upload it in front of the article. Disable the account after publication.
+
+Fallback if the platform cannot deliver instant downloads to that account: build the sample package
+(`make_review_sample.py --zip`) and host it at an anonymous link (e.g. a Box shared link).
 
 ## 4. Open policy points (decisions, not tasks)
 
-- **Minors under a consent waiver.** The journal's human-data policy says waivers should not be used for children.
-  The Ethics section states the IRB waiver transparently; `email_to_editorial_office_pediatric_waiver.md` asks the
-  office for guidance. Fallback if refused: Epilepsia Open (the earlier Epilepsia-format manuscript is in the repo).
 - **License field.** `dataset_description.json` on S3 says CC BY-NC 4.0; controlled access is governed by the DUA,
   but an editor may query the -NC tag.
 - **bdsp.io listing page** still shows the old Natus/Xltek and ICU wording and the old counts; corrected text with

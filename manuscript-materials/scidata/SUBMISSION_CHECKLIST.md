@@ -31,10 +31,9 @@ No supplementary information. All former supplementary figures and tables were f
 
 ## Open items — decide before clicking Submit (see README_SUBMISSION.md for the exact commands)
 
-1. **Reviewer access to the data (blocking).** Build the sample with `scidata/make_review_sample.py --zip`, host it at an anonymous instant-download URL (Box shared link, institutional share, or a public-read object), fill the three `[INSERT …]` fields in `reviewer_data_access_note.docx`, export to PDF, upload as the first Article file.
-2. **Two S3 commands** (blocked for Claude): delete the 32 orphan sessions (`s3_audit_2026-09-10/orphan_session_objects_to_delete.txt`) and upload the trimmed `participants.tsv` (4,912 rows). The manuscript already describes the post-command state; `release_gate.py` verifies it.
-3. **Pediatric data under a consent waiver (policy risk).** Send `email_to_editorial_office_pediatric_waiver.md` to scientificdata@nature.com. Fallback: Epilepsia Open.
-4. **DUA copy.** Download the BDSP data use agreement text and add it as a Related Manuscript file (the filled checklist says a copy is supplied).
+1. **Reviewer access to the data (blocking).** Temporary reviewer login on bdsp.io with pre-approved credentialing (README_SUBMISSION.md §3); credentials go into `reviewer_data_access_note.docx`, exported to PDF and uploaded as the first Article file.
+2. **S3 release: DONE 2026-09-12.** Orphan sessions deleted (Brandon), `participants.tsv` uploaded (4,912 rows); `release_gate.py` verifies the live state.
+3. **DUA: DONE.** The agreement is public at https://bdsp.io/content/nf89816gtxbon11kbr9a/view-dua/1.0/ and cited in the checklist and manuscript; no attachment.
 5. **License field.** `dataset_description.json` on S3 says CC BY-NC 4.0; an editor may query the -NC tag.
 6. **bdsp.io listing page** still shows Natus/Xltek, ICU wording and the July counts; corrected text in `manuscript-materials/bdsp_listing_draft.md` (prod shell needed). DataCite description: optional refresh.
 7. **Neurotech confirmations still outstanding** (equipment names / Persyst version; annotation workflow). Text is worded to be correct without them.

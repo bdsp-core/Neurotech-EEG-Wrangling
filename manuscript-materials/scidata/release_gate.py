@@ -26,12 +26,10 @@ PY = ROOT / ".venv" / "bin" / "python"
 STALE = ["4,914", "23,607", "212,186", "30,819", "54,426", "14,517", "226,486", "50,482", "6,892",
          "21,330", "19,401", "15,746", "53,469", "3 to 21", "1.13 annotations", "0.47 to 2.78", "232,000", "Natus/Xltek"]
 DELIVERABLES = [MM / "manuscript-scidata.md", SD / "cover_letter.md", SD / "reviewer_data_access_note.md",
-                SD / "human_data_checklist_answers.md", SD / "email_to_editorial_office_pediatric_waiver.md",
-                MM / "bdsp_listing_draft.md"]
+                SD / "human_data_checklist_answers.md", MM / "bdsp_listing_draft.md"]
 PACKAGE = ["Neurotech_EEG_Dataset_SciData.docx", "Neurotech_EEG_Dataset_SciData.pdf", "figures/Figure1.png",
            "figures/Figure2.png", "figures/Figure3.png", "figures/Figure4.png", "cover_letter.md", "cover_letter.docx",
-           "Human_Data_Checklist_FILLED.docx", "reviewer_data_access_note.docx", "email_to_editorial_office_pediatric_waiver.md",
-           "README_SUBMISSION.md"]
+           "Human_Data_Checklist_FILLED.docx", "reviewer_data_access_note.docx", "README_SUBMISSION.md"]
 
 ok = True
 

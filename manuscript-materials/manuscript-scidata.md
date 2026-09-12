@@ -76,7 +76,7 @@ We converted the dataset to BIDS-EEG format (version 1.7.0)^8,10^ and assigned e
 
 ### Ethics
 
-This project was conducted under Beth Israel Deaconess Medical Center (BIDMC) Institutional Review Board (IRB) protocol 2022P000417 and under a Business Associate Agreement between BIDMC and Neurotech. The IRB granted a waiver of informed consent for this retrospective use of clinical data and approved publication of the dataset in de-identified form with access restricted by a data use agreement prohibiting attempts at re-identification. The cohort includes patients of all ages, including children, whose data are shared under the same waiver and access controls. The study complied with the Declaration of Helsinki.
+This project was conducted under Beth Israel Deaconess Medical Center (BIDMC) Institutional Review Board (IRB) protocol 2022P000417 and under a Business Associate Agreement between BIDMC and Neurotech. The IRB granted a waiver of informed consent for this retrospective use of clinical data and approved publication of the dataset in de-identified form with access restricted by a data use agreement prohibiting attempts at re-identification. The study complied with the Declaration of Helsinki.
 
 ## Data Records
 

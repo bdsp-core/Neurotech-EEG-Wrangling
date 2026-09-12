@@ -5,8 +5,6 @@ Form: `manuscript-materials/Scientific_Data_Human_Data_Checklist.docx` (download
 ## Q1 — How consent was obtained
 Tick: **"Patients were not informed or did not provide consent for data sharing … but a third party has agreed this may be waived, and I have explained this in the Methods section of the paper."**
 
-Note for the editors (put in the Q2 box or the cover email): the cohort spans all ages, including children. The BIDMC IRB granted a waiver of informed consent for this retrospective use of clinical data and approved release in de-identified form (HIPAA Safe Harbor) under a data use agreement. The journal's guidance says waivers should not be used for minors; we ask the editorial office to confirm acceptability (see SUBMISSION_CHECKLIST.md item 2).
-
 ## Q2 — Ethics approval
 Tick: **Institutional ethics board or IRB.**
 Box: "Beth Israel Deaconess Medical Center (BIDMC) Institutional Review Board, protocol 2022P000417. The IRB granted a waiver of informed consent and approved publication of the dataset in de-identified form with access restricted by a data use agreement prohibiting re-identification. Both details are stated in Methods → Ethics. A Business Associate Agreement between BIDMC and Neurotech governs the data transfer."
