@@ -46,8 +46,10 @@ def load_targets(audit_dir: Path) -> dict[str, set[str]]:
 
 
 def load_linking(paths: list[Path]) -> pd.DataFrame:
+    """All rows of all tables. A patient with several source folders has one row per folder, each
+    with its own session_start / n_edf_files; exact duplicate rows across tables are dropped."""
     frames = [pd.read_csv(p) for p in paths]
-    df = pd.concat(frames, ignore_index=True).drop_duplicates(subset=["BDSPPatientID"], keep="first")
+    df = pd.concat(frames, ignore_index=True).drop_duplicates(subset=["BDSPPatientID", "original_folder"], keep="first")
     return df
 
 
@@ -75,45 +77,55 @@ def main():
 
     targets = load_targets(args.targets)
     linking = load_linking(args.linking)
-    linking = linking.set_index("BDSPPatientID")
+    groups = {pid: g for pid, g in linking.groupby("BDSPPatientID")}
     sizes = published_sizes(args.recordings)
-    print(f"targets: {sum(len(v) for v in targets.values())} sessions in {len(targets)} subjects; linking rows: {len(linking)}")
+    print(f"targets: {sum(len(v) for v in targets.values())} sessions in {len(targets)} subjects; "
+          f"linking rows: {len(linking)} ({len(groups)} patients)")
 
     broad_names, per_folder_names = None, None
     if not args.dry_run:
-        # name scrubber needs the linking table(s); build from the first that exists (all rows concatenated)
         tmp = args.out.parent / "_linking_concat.csv"
         args.out.parent.mkdir(parents=True, exist_ok=True)
-        linking.reset_index().to_csv(tmp, index=False)
+        linking.to_csv(tmp, index=False)
         broad_names, per_folder_names = bb.build_name_scrubber(tmp)
         tmp.unlink()
 
     done, skipped = [], []
     for sub, sessions in sorted(targets.items(), key=lambda kv: int(re.sub(r"\D", "", kv[0]))):
         pid = "Neurotech-" + re.sub(r"\D", "", sub)
-        if pid not in linking.index:
+        if pid not in groups:
             skipped.append((sub, "no linking row"))
             continue
-        row = linking.loc[pid]
-        folder = args.drive / str(row["original_folder"])
-        if not folder.exists():
-            skipped.append((sub, "source folder not found on drive"))
+        # one entry per source folder of this patient: (row, folder path, sorted edf list, lay dict)
+        folders = []
+        for _, row in groups[pid].iterrows():
+            folder = args.drive / str(row["original_folder"])
+            if not folder.exists():
+                skipped.append((f"{sub} [{str(row['original_folder'])[:12]}…]", "source folder not found on drive"))
+                continue
+            edf_files = sorted(folder.glob("*.edf"), key=lambda p: p.name)
+            lay_files = {p.stem: p for p in folder.glob("*.lay") if ".backup" not in p.name}
+            folders.append((row, folder, edf_files, lay_files))
+        if not folders:
             continue
-        shift_days, session_start = int(row["shift_days"]), int(row["session_start"])
-        edf_files = sorted(folder.glob("*.edf"), key=lambda p: p.name)
-        lay_files = {p.stem: p for p in folder.glob("*.lay") if ".backup" not in p.name}
+
+        def locate(ses_num: int):
+            for row, folder, edf_files, lay_files in folders:
+                start = int(row["session_start"])
+                if start <= ses_num < start + len(edf_files):
+                    return row, folder, edf_files, lay_files, ses_num - start
+            return None
 
         # numbering check against every published session of this subject
-        mismatch = []
-        checked = 0
+        mismatch, checked = [], 0
         for (s, ses), size in sizes.items():
             if s != sub or ses in sessions:
                 continue
-            idx = int(ses.split("-")[1]) - session_start
-            if idx < 0 or idx >= len(edf_files):
-                mismatch.append(f"{ses}: index {idx} out of range ({len(edf_files)} source EDFs)")
+            loc = locate(int(ses.split("-")[1]))
+            if loc is None:
+                mismatch.append(f"{ses}: no source folder range contains it")
                 continue
-            src_size = edf_files[idx].stat().st_size
+            src_size = loc[2][loc[4]].stat().st_size
             if src_size != size:
                 mismatch.append(f"{ses}: source {src_size} B vs published {size} B")
             checked += 1
@@ -122,10 +134,12 @@ def main():
             continue
 
         for ses in sorted(sessions, key=lambda s: int(s.split("-")[1])):
-            idx = int(ses.split("-")[1]) - session_start
-            if idx < 0 or idx >= len(edf_files):
-                skipped.append((f"{sub}/{ses}", f"index {idx} out of range ({len(edf_files)} source EDFs)"))
+            loc = locate(int(ses.split("-")[1]))
+            if loc is None:
+                skipped.append((f"{sub}/{ses}", "no source folder range contains this session"))
                 continue
+            row, folder, edf_files, lay_files, idx = loc
+            shift_days = int(row["shift_days"])
             edf_path = edf_files[idx]
             if edf_path.stat().st_size < 512:
                 skipped.append((f"{sub}/{ses}", "source EDF < 512 B (builder skips these)"))
