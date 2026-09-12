@@ -79,3 +79,6 @@ output/ehr_deid_tables_qwen/
 # reviewer sample package (patient data; hosted separately)
 manuscript-materials/scidata/review_sample/
 manuscript-materials/scidata/review_sample.zip
+
+# production provisioning script (kept only in the private submission package)
+manuscript-materials/scidata/bdsp_reviewer_account.py

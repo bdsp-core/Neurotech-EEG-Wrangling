@@ -2,14 +2,16 @@
 
 **Manuscript:** Clinical scalp electroencephalography of 4,912 patients including multi-day ambulatory home recordings
 
-**Dataset:** The Neurotech EEG Dataset, Brain Data Science Platform, https://doi.org/10.60508/v99k-ek82 (https://bdsp.io/content/nf89816gtxbon11kbr9a/1.0/)
+**Dataset:** The Neurotech EEG Dataset, Brain Data Science Platform (BDSP), https://doi.org/10.60508/v99k-ek82 (https://bdsp.io/content/nf89816gtxbon11kbr9a/1.0/)
 
-The dataset is distributed under **controlled access** because it contains patient-level health information (diagnoses, medications, EEG findings) with age and sex. Users register on bdsp.io, complete credentialing, and sign a data use agreement that prohibits re-identification and redistribution; access is then granted to the full 10.2 TB BIDS release.
+The dataset is distributed under **controlled access** because it contains patient-level health information (diagnoses, medications, EEG findings) with age and sex. Regular users register on bdsp.io, complete credentialing, and sign the data use agreement (https://bdsp.io/content/nf89816gtxbon11kbr9a/view-dua/1.0/), which prohibits re-identification and redistribution.
 
-Because that process records the user's identity and is not instantaneous, we provide a **representative sample for anonymous, immediate download** so that reviewers can inspect the data without revealing their identity:
+So that reviewers can inspect the data **immediately and without revealing their identity**, we have created a temporary reviewer account on BDSP that is already credentialed and has the data use agreement recorded:
 
-- **Download:** [INSERT ANONYMOUS DOWNLOAD URL OF THE SAMPLE ZIP]
-- **Contents:** the complete top-level files of the release (`dataset_description.json`, `README`, `participants.tsv`, `participants.json`, the full `phenotype/` directory with all six tables and their data dictionaries) and the complete BIDS directories of [INSERT N] subjects chosen to span routine, ambulatory, and multi-day studies, including every EDF recording, JSON sidecar, channels table, annotation file, and scans table for those subjects. The sample is a verbatim subset of the published release.
-- **Size:** approximately [INSERT SIZE] GB as a single zip archive.
+- **Login page:** https://bdsp.io/login/
+- **Username:** [INSERT USERNAME]
+- **Password:** [INSERT PASSWORD]
+- **Dataset page (after login):** https://bdsp.io/content/nf89816gtxbon11kbr9a/1.0/ — the Files section lists every file of the release (dataset-level files, the phenotype tables, and the per-subject BIDS directories with EDF recordings, sidecars, and annotation files) for direct download.
+- **Bulk access (optional):** for the full 10.2 TB release, enter any AWS account ID under Account → Cloud settings while logged in as the reviewer account; access to `s3://bdsp-opendata-repository/EEG/bids/Neurotech/` is granted automatically, after which `aws s3 sync` works.
 
-The sample link is temporary and will be withdrawn after publication; the persistent record is the DOI above.
+The account is shared by all reviewers and records no reviewer identity; it will be disabled after publication. The persistent record is the DOI above.
