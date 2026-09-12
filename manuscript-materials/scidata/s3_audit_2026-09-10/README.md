@@ -12,7 +12,7 @@ Full listing of `s3://bdsp-opendata-repository/EEG/bids/Neurotech/` (231,893 obj
 | Sessions with sidecars but no EDF | 31 | 0 | not in the recordings table (subjects 1028, 934, 970 have only such sessions) |
 | Sessions with an EDF but a missing sidecar | 8 (10 files) | 0 | **fixed 2026-09-11**: regenerated from the EDF headers on S3 (`staged/`) and uploaded; verified on S3 |
 | `participants.tsv` rows | 4,915 | one per subject directory | matches the S3 subject directories today |
-| `*_eeg.json` Manufacturer | "Natus/Xltek" | "Lifelines/EMS" | all 54,346 sidecars; fix with `patch_s3_manufacturer.py` (list: `output/s3_eeg_json_sidecars.txt`) |
+| `*_eeg.json` Manufacturer | "Lifelines/EMS" | "Lifelines/EMS" | **fixed 2026-09-11**: all 54,346 sidecars rewritten (download → `patch_sidecars_local.py` → rclone upload); 300 random re-reads + spot checks verified |
 
 ## What happened (established 2026-09-10)
 
@@ -38,7 +38,7 @@ cd manuscript-materials/scidata/s3_audit_2026-09-10
 rclone copy staged/ s3:bdsp-opendata-repository/EEG/bids/Neurotech/ --ignore-existing -v
 ```
 
-## Fix 2 — Manufacturer in all 54,346 sidecars (~15 minutes)
+## Fix 2 — Manufacturer in all 54,346 sidecars (DONE 2026-09-11 via the rclone route in `patch_sidecars_local.py`; the boto3 script below remains valid for re-runs)
 
 ```bash
 cd /Users/mwestover/GithubRepos/NeuroTech-Wrangling
